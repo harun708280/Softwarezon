@@ -1,15 +1,13 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import {Rubik } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/shared/Navbar/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const rubik = Rubik({
+  subsets: ['latin'],  // বা প্রয়োজন অনুযায়ী
+  weights: ['400', '700'],  // আপনি যে weight গুলো ব্যবহার করতে চান
+  // optionally, variable: '--font-rubik'
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Create Next App",
@@ -19,7 +17,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={rubik.className}>
+        <Navbar/>
         {children}
       </body>
     </html>

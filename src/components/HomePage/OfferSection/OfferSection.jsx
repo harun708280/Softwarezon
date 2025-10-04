@@ -1,0 +1,86 @@
+// components/OfferSection.js
+import Image from "next/image";
+
+const offers = [
+  {
+    id: "01/04",
+    title: "UI/UX Design",
+    desc: "Lorem ipsum dolor sit amet elit, sed do tempor incididunt ut dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: "/images/ui-icon.svg",
+    gradient: "from-[#4D46C7] to-[#6D65FC]",
+  },
+  {
+    id: "02/04",
+    title: "Web Design & Development",
+    desc: "Lorem ipsum dolor sit amet elit, sed do tempor incididunt ut dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: "/images/web-icon-2.svg",
+    gradient: "from-[#FFC806] to-[#FF6A4D]",
+  },
+  {
+    id: "03/04",
+    title: "Mobile App Development",
+    desc: "Lorem ipsum dolor sit amet elit, sed do tempor incididunt ut dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: "/images/mobile-dev-icon.svg",
+    gradient: "from-[#F85374] to-[#EE2A52]",
+  },
+  {
+    id: "04/04",
+    title: "Content Writing",
+    desc: "Lorem ipsum dolor sit amet elit, sed do tempor incididunt ut dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: "/images/ContentWriting-icon.svg",
+    gradient: "from-[#C3DB8C] to-[#7A9C2B]",
+  },
+];
+
+function OfferCard({ item }) {
+  return (
+    <div className="group border border-[#00000014] py-[30px] px-[25px] lg:px-[50px] rounded-[10px] hover:shadow-[10px_12px_60px_0px_#0000001A] transition-shadow duration-300">
+      <div className="flex items-center justify-between hover:border-none transition-opacity duration-300">
+        <div
+          className={`rounded-full bg-gradient-to-tr ${item.gradient} flex items-center justify-center`}
+        >
+          <Image
+            src={item.icon}
+            alt={item.title}
+            width={100}
+            height={100}
+            className="p-[10px] lg:p-[25px] h-14 lg:h-auto"
+          />
+        </div>
+        <p className="opacity-50 text-primary text-[22px] lg:text-[30px]">
+          {item.id}
+        </p>
+      </div>
+
+      <div className="pt-[17px] text-left">
+        <h3 className="text-[25px] lg:text-[38px] font-semibold">
+          {item.title}
+        </h3>
+        <p className="text-[16px] lg:text-[18px] text-[#777777] pt-[10px] lg:pt-[20px] pb-[20px] lg:pb-[30px] group-hover:text-[#555555] transition-colors duration-300">
+          {item.desc}
+        </p>
+        <button className="text-[18px] text-primary pb-[8px] transition-all duration-300 group-hover:border-b-2 group-hover:border-[#F7A421] group-hover:font-semibold group-hover:text-[#F7A421] border-b-2 border-transparent cursor-pointer">
+          Learn More
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default function OfferSection() {
+  return (
+    <section className="container text-center">
+      <h1 className="section-header ">Explore What We Offer</h1>
+      <p className="max-w-[617px] mx-auto text-[18px] lg:text-[20px] text-[#626262] pt-[10px] lg:pt-[15px]">
+        Every week, our staff personally hand-pick some of the best new website
+        themes from our collection.
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[30px] lg:gap-[44px] pt-[30px] lg:pt-[50px]">
+        {offers.map((item, index) => (
+          <OfferCard key={index} item={item} />
+        ))}
+      </div>
+    </section>
+  );
+}
