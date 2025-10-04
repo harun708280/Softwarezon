@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { ShoppingCart } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,11 +78,12 @@ const Navbar = () => {
                     : "border-secondary text-secondary"
                 }`}
               >
-                <img
-                  id="cart-icon"
-                    src={scrolled ? "/images/cart-3.png" : "/images/cart2.svg"}
-                  alt="Cart"
-                  class="w-6 h-6 transition-all duration-300"
+                <ShoppingCart
+                  className={`w-6 h-6 transition-all duration-300 ${
+                    scrolled
+                      ? "text-primary fill-primary"
+                      : "text-secondary fill-secondary"
+                  }`}
                 />
               </div>
               <span
@@ -97,10 +99,17 @@ const Navbar = () => {
             <Link
               href="#"
               className={`hidden md:inline-flex items-center gap-2 border py-[14px] px-[20px] rounded-full text-[18px] font-medium hover:opacity-70 transition ${
-                scrolled ? "text-[#17A52E] border-[#17A52E]" : "text-[#52FFA1] border-[#52FFA1]"
+                scrolled
+                  ? "text-[#17A52E] border-[#17A52E]"
+                  : "text-[#52FFA1] border-[#52FFA1]"
               }`}
             >
-              <Image src="/images/whatsap.svg" alt="Whatsapp" width={24} height={24} />
+              <Image
+                src="/images/whatsap.svg"
+                alt="Whatsapp"
+                width={24}
+                height={24}
+              />
               <span>Whatsapp Us</span>
             </Link>
 
@@ -126,37 +135,41 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           {isOpen && (
-<div
-  id="primary-menu"
-  className={`absolute left-0 right-0 w-full mt-2 bg-white shadow-md md:hidden top-16 rounded-b-md overflow-hidden transition-all duration-500 ease-in-out ${
-    isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-  }`}
->
-  <ul className="flex flex-col p-4 space-y-2 text-base text-black">
-    {navLinks.map((link) => (
-      <li key={link.href}>
-        <Link
-          href={link.href}
-          className="block px-2 py-2 rounded hover:bg-gray-50"
-          onClick={() => setIsOpen(false)}
-        >
-          {link.label}
-        </Link>
-      </li>
-    ))}
+            <div
+              id="primary-menu"
+              className={`absolute left-0 right-0 w-full mt-2 bg-white shadow-md md:hidden top-16 rounded-b-md overflow-hidden transition-all duration-500 ease-in-out ${
+                isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+              }`}
+            >
+              <ul className="flex flex-col p-4 space-y-2 text-base text-black">
+                {navLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="block px-2 py-2 rounded hover:bg-gray-50"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
 
-    <li className="pt-2 border-t">
-      <Link
-        href="#"
-        className="flex w-full justify-center md:hidden items-center gap-2 text-[#52FFA1] border py-[14px] px-[20px] rounded-full text-[18px] font-medium hover:opacity-70 transition border-[#52FFA1]"
-      >
-        <Image src="/images/whatsap.svg" alt="" width={20} height={20} />
-        <span>Whatsapp Us</span>
-      </Link>
-    </li>
-  </ul>
-</div>
-
+                <li className="pt-2 border-t">
+                  <Link
+                    href="#"
+                    className="flex w-full justify-center md:hidden items-center gap-2 text-[#52FFA1] border py-[14px] px-[20px] rounded-full text-[18px] font-medium hover:opacity-70 transition border-[#52FFA1]"
+                  >
+                    <Image
+                      src="/images/whatsap.svg"
+                      alt=""
+                      width={20}
+                      height={20}
+                    />
+                    <span>Whatsapp Us</span>
+                  </Link>
+                </li>
+              </ul>
+            </div>
           )}
         </nav>
       </div>

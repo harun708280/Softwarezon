@@ -1,12 +1,12 @@
-// components/VirtualSolution.js
+
+import PrimaryButton from "@/components/ui/PrimaryButton/PrimaryButton";
 import Image from "next/image";
 
 export default function VirtualSolution() {
   return (
     <section className="container !py-[40px] md:!py-[60px] lg:!py-[140px]">
       <div className="flex gap-[30px] lg:gap-[66px] justify-between flex-col-reverse lg:flex-row items-center">
-        
-        {/* Left Side Image */}
+      
         <div className="flex-1">
           <Image
             src="/images/virtual-solution.png"
@@ -17,33 +17,26 @@ export default function VirtualSolution() {
           />
         </div>
 
-        {/* Right Side Content */}
         <div className="flex-1 text-center lg:text-left">
           <h1 className="section-header pb-[25px] lg:pb-[40px]">
-            We&apos;re your virtual Software Solution studio
+            We’re your trusted Software Development Studio
           </h1>
-          <p className="text-[#626262] text-[20px] leading-[29px] font-normal text-left">
-            Picture altering administrations for internet business organizations
-             stars, from item photographic artists to Amazon sellers to
-            worldwide brands.
+          <p className="bg-[#FFF5E6] rounded-[7px] px-[10px] py-[15px] text-[18px] lg:text-[20px] text-[#626262]">
+            We craft scalable SaaS, CRM, and Blockchain solutions to power your
+            growth. 🚀
+          </p>
+          <p className="text-[#626262] text-[20px] leading-[29px] font-normal text-left pt-[25px] lg:pt-[30px]">
+            At Softwarezon, we create powerful digital products—from SaaS and
+            CRM platforms to FinTech and Blockchain solutions—that help
+            businesses grow and scale
           </p>
           <p className="!text-left text-[#626262] text-[20px] leading-[29px] font-normal pt-[20px] pb-[25px] lg:pb-[45px]">
-            Since a fast item shoot can without much of a stretch transform into
-            up to seven days of altering  organizing your images. Allow us
-            to take care of the edits, so you can return to the work that needs
-            you.
+            Our process covers everything from requirement analysis to Figma
+            UI/UX design and full-stack development, ensuring every solution is
+            modern, secure, and user-friendly.
           </p>
 
-      
-          <button className="primary-button ">
-            CONTACT US
-            <Image
-              src="/images/right-arrow.svg"
-              alt="arrow"
-              width={20}
-              height={20}
-            />
-          </button>
+          <PrimaryButton label="Let’s Work Together" />
         </div>
       </div>
     </section>
