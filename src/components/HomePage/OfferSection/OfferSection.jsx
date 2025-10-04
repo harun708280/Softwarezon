@@ -44,7 +44,7 @@ function OfferCard({ item }) {
             alt={item.title}
             width={100}
             height={100}
-            className="p-[10px] lg:p-[25px] h-14 lg:h-auto"
+            className="p-[10px] lg:p-[25px] h-14 w-14 md:w-auto  md:h-auto"
           />
         </div>
         <p className=" text-[#777777] text-[22px] lg:text-[30px]">
