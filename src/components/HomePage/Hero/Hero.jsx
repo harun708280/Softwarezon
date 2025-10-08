@@ -13,8 +13,8 @@ const Hero = () => {
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center text-center gap-[20px] lg:gap-[42px]">
        
         <div className="lg:max-w-[700px] w-full mb-8 text-white lg:text-left lg:mb-0">
-          <h1 className="text-3xl md:text-4xl lg:text-[56px] font-bold leading-tight lg:leading-[70px]">
-          Build, Scale & Transform with <span className="bg-gradient-to-r from-[#FFBF78] to-[#D76B00] bg-clip-text text-transparent font-bold">
+          <h1 className="text-3xl md:text-4xl lg:text-[56px] font-bold leading-tight lg:leading-[75px]">
+          Build, Scale & Transform with <span className="bg-gradient-to-r from-[#FFBF78] to-[#D76B00] bg-clip-text text-transparent ">
               SOFTWAREZON
             </span>
           </h1>

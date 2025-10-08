@@ -6,6 +6,7 @@ const PrimaryButton = ({
   onClick,
   icon: Icon = MoveRight,
   className = "",
+  iconClassName = "",
 }) => {
   return (
     <button
@@ -13,7 +14,7 @@ const PrimaryButton = ({
       className={`primary-button ${className}`}
     >
       {label}
-      {Icon && <Icon className=" " />}
+      {Icon && <Icon className={`w-5 h-5 ${iconClassName}`} />}
     </button>
   );
 };

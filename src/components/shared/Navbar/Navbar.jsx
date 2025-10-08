@@ -56,7 +56,7 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <ul
-            className={`hidden md:flex md:items-center md:space-x-8 text-[18px] font-medium transition-colors duration-300 ${
+            className={`hidden lg:flex lg:items-center lg:space-x-8 text-[18px] font-medium transition-colors duration-300 ${
               scrolled ? "text-black" : "text-white"
             }`}
           >
@@ -68,11 +68,11 @@ const Navbar = () => {
           </ul>
 
           {/* Right Section */}
-          <div className="flex items-center space-x-2 md:space-x-4">
+          <div className="flex items-center space-x-2 lg:space-x-4">
             {/* Cart */}
             <Link href="#" className="relative inline-block">
               <div
-                className={`flex items-center justify-center w-10 h-10 md:w-14 md:h-14 border rounded-full transition-colors duration-300 ${
+                className={`flex items-center justify-center w-10 h-10 lg:w-14 lg:h-14 border rounded-full transition-colors duration-300 ${
                   scrolled
                     ? "border-primary text-primary"
                     : "border-secondary text-secondary"
@@ -87,7 +87,7 @@ const Navbar = () => {
                 />
               </div>
               <span
-                className={`absolute flex items-center justify-center w-4 h-4 text-xs rounded-full top-1 right-1 md:top-2 md:right-3 transition-colors duration-300 ${
+                className={`absolute flex items-center justify-center w-4 h-4 text-xs rounded-full top-1 right-1 lg:top-2 lg:right-3 transition-colors duration-300 ${
                   scrolled ? "bg-primary text-white" : "bg-white text-primary"
                 }`}
               >
@@ -98,7 +98,7 @@ const Navbar = () => {
             {/* Whatsapp */}
             <Link
               href="#"
-              className={`hidden md:inline-flex items-center gap-2 border py-[14px] px-[20px] rounded-full text-[18px] font-medium hover:opacity-70 transition ${
+              className={`hidden lg:inline-flex items-center gap-2 border py-[14px] px-[20px] rounded-full text-[18px] font-medium hover:opacity-70 transition ${
                 scrolled
                   ? "text-[#17A52E] border-[#17A52E]"
                   : "text-[#52FFA1] border-[#52FFA1]"
@@ -116,7 +116,7 @@ const Navbar = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 rounded-md md:hidden transition-colors duration-300 ${
+              className={`p-2 rounded-md lg:hidden transition-colors duration-300 ${
                 scrolled ? "invert-0" : "invert"
               }`}
               aria-controls="primary-menu"
@@ -137,7 +137,7 @@ const Navbar = () => {
           {isOpen && (
             <div
               id="primary-menu"
-              className={`absolute left-0 right-0 w-full mt-2 bg-white shadow-md md:hidden top-16 rounded-b-md overflow-hidden transition-all duration-500 ease-in-out ${
+              className={`absolute left-0 right-0 w-full mt-2 bg-white shadow-md lg:hidden top-16 rounded-b-md overflow-hidden transition-all duration-500 ease-in-out ${
                 isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
               }`}
             >
@@ -157,7 +157,7 @@ const Navbar = () => {
                 <li className="pt-2 border-t">
                   <Link
                     href="#"
-                    className="flex w-full justify-center md:hidden items-center gap-2 text-[#52FFA1] border py-[14px] px-[20px] rounded-full text-[18px] font-medium hover:opacity-70 transition border-[#52FFA1]"
+                    className="flex w-full justify-center lg:hidden items-center gap-2 text-[#52FFA1] border py-[14px] px-[20px] rounded-full text-[18px] font-medium hover:opacity-70 transition border-[#52FFA1]"
                   >
                     <Image
                       src="/images/whatsap.svg"

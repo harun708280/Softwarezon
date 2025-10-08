@@ -71,7 +71,7 @@ export default function OfferSection() {
   return (
     <section className="container text-center">
       <h1 className="section-header ">Explore What We Offer</h1>
-      <p className="max-w-[521px] mx-auto text-[18px] lg:text-[20px] text-[#626262] pt-[10px] lg:pt-[15px]">
+      <p className="max-w-[521px] mx-auto section-description pt-[10px] lg:pt-[15px]">
         From design to development, we build the future of SaaS, FinTech & Web3.
 
       </p>

@@ -3,9 +3,10 @@ import "./globals.css";
 import Navbar from "@/components/shared/Navbar/Navbar";
 
 const rubik = Rubik({
-  subsets: ['latin'],  
-  weights: ['400', '700'],  
-})
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  
+});
 
 
 export const metadata = {
@@ -20,8 +21,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={rubik.className}>
-        <Navbar/>
-        {children}
+        <div><Navbar/>
+        {children}</div>
       </body>
     </html>
   );
