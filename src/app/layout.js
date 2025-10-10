@@ -2,6 +2,9 @@ import {Rubik } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar/Navbar";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const rubik = Rubik({
   subsets: ['latin'],
   weight: ['400', '700'],

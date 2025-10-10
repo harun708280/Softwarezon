@@ -93,3 +93,43 @@ body {
     font-size: 20px;
   }
 }
+
+.gradient-btn {
+  position: relative;
+  overflow: hidden;
+  color: #666666;
+  border: 1px solid #cccccc;
+  border-radius: 12px;
+  padding: 12px 17px;
+  transition: all 0.5s ease-in-out;
+  background: transparent;
+  z-index: 1;
+}
+
+.gradient-btn:hover {
+  color: #fff;
+  border-color: transparent;
+}
+
+.gradient-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #F39022 -7.35%, #F8A921 103.68%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.gradient-btn:hover::before {
+  opacity: 1;
+}
+
+.slick-slide {
+  padding: 0 12px;
+}
+
+.slick-list {
+  margin: 0 -12px; 
+}
