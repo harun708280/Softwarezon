@@ -59,15 +59,11 @@ const OurProducts = () => {
                 icon={ShoppingCart}
                 iconClassName="w-5 h-5 fill-white"
               />
-              <button className="primary-button-2 rounded-full">
-                Buy From Envato
-                <Image
-                  src="/images/envarto-icon.svg"
-                  alt="Product 1"
-                  width={16}
-                  height={24}
-                />
-              </button>
+              <SecondaryButton
+                text="Buy From Envato"
+                imgSrc="/images/envarto-icon.svg"
+                alt="Envato"
+              />
             </div>
           </div>
         </div>
@@ -116,15 +112,11 @@ const OurProducts = () => {
                 icon={ShoppingCart}
                 iconClassName="w-5 h-5 fill-white"
               />
-              <button className="primary-button-2 rounded-full">
-                Buy From Envato
-                <Image
-                  src="/images/envarto-icon.svg"
-                  alt="Product 1"
-                  width={16}
-                  height={24}
-                />
-              </button>
+              <SecondaryButton
+                text="Buy From Envato"
+                imgSrc="/images/envarto-icon.svg"
+                alt="Envato"
+              />
             </div>
           </div>
         </div>
@@ -173,15 +165,11 @@ const OurProducts = () => {
                 icon={ShoppingCart}
                 iconClassName="w-5 h-5 fill-white"
               />
-              <button className="primary-button-2 rounded-full">
-                Buy From Envato
-                <Image
-                  src="/images/envarto-icon.svg"
-                  alt="Product 1"
-                  width={16}
-                  height={24}
-                />
-              </button>
+              <SecondaryButton
+                text="Buy From Envato"
+                imgSrc="/images/envarto-icon.svg"
+                alt="Envato"
+              />
             </div>
           </div>
         </div>

@@ -4,6 +4,7 @@ import Navbar from "@/components/shared/Navbar/Navbar";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from "@/components/shared/Footer/Footer";
 
 const rubik = Rubik({
   subsets: ['latin'],
@@ -25,7 +26,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={rubik.className}>
         <div><Navbar/>
-        {children}</div>
+        {children}
+        <Footer/>
+        </div>
       </body>
     </html>
   );

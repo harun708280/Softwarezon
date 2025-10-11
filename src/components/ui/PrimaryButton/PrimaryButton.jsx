@@ -4,7 +4,7 @@ import { MoveRight } from "lucide-react";
 const PrimaryButton = ({
   label = "Contact Now",
   onClick,
-  icon: Icon = MoveRight,
+  icon: Icon ,
   className = "",
   iconClassName = "",
 }) => {
