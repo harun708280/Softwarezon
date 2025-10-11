@@ -125,6 +125,58 @@ body {
 .gradient-btn:hover::before {
   opacity: 1;
 }
+.gradient-btn-2 {
+  position: relative;
+  overflow: hidden;
+  color: #F39022;
+  border: 1px solid #F39022;
+  border-radius: 12px;
+  padding: 12px 17px;
+  transition: all 0.5s ease-in-out;
+  background: transparent;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.gradient-btn-2:hover {
+  color: #fff;
+  border-color: transparent;
+}
+
+
+.gradient-btn-2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #F39022 -7.35%, #F8A921 103.68%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.gradient-btn-2:hover::before {
+  opacity: 1;
+}
+
+
+.gradient-btn-2 img {
+  transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
+  filter: brightness(1) saturate(1);
+}
+
+.gradient-btn-2:hover img {
+  filter: brightness(10) saturate(0);
+  transform: scale(1.05);
+  transition-delay: 0.05s; 
+}
+
 
 .slick-slide {
   padding: 0 12px;

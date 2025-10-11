@@ -7,6 +7,7 @@ import OfferSection from './OfferSection/OfferSection';
 import OurProducts from './OurProducts/OurProducts';
 import Faq from './Faq/Faq';
 import TestimonialSlick from './Testimonail/Testimonail';
+import Blog from './Blog/Blog';
 
 const HomePage = () => {
     return (
@@ -17,6 +18,7 @@ const HomePage = () => {
            <OurProducts/>
            <Faq/>
            <TestimonialSlick/>
+           <Blog/>
         </div>
     );
 };

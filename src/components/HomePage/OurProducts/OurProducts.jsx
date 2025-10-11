@@ -1,4 +1,5 @@
 import PrimaryButton from "@/components/ui/PrimaryButton/PrimaryButton";
+import SecondaryButton from "@/components/ui/SecondaryButton/SecondaryButton";
 import { ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import React from "react";
@@ -14,7 +15,6 @@ const OurProducts = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2  gap-[30px] lg:gap-[40px] pt-[40px] lg:pt-[50px]">
-        
         <div className="border border-[#000000]/8 rounded-[10px] shadow-[10px_12px_60px_0px_#0000001A] transition-shadow duration-300">
           <div className="">
             <Image
@@ -83,7 +83,8 @@ const OurProducts = () => {
           </div>
           <div className="py-[24px] px-[20px] ">
             <h6 className="text-primary text-[18px] lg:text-[20px] font-semibold">
-              Forex Trade Signal and Crypto Currency Trade Signal Notifier Telegram Supported Platform
+              Forex Trade Signal and Crypto Currency Trade Signal Notifier
+              Telegram Supported Platform
             </h6>
 
             <p className="pt-[10px] lg:pt-[14px] pb-[25px] lg:pb-[40px] text-[16px] text-[#777777] leading-[26px]">
@@ -139,7 +140,8 @@ const OurProducts = () => {
           </div>
           <div className="py-[24px] px-[20px] ">
             <h6 className="text-primary text-[18px] lg:text-[20px] font-semibold">
-              myShop - Installment and Due Sell Supported Powerful Shop Management System
+              myShop - Installment and Due Sell Supported Powerful Shop
+              Management System
             </h6>
 
             <p className="pt-[10px] lg:pt-[14px] pb-[25px] lg:pb-[40px] text-[16px] text-[#777777] leading-[26px]">
@@ -195,7 +197,8 @@ const OurProducts = () => {
           </div>
           <div className="py-[24px] px-[20px] ">
             <h6 className="text-primary text-[18px] lg:text-[20px] font-semibold">
-              Ecommerce - Cryptocurrency Supported Responsive eCommerce Business Platform
+              Ecommerce - Cryptocurrency Supported Responsive eCommerce Business
+              Platform
             </h6>
 
             <p className="pt-[10px] lg:pt-[14px] pb-[25px] lg:pb-[40px] text-[16px] text-[#777777] leading-[26px]">
@@ -227,15 +230,12 @@ const OurProducts = () => {
                 icon={ShoppingCart}
                 iconClassName="w-5 h-5 fill-white"
               />
-              <button className="primary-button-2 rounded-full">
-                Buy From Envato
-                <Image
-                  src="/images/envarto-icon.svg"
-                  alt="Product 1"
-                  width={16}
-                  height={24}
-                />
-              </button>
+              
+              <SecondaryButton
+                text="Buy From Envato"
+                imgSrc="/images/envarto-icon.svg"
+                alt="Envato"
+              />
             </div>
           </div>
         </div>
