@@ -5,6 +5,18 @@
   --color-secondary: #f39022;
 }
 
+:root {
+  --gradient-orange-glow: radial-gradient(
+    81.16% 143.98% at 50% -5.92%,
+    rgba(243, 145, 34, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.bg-orange-glow {
+  background: var(--gradient-orange-glow);
+}
+
 body {
   font-family: var(--font-rubik), sans-serif;
 
@@ -54,7 +66,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  
+
   font-size: 18px;
   font-weight: 500;
   border-radius: 10000px;
@@ -63,11 +75,11 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   opacity: 1;
-  
-  color: #F39022;
 
-  border: 1px solid; 
-  border: linear-gradient(90deg, #F39022 -7.35%, #F8A921 103.68%);
+  color: #f39022;
+
+  border: 1px solid;
+  border: linear-gradient(90deg, #f39022 -7.35%, #f8a921 103.68%);
   border-image-slice: 1;
 }
 
@@ -116,7 +128,7 @@ body {
   position: absolute;
   inset: 0;
   border-radius: 12px;
-  background: linear-gradient(90deg, #F39022 -7.35%, #F8A921 103.68%);
+  background: linear-gradient(90deg, #f39022 -7.35%, #f8a921 103.68%);
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   z-index: -1;
@@ -128,8 +140,8 @@ body {
 .gradient-btn-2 {
   position: relative;
   overflow: hidden;
-  color: #F39022;
-  border: 1px solid #F39022;
+  color: #f39022;
+  border: 1px solid #f39022;
   border-radius: 12px;
   padding: 12px 17px;
   transition: all 0.5s ease-in-out;
@@ -143,19 +155,31 @@ body {
   gap: 8px;
 }
 
+.hero-shape {
+    position: absolute;
+    width: 800px;
+    height: 1261.83px;
+    top: -793px;
+    left: -571px;
+    background: #ffffff12;
+    transform: rotate(135.06deg);
+    opacity: 1;
+}
+
+
+
 
 .gradient-btn-2:hover {
   color: #fff;
   border-color: transparent;
 }
 
-
 .gradient-btn-2::before {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: 12px;
-  background: linear-gradient(90deg, #F39022 -7.35%, #F8A921 103.68%);
+  background: linear-gradient(90deg, #f39022 -7.35%, #f8a921 103.68%);
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   z-index: -1;
@@ -165,7 +189,6 @@ body {
   opacity: 1;
 }
 
-
 .gradient-btn-2 img {
   transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
   filter: brightness(1) saturate(1);
@@ -174,19 +197,58 @@ body {
 .gradient-btn-2:hover img {
   filter: brightness(10) saturate(0);
   transform: scale(1.05);
-  transition-delay: 0.05s; 
+  transition-delay: 0.05s;
 }
-
 
 .slick-slide {
   padding: 0 12px;
 }
 
 .slick-list {
-  margin: 0 -12px; 
+  margin: 0 -12px;
 }
-
 
 .bg-orange {
-  background: linear-gradient(90deg, #F39022 -7.35%, #F8A921 103.68%);
+  background: linear-gradient(90deg, #f39022 -7.35%, #f8a921 103.68%);
 }
+
+.hero-logo {
+  position: absolute;
+  transform: translate(var(--x, 0px), var(--y, 0px)) scale(var(--scale, 0.5));
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.6, 0.01, 0.1, 1);
+}
+
+/* Scatter to final + continuous floating */
+@keyframes float-in {
+  0% {
+    transform: translate(var(--randX, 0px), var(--randY, 0px)) scale(var(--randScale, 0.5));
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes float-continuous {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+.logo-item {
+  position: absolute;
+  transition: all 0.5s ease-out;
+  animation: float-in 0.8s forwards, float-continuous 3s ease-in-out infinite;
+}
+
+/* Stagger delays */
+.delay-0 { animation-delay: 0s, 0.8s; }
+.delay-1 { animation-delay: 0.2s, 0.8s; }
+.delay-2 { animation-delay: 0.4s, 0.8s; }
+.delay-3 { animation-delay: 0.6s, 0.8s; }
+.delay-4 { animation-delay: 0.8s, 0.8s; }
+.delay-5 { animation-delay: 1s, 0.8s; }
+.delay-6 { animation-delay: 1.2s, 0.8s; }
+.delay-7 { animation-delay: 1.4s, 0.8s; }
