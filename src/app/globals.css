@@ -156,18 +156,15 @@ body {
 }
 
 .hero-shape {
-    position: absolute;
-    width: 800px;
-    height: 1261.83px;
-    top: -793px;
-    left: -571px;
-    background: #ffffff12;
-    transform: rotate(135.06deg);
-    opacity: 1;
+  position: absolute;
+  width: 800px;
+  height: 1261.83px;
+  top: -793px;
+  left: -571px;
+  background: #ffffff12;
+  transform: rotate(135.06deg);
+  opacity: 1;
 }
-
-
-
 
 .gradient-btn-2:hover {
   color: #fff;
@@ -214,15 +211,19 @@ body {
 
 .hero-logo {
   position: absolute;
-  transform: translate(var(--x, 0px), var(--y, 0px)) scale(var(--scale, 0.5));
+  transition: all 0.8s cubic-bezier(0.6, 0.01, 0.1, 1);
   opacity: 0;
-  transition: all 1s cubic-bezier(0.6, 0.01, 0.1, 1);
+  transform: translate(var(--x, 0px), var(--y, 0px)) scale(var(--scale, 0.5));
 }
 
-/* Scatter to final + continuous floating */
+.hero-logo.show {
+  opacity: 1;
+  transform: translate(0px, 0px) scale(1);
+}
+
 @keyframes float-in {
   0% {
-    transform: translate(var(--randX, 0px), var(--randY, 0px)) scale(var(--randScale, 0.5));
+    transform: translate(var(--randX, 0px), var(--randY, 0px)) scale(0.5);
     opacity: 0;
   }
   100% {
@@ -232,23 +233,29 @@ body {
 }
 
 @keyframes float-continuous {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .logo-item {
   position: absolute;
-  transition: all 0.5s ease-out;
-  animation: float-in 0.8s forwards, float-continuous 3s ease-in-out infinite;
+  opacity: 0;
+  animation: float-in 0.8s forwards ease-out, float-continuous 3s ease-in-out infinite;
 }
 
-/* Stagger delays */
-.delay-0 { animation-delay: 0s, 0.8s; }
-.delay-1 { animation-delay: 0.2s, 0.8s; }
-.delay-2 { animation-delay: 0.4s, 0.8s; }
-.delay-3 { animation-delay: 0.6s, 0.8s; }
-.delay-4 { animation-delay: 0.8s, 0.8s; }
-.delay-5 { animation-delay: 1s, 0.8s; }
-.delay-6 { animation-delay: 1.2s, 0.8s; }
-.delay-7 { animation-delay: 1.4s, 0.8s; }
+
+.logo-item:nth-child(1) { animation-delay: 0s, 0.8s; }
+.logo-item:nth-child(2) { animation-delay: 0.2s, 1s; }
+.logo-item:nth-child(3) { animation-delay: 0.4s, 1.2s; }
+.logo-item:nth-child(4) { animation-delay: 0.6s, 1.4s; }
+.logo-item:nth-child(5) { animation-delay: 0.8s, 1.6s; }
+.logo-item:nth-child(6) { animation-delay: 1s, 1.8s; }
+.logo-item:nth-child(7) { animation-delay: 1.2s, 2s; }
+.logo-item:nth-child(8) { animation-delay: 1.4s, 2.2s; }

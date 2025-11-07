@@ -33,74 +33,74 @@ const Hero = () => {
             </Link>
           </div>
 
-          <div className="flex justify-center lg:max-w-[586px] w-full lg:justify-end relative">
-            <div className="absolute left-[27px] top-[140px] logo-item">
+          <div className="flex justify-center lg:max-w-[586px] w-full lg:justify-end relative mx-auto my-20">
+            <div className="absolute left-[27px] top-[140px] logo-item ">
               <Image
                 src="/hero-icon/nextjs.png"
-                alt="Next.js Framework Logo"
+                alt="Next.js"
                 width={80}
                 height={62}
               />
             </div>
 
-            <div className="absolute left-[0] top-[84px] logo-item">
+            <div className="absolute left-[0] top-[84px] logo-item ">
               <Image
                 src="/hero-icon/nuxt.png"
-                alt="Nuxt.js Framework Logo"
+                alt="Nuxt.js"
                 width={80}
                 height={62}
               />
             </div>
 
-            <div className="absolute left-[20px] top-[0px] logo-item">
+            <div className="absolute left-[20px] top-[0px] logo-item ">
               <Image
                 src="/hero-icon/react.png"
-                alt="React.js Library Logo"
+                alt="React.js"
                 width={80}
                 height={62}
               />
             </div>
 
-            <div className="absolute left-[113px] top-[23px] logo-item">
+            <div className="absolute left-[113px] top-[23px] logo-item ">
               <Image
                 src="/hero-icon/vue.png"
-                alt="Vue.js Framework Logo"
+                alt="Vue.js"
                 width={80}
                 height={62}
               />
             </div>
 
-            <div className="absolute left-[156px] -top-[70px] logo-item">
+            <div className="absolute left-[156px] -top-[70px] logo-item ">
               <Image
                 src="/hero-icon/wifi.png"
-                alt="Wireless Connection Icon"
+                alt="Wireless Icon"
                 width={48}
                 height={69}
               />
             </div>
 
-            <div className="absolute left-[235px] -top-[58px] logo-item">
+            <div className="absolute left-[235px] -top-[58px] logo-item ">
               <Image
                 src="/hero-icon/laravel.png"
-                alt="Laravel PHP Framework Logo"
+                alt="Laravel"
                 width={80}
                 height={62}
               />
             </div>
 
-            <div className="absolute right-[192px] -top-[45px] logo-item">
+            <div className="absolute right-[192px] -top-[45px] logo-item ">
               <Image
                 src="/hero-icon/figma.png"
-                alt="Figma Design Tool Logo"
+                alt="Figma"
                 width={58}
                 height={61}
               />
             </div>
 
-            <div className="absolute right-[110px] -top-[11px] logo-item">
+            <div className="absolute right-[110px] -top-[11px] logo-item ">
               <Image
                 src="/hero-icon/react.png"
-                alt="React.js UI Library Logo"
+                alt="React.js UI"
                 width={80}
                 height={62}
               />
@@ -111,8 +111,7 @@ const Hero = () => {
               alt="Developer Illustration with Framework Logos"
               width={586}
               height={581}
-              layout="responsive"
-              className="max-w-[586px] max-h-[586px] w-full"
+              className="max-w-[586px] max-h-[586px] w-full relative z-0"
             />
           </div>
         </div>
