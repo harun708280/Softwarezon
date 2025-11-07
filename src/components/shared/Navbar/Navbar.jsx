@@ -32,18 +32,20 @@ const Navbar = () => {
   }, []);
 
   return (
+
+    
     <header
       id="main-header"
-      className={`fixed top-0 left-0 z-50 w-full transition-colors duration-300 ${
-        scrolled ? "bg-white shadow-md" : "bg-transparent"
+      className={`fixed  left-0 z-50 w-full   transition-colors duration-300  ${
+        scrolled ? "bg-white shadow-md !top-0" : "bg-transparent "
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto ">
         <nav
           className="flex items-center justify-between py-2.5 relative"
           aria-label="Main navigation"
         >
-          {/* Logo */}
+          
           <Link href="/" className="flex items-center gap-3">
             <Image
               src="/images/logo.svg"
@@ -54,7 +56,7 @@ const Navbar = () => {
             />
           </Link>
 
-          {/* Desktop Navigation */}
+         
           <ul
             className={`hidden lg:flex lg:items-center lg:space-x-8 text-[18px] font-medium transition-colors duration-300 ${
               scrolled ? "text-black" : "text-white"

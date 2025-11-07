@@ -11,10 +11,16 @@
     rgba(243, 145, 34, 0.8) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+
+  --gradient-orange-linear: linear-gradient(90deg, #F39022 -7.35%, #F8A921 103.68%);
 }
 
 .bg-orange-glow {
   background: var(--gradient-orange-glow);
+}
+
+.bg-orange{
+  background: var(--gradient-orange-linear);
 }
 
 body {
