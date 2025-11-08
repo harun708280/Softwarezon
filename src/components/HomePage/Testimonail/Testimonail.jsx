@@ -9,7 +9,7 @@ const testimonials = [
     name: "John Doe",
     role: "CEO, Company A",
     feedback:
-      "The product is amazing, and the support is outstanding. This is the best product I’ve ever used. Highly recommended!",
+      "The product is amazing, and the support is outstanding. This is the best product I’ve ever used.",
     avatar: "/images/avator.png",
     rating: 5,
     Product: "Shop Management System",
@@ -43,7 +43,6 @@ const testimonials = [
   },
 ];
 
-
 const NextArrow = ({ onClick }) => (
   <button
     onClick={onClick}
@@ -76,24 +75,27 @@ const TestimonialSlick = () => {
     responsive: [
       {
         breakpoint: 1024,
-        settings: { slidesToShow: 1, dots: false },
+        settings: { slidesToShow: 2, dots: false },
       },
+      {
+      breakpoint: 768, 
+      settings: { slidesToShow: 1, dots: false },
+    },
     ],
   };
 
   return (
-    <div className="py-[100px]">
+    <div className="py-[60px] xl:py-[100px]">
       <div className="container mx-auto px-4">
-        
-        <div className="flex flex-wrap justify-between items-center mb-12">
+        <div className="flex flex-wrap gap-2 justify-between items-center mb-12">
           <div>
-            <h1 className="section-header">Success Stories That Inspire</h1>
-            <p className="section-description pt-4 lg:pt-5">
-              From startups to enterprises, here’s how Softwarezon makes an impact.
+            <h2 className="section-header">Success Stories That Inspire</h2>
+            <p className="section-description pt-2 lg:pt-5">
+              From startups to enterprises, here’s how Softwarezon makes an
+              impact.
             </p>
           </div>
 
-         
           <div className="flex gap-4">
             <button
               className="gradient-btn"
@@ -110,43 +112,43 @@ const TestimonialSlick = () => {
           </div>
         </div>
 
-      
         <Slider ref={sliderRef} {...settings}>
           {testimonials.map((item, index) => (
             <div key={index} className="">
-              <div className="bg-white rounded-[10px] p-6 shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-[1.02] min-h-[259px]">
-                
+              <div className="bg-white rounded-[10px] p-3 lg:p-6 shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-[1.02] h-[270px] flex flex-col justify-between">
                 <div className="flex items-center">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <GradientStar key={i} filled={i < item.rating} />
                   ))}
-                  <span className="text-primary text-[18px] pl-2">
+                  <span className="text-primary text-sm lg:text-[18px] pl-2">
                     ({item.rating}/5)
                   </span>
                 </div>
 
-               
-                <p className="text-lg text-[#666666] leading-relaxed pt-5 pb-10">
+                <p className="text-sm lg:text-[18px] text-[#666666] leading-relaxed pt-5 pb-5 lg:pb-10 line-clamp-0">
                   “{item.feedback}”
                 </p>
 
-                
                 <div className="flex justify-between items-center flex-wrap gap-4">
                   <div className="flex items-center gap-4">
                     <img
                       src={item.avatar}
                       alt={item.name}
-                      className="w-[46px] h-[46px] rounded-full object-cover"
+                      className="w-[35px] h-[35px] md:w-[46px] md:h-[46px] rounded-full object-cover"
                     />
                     <div>
-                      <h3 className="text-primary font-semibold">{item.name}</h3>
-                      <span className="block text-[#626262] text-sm">{item.role}</span>
+                      <h3 className="text-primary font-semibold text-[18px]">
+                        {item.name}
+                      </h3>
+                      <span className="block text-[#626262] text-sm">
+                        {item.role}
+                      </span>
                       <p className="text-sm text-primary">
                         Product: {item.Product}
                       </p>
                     </div>
                   </div>
-                  <button className="text-[#666666] text-[14px] py-[10px] px-[16px] border rounded-full border-secondary cursor-pointer">
+                  <button className="text-[#666666] text-[14px] py-[10px] px-[16px] border rounded-full gradient-btn-2 cursor-pointer">
                     Customer Support
                   </button>
                 </div>

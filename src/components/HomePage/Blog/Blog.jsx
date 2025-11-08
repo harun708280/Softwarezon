@@ -31,19 +31,19 @@ const Blog = () => {
 
   return (
     <div className="container">
-      <div className="text-center">
-        <h1 className="section-header">Insights & Updates</h1>
+      <div className="md:text-center">
+        <h2 className="section-header">Insights & Updates</h2>
         <p className="section-description pt-[10px] lg:pt-[15px]">
           Stay updated with the latest in SaaS, FinTech, Blockchain, and Web
           Development.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[14px] pt-[20px] lg:pt-[40px] pb-[60px] lg:pb-[120px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[14px] pt-[20px] xl:pt-[40px] pb-[60px] xl:pb-[120px]">
         {blogData.map((blog) => (
           <div
             key={blog.id}
-            className="px-[10px] lg:px-[15px] py-[15px] lg:py-[20px] bg-white border border-[#F4F4F4] rounded-[20px] shadow-[0_34px_34px_0_rgba(0,0,0,0.05)]"
+            className="px-[15px] lg:px-[15px] py-[15px] lg:py-[20px] bg-white border border-[#F4F4F4] rounded-[20px] shadow-[0_34px_34px_0_rgba(0,0,0,0.05)]"
           >
             <div className="w-full h-[280px] lg:h-[346px] relative rounded-[15px] overflow-hidden">
               <Image

@@ -77,6 +77,7 @@ const Faq = () => {
               width={204}
               height={251}
               alt="Polygon"
+              className="object-cover"
             />
             <h6 className="uppercase text-[20px] lg:text-[36px] py-[23px] font-semibold text-white">
               Fast <span className="text-[#F6A221] ">Response!</span>
@@ -153,7 +154,7 @@ const Faq = () => {
   ${openIndex === index ? "bg-secondary" : "bg-white"}`}
               >
                 <span
-                  className={`font-medium text-[22px]  text-left  ${
+                  className={`font-medium text-[16px] lg:text-[22px]  text-left  ${
                     openIndex === index ? "text-white" : "text-black"
                   }`}
                 >
@@ -175,7 +176,7 @@ const Faq = () => {
                 }`}
               >
                 <div className="overflow-hidden">
-                  <p className="text-[#777777] px-4 lg:px-6 py-[15px] lg:pb-[26px] text-[16px] lg:text-[18px]">
+                  <p className="text-[#777777] px-4 lg:px-6 py-[15px] lg:pb-[26px] text-sm lg:text-[18px]">
                     {item.answer}
                   </p>
                 </div>

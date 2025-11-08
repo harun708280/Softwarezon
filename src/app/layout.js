@@ -24,20 +24,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={rubik.className}>
-       
         <div className="flex flex-col min-h-screen">
-      
           <UpperHeader />
-
-
           <div className="sticky top-0 z-[9998]">
             <Navbar />
           </div>
-
-        
           <main className="flex-grow">{children}</main>
-
-         
           <Footer />
         </div>
       </body>

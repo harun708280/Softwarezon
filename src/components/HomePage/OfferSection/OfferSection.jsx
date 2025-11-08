@@ -34,7 +34,7 @@ const offers = [
 
 function OfferCard({ item }) {
   return (
-    <div className="group border border-[#00000014] py-[30px] px-[25px] lg:px-[50px] rounded-[10px] hover:shadow-[10px_12px_60px_0px_#0000001A] transition-shadow duration-300">
+    <div className="group border border-[#00000014] py-[20px] px-[25px] lg:px-[50px] rounded-[10px] hover:shadow-[10px_12px_60px_0px_#0000001A] transition-shadow duration-300">
       <div className="flex items-center justify-between hover:border-none transition-opacity duration-300">
         <div
           className={`rounded-full bg-gradient-to-tr ${item.gradient} flex items-center justify-center`}
@@ -53,7 +53,7 @@ function OfferCard({ item }) {
       </div>
 
       <div className="pt-[17px] text-left">
-        <h3 className="text-[25px] lg:text-[34px] leading-tight font-semibold">
+        <h3 className="text-[20px] lg:text-[34px] leading-tight font-semibold">
           {item.title}
         </h3>
         <p className="text-[16px] lg:text-[18px] text-[#777777] pt-[10px] lg:pt-[20px] pb-[20px] lg:pb-[30px] group-hover:text-[#555555] transition-colors duration-300">
@@ -69,8 +69,8 @@ function OfferCard({ item }) {
 
 export default function OfferSection() {
   return (
-    <section className="container text-center">
-      <h1 className="section-header ">Explore What We Offer</h1>
+    <section className="container md:text-center">
+      <h2 className="section-header ">Explore What We Offer</h2>
       <p className="max-w-[521px] mx-auto section-description pt-[10px] lg:pt-[15px]">
         From design to development, we build the future of SaaS, FinTech & Web3.
 

@@ -13,7 +13,6 @@ const UpperHeader = () => {
       sessionStorage.setItem("hasSeenUpperHeader", "true");
     }
 
-
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setVisible(false);

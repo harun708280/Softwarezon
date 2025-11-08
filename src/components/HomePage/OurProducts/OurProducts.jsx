@@ -7,8 +7,8 @@ import React from "react";
 const OurProducts = () => {
   return (
     <div className=" container !py-[40px] md:!py-[60px] lg:!py-[140px]">
-      <div className="text-center max-w-[740px] mx-auto">
-        <h1 className="section-header">Check-Out Our Products</h1>
+      <div className="md:text-center max-w-[740px] mx-auto">
+        <h2 className="section-header">Check-Out Our Products</h2>
         <p className="section-description pt-[10px] lg:pt-[15px]">
           Production-ready apps, scripts, and components—built with Laravel,
           Vue/Nuxt, Node.js & Web3. Secure, scalable, and easy to deploy.
@@ -218,7 +218,7 @@ const OurProducts = () => {
                 icon={ShoppingCart}
                 iconClassName="w-5 h-5 fill-white"
               />
-              
+
               <SecondaryButton
                 text="Buy From Envato"
                 imgSrc="/images/envarto-icon.svg"
