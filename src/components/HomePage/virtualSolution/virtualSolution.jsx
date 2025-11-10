@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function VirtualSolution() {
   return (
-    <section className="container !py-[40px] md:!py-[60px] lg:!py-[140px]">
+    <section className="container !py-[40px] md:!py-[60px] lg:!py-[120px]">
       <div className="flex gap-[30px] lg:gap-[66px] justify-between flex-col-reverse lg:flex-row items-center">
       
         <div className="flex-1">

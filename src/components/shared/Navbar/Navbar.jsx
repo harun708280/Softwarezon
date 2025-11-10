@@ -137,7 +137,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        <ul className="flex flex-col p-6 space-y-4 text-base text-gray-800">
+        <ul className="flex flex-col px-6 py-2 space-y-1 text-base text-gray-800">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
@@ -151,10 +151,10 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="px-6 mt-4 border-t pt-4">
+        <div className="px-6 ">
           <Link
             href="#"
-            className="flex items-center justify-center gap-2 border border-[#17A52E] text-[#17A52E] py-[14px] px-[20px] rounded-full text-[18px] font-medium hover:opacity-80 transition"
+            className="flex items-center justify-center gap-2 border border-[#17A52E] text-[#17A52E] py-[8px]  lg:px-[20px] rounded-full text-[18px] font-medium hover:opacity-80 transition"
           >
             <Image src="/images/whatsap.svg" alt="" width={20} height={20} />
             <span>Whatsapp Us</span>

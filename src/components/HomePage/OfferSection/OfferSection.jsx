@@ -1,6 +1,5 @@
-
 import Image from "next/image";
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight } from "lucide-react";
 const offers = [
   {
     id: "01/04",
@@ -47,9 +46,7 @@ function OfferCard({ item }) {
             className="p-[10px] lg:p-[25px] h-14 w-14 md:w-auto  md:h-auto"
           />
         </div>
-        <p className=" text-[#777777] text-[22px] lg:text-[30px]">
-          {item.id}
-        </p>
+        <p className=" text-[#777777] text-[22px] lg:text-[30px]">{item.id}</p>
       </div>
 
       <div className="pt-[17px] text-left">
@@ -60,7 +57,7 @@ function OfferCard({ item }) {
           {item.desc}
         </p>
         <button className="text-[18px] flex items-center text-primary pb-[8px] transition-all duration-300 group-hover:border-b-2 group-hover:border-[#F7A421] group-hover:font-semibold group-hover:text-[#F7A421] border-b-2 border-transparent cursor-pointer">
-          Learn More   <ChevronRight className="h-[20px] w-[20px]" />
+          Learn More <ChevronRight className="h-[20px] w-[20px]" />
         </button>
       </div>
     </div>
@@ -73,7 +70,6 @@ export default function OfferSection() {
       <h2 className="section-header ">Explore What We Offer</h2>
       <p className="max-w-[521px] mx-auto section-description pt-[10px] lg:pt-[15px]">
         From design to development, we build the future of SaaS, FinTech & Web3.
-
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[30px] lg:gap-[44px] pt-[30px] lg:pt-[50px]">

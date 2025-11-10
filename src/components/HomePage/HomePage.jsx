@@ -8,12 +8,14 @@ import OurProducts from './OurProducts/OurProducts';
 import Faq from './Faq/Faq';
 import TestimonialSlick from './Testimonail/Testimonail';
 import Blog from './Blog/Blog';
+import HowWork from './HowWork/HowWork';
 
 const HomePage = () => {
     return (
         <div className=''>
            <Hero/>
            <VirtualSolution/>
+           <HowWork/>
            <OfferSection/>
            <OurProducts/>
            <Faq/>

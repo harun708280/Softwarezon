@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className="bg-black relative overflow-hidden">
       <div className="hero-shape"></div>
-      <div className="min-h-screen flex items-center pt-[120px] pb-[50px] md:pb-[80px] bg-orange-glow">
+      <div className="min-h-screen flex items-center pt-[120px] pb-[0px] md:pb-[80px] bg-orange-glow">
         <div className="container mx-auto flex flex-col xl:flex-row items-center justify-center text-center gap-[20px] xl:gap-[42px]">
           <div className="xl:max-w-[700px] w-full mb-8 text-white xl:text-left xl:mb-0">
             <h1 className="text-[30px] sm:text-3xl md:text-4xl xl:text-[56px] font-bold leading-tight xl:leading-[75px]">
