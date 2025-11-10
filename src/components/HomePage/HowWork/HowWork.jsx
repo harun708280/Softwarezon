@@ -59,7 +59,7 @@ const HowWork = () => {
               </div>
 
               <div className="space-y-[5px] md:space-y-[10px]">
-                <h5 className="text-[20px] md:text-[30px] lg:text-[36px] font-semibold">
+                <h5 className="text-[20px] md:text-[25px] lg:text-[30px] font-semibold">
                   {item.title}
                 </h5>
                 <p className="text-[#626262] text-[16px] md:text-[18px]">
