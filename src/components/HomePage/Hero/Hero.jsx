@@ -7,6 +7,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section className="bg-black relative overflow-hidden">
+      <div className="glow-circle "></div>
       <div className="hero-shape"></div>
       <div className="min-h-screen flex items-center pt-[120px] pb-[0px] md:pb-[80px] bg-orange-glow">
         <div className="container mx-auto flex flex-col xl:flex-row items-center justify-center text-center gap-[20px] xl:gap-[42px]">
@@ -17,7 +18,6 @@ const Hero = () => {
                 SOFTWAREZON
               </span>
             </h1>
-
             <p className="text-white text-[16px] md:text-[20px] pt-[15px] md:pt-[20px] leading-[30px] pb-[25px] md:pb-[45px]">
               We design and develop next-gen CRM systems, SaaS platforms, and
               Web3 solutions using modern stacks like Laravel, Vue, Nuxt,

@@ -7,7 +7,7 @@
 
 :root {
   --gradient-orange-glow: radial-gradient(
-    81.16% 143.98% at 50% -5.92%,
+    65% 110% at 50% 0%,  /* choto size, upar center e thakbe */
     rgba(243, 145, 34, 0.7) 0%,
     rgba(0, 0, 0, 0) 100%
   );
@@ -18,6 +18,21 @@
 .bg-orange-glow {
   background: var(--gradient-orange-glow);
 }
+
+.glow-circle {
+  position: absolute;        
+  width: 269px;
+  height: 269px;
+  top: 515px;
+  left: 1244px;
+  background: #FC812F;      
+  opacity: 1;
+  border-radius: 50%;        
+  filter: blur(200px);      
+  transform: rotate(0deg);   
+  pointer-events: none;      
+}
+
 
 .bg-orange{
   background: var(--gradient-orange-linear);
@@ -66,6 +81,7 @@ body {
   transition: all 0.3s ease;
   opacity: 1;
   white-space: nowrap;
+  transition: all 0.5s ease-in-out;
 }
 
 .primary-button:hover {
@@ -310,3 +326,142 @@ body {
 .logo-item:nth-child(6) { animation-delay: 1s, 1.8s; }
 .logo-item:nth-child(7) { animation-delay: 1.2s, 2s; }
 .logo-item:nth-child(8) { animation-delay: 1.4s, 2.2s; }
+
+
+
+.pt{
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+@media (min-width: 768px) {
+  .pt {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pt {
+    padding-top: 120px !important;
+    padding-bottom: 120px !important;
+  }
+}
+
+
+/* Remove default padding/margin from slick */
+.slick-slider,
+.slick-list,
+.slick-track,
+.slick-slide {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.slick-slide > div {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
+
+.slick-dots li button:before {
+  font-size: 12px; 
+  color: #f39022; 
+  opacity: 0.5;  
+}
+
+
+.slick-dots li.slick-active button:before {
+  color: #f39022; 
+  opacity: 1;
+}
+.slick-dots {
+  bottom: 15px; 
+}
+
+.slick-dots li {
+  margin: 0 6px; 
+}
+
+.slick-dots li.slick-active button:before {
+  color: #f39022;
+  opacity: 1;    
+}
+
+
+.slick-dots li button:before {
+  color: #ccc;   
+  opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #f39022 !important;
+  opacity: 1;    
+}
+
+
+.slick-dots li button:before {
+  color: #ccc;   
+  opacity: 0.5;
+}
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 64px !important;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active button:hover:before {
+  color: #f39022 !important;
+  opacity: 1;
+}
+.slick-dots li.slick-active button:before{
+   color: #f39022 !important;
+}
+
+
+
+
+/* Common reusable button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10000px;
+  padding: 12px 24px;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+  background: transparent;
+  color: #fff; 
+}
+
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+
+@media (max-width: 768px) {
+  .btn {
+    font-size: 15px;
+    padding: 10px 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    font-size: 14px;
+    padding: 9px 20px;
+  }
+}

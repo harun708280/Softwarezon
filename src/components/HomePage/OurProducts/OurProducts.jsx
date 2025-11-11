@@ -3,6 +3,7 @@ import PrimaryButton from "@/components/ui/PrimaryButton/PrimaryButton";
 import SecondaryButton from "@/components/ui/SecondaryButton/SecondaryButton";
 import { ShoppingCart } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const OurProducts = () => {
@@ -68,8 +69,9 @@ const OurProducts = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[30px] lg:gap-[40px] pt-[40px] lg:pt-[50px]">
         {products.map((product) => (
+         <Link key={product.id} href={`products/${product.id}`}>
           <div
-            key={product.id}
+            
             className="group border border-[#000000]/8 rounded-[10px] shadow-[10px_12px_60px_0px_#0000001A] transition-transform duration-300 hover:scale-100 hover:shadow-[0_30px_40px_rgba(0,0,0,0.1)] flex flex-col h-full"
           >
             <div className="">
@@ -130,6 +132,7 @@ const OurProducts = () => {
               </div>
             </div>
           </div>
+         </Link>
         ))}
       </div>
     </section>

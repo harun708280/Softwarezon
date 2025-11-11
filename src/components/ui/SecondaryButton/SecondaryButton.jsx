@@ -3,7 +3,7 @@ import React from "react";
 
 const SecondaryButton = ({ text, icon: Icon, imgSrc, alt }) => {
   return (
-    <button className="gradient-btn-2 !rounded-full flex items-center gap-2 cursor-pointer">
+    <button className="gradient-btn-2 !rounded-full flex items-center justify-center gap-2 cursor-pointer">
       {text}
 
 
