@@ -30,7 +30,7 @@ const Blog = () => {
   ];
 
   return (
-    <section className="bg-[#f9f9f9] py-[60px] md:py-[80px] lg:py-[120px]">
+    <section className=" py-[60px] md:py-[80px] lg:py-[120px]">
       <div className="container">
         
         <div className="md:text-center max-w-[750px] mx-auto">

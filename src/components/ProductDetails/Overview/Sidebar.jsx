@@ -29,10 +29,29 @@ const Sidebar = () => {
     "3 months support included",
   ];
 
+  const licenseDetails = [
+    [
+      { label: "First Release", value: "03rd February 2022" },
+      { label: "Last Update", value: "02nd February 2022" },
+    ],
+    { label: "Documentation", value: "YES" },
+    { label: "High Resolution", value: "YES" },
+    { label: "Responsive", value: "YES" },
+    {
+      label: "Compatible Browsers",
+      value: "Firefox, Safari, Opera, Chrome, Edge",
+    },
+    { label: "Version", value: "v1.0.1" },
+    {
+      label: "Files Included",
+      value: "JavaScript JS, JavaScript JSON, PHP, SQL",
+    },
+  ];
+
   const mainPrice = licenses.find((l) => l.title === selectedLicense)?.price;
 
   return (
-    <section className="sticky top-20 relative">
+    <section className="sticky top-20 ">
       <div className="border border-[#00000014] rounded-[5px] bg-[#FDFDFD]">
         <div
           onClick={() => setShowPopup(!showPopup)}
@@ -119,6 +138,39 @@ const Sidebar = () => {
       <p className="p-[15px] lg:p-[20px] bg-[#474545] rounded-[5px] text-white text-[16px] font-medium lg:text-[24px] mt-[20px] lg:mt-[30px]">
         Total Sell - 34
       </p>
+
+      <div className="border border-[#00000014] overflow-hidden  mt-[20px]  lg:mt-[30px] rounded-[5px]">
+        {licenseDetails.map((item, index) => {
+        const hasBg =  index % 2 !== 0;
+
+     
+        if (Array.isArray(item)) {
+          return (
+            <div
+              key={index}
+              className={`text-[16px] lg:text-[20px] ${hasBg ? "bg-[#FDFDFD]" : ""} border-b border-gray-200 p-[15px] lg:p-[20px]`}
+            >
+              {item.map((subItem, subIndex) => (
+                <div key={subIndex} className="flex justify-between py-1">
+                  <p className="text-[#474545] text-[16px] lg:text-[20px]">{subItem.label}</p>
+                  <p className="">{subItem.value}</p>
+                </div>
+              ))}
+            </div>
+          );
+        } else {
+          return (
+            <div
+              key={index}
+              className={`${hasBg ? "bg-[#FDFDFD]" : ""} flex justify-between gap-[10px] flex-wrap p-[15px] lg:p-[20px]`}
+            >
+              <p className="text-[#474545] text-[16px] lg:text-[20px]">{item.label}</p>
+              <p className="text-[16px] lg:text-[18px]">{item.value}</p>
+            </div>
+          );
+        }
+      })}
+      </div>
 
       <style jsx>{`
         @keyframes slideDown {

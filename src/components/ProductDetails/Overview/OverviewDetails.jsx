@@ -15,7 +15,7 @@ const OverviewDetails = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -58,8 +58,8 @@ const OverviewDetails = () => {
   ];
 
   return (
-    <section>
-      <div className="w-full relative overflow-hidden border-b  border-l border-r rounded-[16px] border-[#00000014] bg-[#FDFDFD]">
+    <section className="overflow-hidden">
+      <div className="w-full product-details-tab relative overflow-hidden border-b  border-l border-r rounded-[16px] border-[#00000014] bg-[#FDFDFD]">
         <Slider {...settings} className="!m-0 !p-0">
           {images.map((src, index) => (
             <div key={index} className="relative w-full h-[440px] !m-0 !p-0">
@@ -160,7 +160,7 @@ const OverviewDetails = () => {
               </li>
             ))}
           </ul>
-          <div className="">
+          <div className="overflow-hidden">
             <h6 className="text-[#474545] text-[18px] lg:text-[24px] font-medium">
               Demo Login
             </h6>

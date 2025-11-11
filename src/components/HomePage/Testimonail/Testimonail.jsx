@@ -43,23 +43,7 @@ const testimonials = [
   },
 ];
 
-const NextArrow = ({ onClick }) => (
-  <button
-    onClick={onClick}
-    className="absolute right-[-20px] top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-primary to-secondary text-white p-2 rounded-full"
-  >
-    <MoveRight size={20} />
-  </button>
-);
 
-const PrevArrow = ({ onClick }) => (
-  <button
-    onClick={onClick}
-    className="absolute left-[-20px] top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-primary to-secondary text-white p-2 rounded-full z-10"
-  >
-    <MoveLeft size={20} />
-  </button>
-);
 
 const TestimonialSlick = () => {
   const sliderRef = useRef(null);

@@ -348,8 +348,7 @@ body {
   }
 }
 
-
-/* Remove default padding/margin from slick */
+.product-details-tab{
 .slick-slider,
 .slick-list,
 .slick-track,
@@ -362,6 +361,8 @@ body {
   margin: 0 !important;
   padding: 0 !important;
 }
+}
+
 
 
 
