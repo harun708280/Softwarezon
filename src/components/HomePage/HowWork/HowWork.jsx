@@ -27,7 +27,7 @@ const HowWork = () => {
   ];
 
   return (
-    <section className="bg-[#d2d1d1] !mb-[40px] md:!mb-[60px] lg:!mb-[120px] py-[40px] md:py-[45px] lg:py-[90px]">
+    <section className="bg-[#9A9A9A12] !mb-[40px] md:!mb-[60px] lg:!mb-[120px] py-[40px] md:py-[45px] lg:py-[90px]">
       <div className="container">
         <h2 className="section-header text-center">How We Work</h2>
 
