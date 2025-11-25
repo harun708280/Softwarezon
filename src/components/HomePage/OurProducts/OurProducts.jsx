@@ -58,7 +58,7 @@ const OurProducts = () => {
   ];
 
   return (
-    <section className="container !py-[40px] md:!py-[60px] lg:!py-[140px]">
+    <section className="container !py-[40px] md:!py-[60px] lg:!py-[120px]">
       <div className="md:text-center max-w-[740px] mx-auto">
         <h2 className="section-header">Check-Out Our Products</h2>
         <p className="section-description pt-[10px] lg:pt-[15px]">

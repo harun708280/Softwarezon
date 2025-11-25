@@ -54,7 +54,7 @@ const TestimonialSlick = () => {
     speed: 600,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     arrows: false,
     responsive: [
       {
@@ -82,13 +82,13 @@ const TestimonialSlick = () => {
 
           <div className="flex gap-4">
             <button
-              className="gradient-btn"
+              className="gradient-btn !py-[8px] !px-[18px] !h-fit"
               onClick={() => sliderRef.current?.slickPrev()}
             >
               <MoveLeft />
             </button>
             <button
-              className="gradient-btn"
+              className="gradient-btn !py-[8px] !px-[18px] !h-fit"
               onClick={() => sliderRef.current?.slickNext()}
             >
               <MoveRight />
@@ -99,7 +99,7 @@ const TestimonialSlick = () => {
         <Slider ref={sliderRef} {...settings}>
           {testimonials.map((item, index) => (
             <div key={index} className="">
-              <div className="bg-white rounded-[10px] p-3 lg:p-6 shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-[1.02] h-[270px] flex flex-col justify-between">
+              <div className="bg-white border border-gray-200/60 rounded-[10px] p-3 lg:p-6   transition-transform duration-300 hover:scale-[1.0] scale-[0.99] h-[270px] flex flex-col justify-between">
                 <div className="flex items-center">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <GradientStar key={i} filled={i < item.rating} />

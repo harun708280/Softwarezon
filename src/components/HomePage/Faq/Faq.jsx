@@ -86,11 +86,11 @@ const Faq = () => {
 
           <div className="space-y-2.5">
             <div className="text-white flex gap-3.5 flex-wrap items-center">
-              <div className="h-[48px] w-[48px]   rounded-full p-[10px] bg-white/18 flex items-center justify-center">
+              <div className="h-[40px] w-[40px]   rounded-full p-[8px] bg-white/18 flex items-center justify-center">
                 <Image
                   src="/images/sms-icon.svg"
-                  width={48}
-                  height={48}
+                  width={40}
+                  height={40}
                   alt="sms"
                   className="p- "
                 />
@@ -101,11 +101,11 @@ const Faq = () => {
               </a>
             </div>
             <div className="text-white flex gap-3.5 flex-wrap items-center">
-              <div className="h-[48px] w-[48px]   rounded-full p-[10px] bg-white/18 flex items-center justify-center">
+              <div className="h-[40px] w-[40px]   rounded-full p-[8px] bg-white/18 flex items-center justify-center">
                 <Image
                   src="/images/messenger-icon.svg"
-                  width={48}
-                  height={48}
+                  width={40}
+                  height={40}
                   alt="sms"
                   className="p- "
                 />
@@ -116,11 +116,11 @@ const Faq = () => {
               </a>
             </div>
             <div className="text-white flex gap-3.5 flex-wrap items-center ">
-              <div className="h-[48px] w-[48px]   rounded-full p-[10px] bg-white/18 flex items-center justify-center">
+              <div className="h-[40px] w-[40px]   rounded-full p-[8px] bg-white/18 flex items-center justify-center">
                 <Image
-                  src="/images/Telegram-icon.svg"
-                  width={48}
-                  height={48}
+                  src="/images/Telegram.svg"
+                  width={40}
+                  height={40}
                   alt="sms"
                   className="p- "
                 />
