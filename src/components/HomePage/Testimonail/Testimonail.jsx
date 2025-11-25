@@ -1,9 +1,13 @@
 "use client";
 import React, { useRef } from "react";
-import Slider from "react-slick";
+
 import { MoveLeft, MoveRight } from "lucide-react";
 import GradientStar from "@/components/ui/GradientStar/GradientStar";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import dynamic from "next/dynamic";
 
+const Slider = dynamic(() => import("react-slick"), { ssr: false });
 const testimonials = [
   {
     name: "John Doe",
@@ -54,17 +58,10 @@ const TestimonialSlick = () => {
     speed: 600,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: false,
     arrows: false,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: { slidesToShow: 2, dots: false },
-      },
-      {
-      breakpoint: 768, 
-      settings: { slidesToShow: 1, dots: false },
-    },
+      { breakpoint: 1024, settings: { slidesToShow: 2 } },
+      { breakpoint: 768, settings: { slidesToShow: 1 } },
     ],
   };
 
