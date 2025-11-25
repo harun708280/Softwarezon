@@ -11,13 +11,13 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About Us" },
-    { href: "/services", label: "Services" },
-    { href: "/blog", label: "Blog" },
-    { href: "/support", label: "Support" },
+    { href: "/404", label: "About Us" },
+    { href: "/404", label: "Services" },
+    { href: "/404", label: "Blog" },
+    { href: "/404", label: "Support" },
   ];
 
-  // scroll effect
+ 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);

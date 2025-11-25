@@ -1,11 +1,11 @@
+// app/layout.js (Server Component)
 import { Rubik } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/shared/Navbar/Navbar";
-import Footer from "@/components/shared/Footer/Footer";
-import UpperHeader from "@/components/shared/UpperHeader/UpperHeader";
+import UpperHeaderWrapper from "@/components/Wrapper/UpperHeaderWrapper";
+import NavWrapper from "@/components/Wrapper/NavWrapper";
+import FooterWrapper from "@/components/Wrapper/FooterWrapper";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -25,12 +25,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={rubik.className}>
         <div className="flex flex-col min-h-screen bg-white">
-          <UpperHeader />
-          <div className="sticky top-0 z-[9998]">
-            <Navbar />
-          </div>
+          <UpperHeaderWrapper/>
+          <NavWrapper />
           <main className="flex-grow">{children}</main>
-          <Footer />
+          <FooterWrapper />
         </div>
       </body>
     </html>
