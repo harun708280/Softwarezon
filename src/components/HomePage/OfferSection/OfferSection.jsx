@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
+import ScrollBlurUp from "@/components/shared/SlideInText/ScrollBlurUp";
 const offers = [
   {
     id: "01/04",
@@ -67,11 +68,13 @@ function OfferCard({ item }) {
 export default function OfferSection() {
   return (
     <section className="container md:text-center">
-      <h2 className="section-header ">Explore What We Offer</h2>
-      <p className="max-w-[521px] mx-auto section-description pt-[10px] lg:pt-[15px]">
-        From design to development, we build the future of SaaS, FinTech & Web3.
-      </p>
-
+      <ScrollBlurUp>
+        <h2 className="section-header ">Explore What We Offer</h2>
+        <p className="max-w-[521px] mx-auto section-description pt-[10px] lg:pt-[15px]">
+          From design to development, we build the future of SaaS, FinTech &
+          Web3.
+        </p>
+      </ScrollBlurUp>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[30px] lg:gap-[44px] pt-[30px] lg:pt-[50px]">
         {offers.map((item, index) => (
           <OfferCard key={index} item={item} />

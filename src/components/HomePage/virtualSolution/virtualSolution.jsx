@@ -1,4 +1,4 @@
-
+import ScrollBlurUp from "@/components/shared/SlideInText/ScrollBlurUp";
 import PrimaryButton from "@/components/ui/PrimaryButton/PrimaryButton";
 import Image from "next/image";
 
@@ -6,18 +6,20 @@ export default function VirtualSolution() {
   return (
     <section className="container !py-[40px] md:!py-[60px] lg:!py-[120px]">
       <div className="flex gap-[30px] lg:gap-[66px] justify-between flex-col-reverse lg:flex-row items-center">
-      
         <div className="flex-1">
-          <Image
-            src="/images/virtual-solution.png"
-            alt="Virtual Software Solution"
-            width={697}
-            height={488}
-            className="max-h-[488px] max-w-[697px] w-full h-full object-contain"
-          />
+          <ScrollBlurUp>
+            <Image
+              src="/images/virtual-solution.png"
+              alt="Virtual Software Solution"
+              width={697}
+              height={488}
+              className="max-h-[488px] max-w-[697px] w-full h-full object-contain"
+            />
+          </ScrollBlurUp>
         </div>
 
         <div className="flex-1 md:text-center lg:text-left">
+           <ScrollBlurUp>
           <h2 className="section-header pb-[25px] lg:pb-[40px]">
             We’re your trusted Software Development Studio
           </h2>
@@ -37,6 +39,7 @@ export default function VirtualSolution() {
           </p>
 
           <PrimaryButton label="Let’s Work Together" />
+          </ScrollBlurUp>
         </div>
       </div>
     </section>

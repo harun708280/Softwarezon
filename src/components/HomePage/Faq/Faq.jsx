@@ -74,7 +74,7 @@ const Faq = () => {
           <div className="">
             <Image
               src="/images/phone-call.png"
-              width={204}
+              width={150}
               height={251}
               alt="Polygon"
               className="object-cover"

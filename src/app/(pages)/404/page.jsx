@@ -64,7 +64,10 @@ export default function ComingSoon() {
         <div
           className="relative flex flex-1 flex-col justify-between p-8 lg:p-12 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/building.png')" }}
-        ></div>
+        >
+          
+
+        </div>
 
         <div className="relative flex flex-1 flex-col justify-center p-8 lg:p-12 text-center">
          
