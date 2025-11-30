@@ -1,0 +1,1119 @@
+{
+    "took": 127,
+    "timed_out": false,
+    "total_hits": 5,
+    "links": {
+        "next_page_url": null,
+        "prev_page_url": null,
+        "first_page_url": "https://api.envato.com/v1/discovery/search/search/item?page=1&site=codecanyon.net&term=softwarezon",
+        "last_page_url": "https://api.envato.com/v1/discovery/search/search/item?page=1&site=codecanyon.net&term=softwarezon"
+    },
+    "matches": [
+        { 
+            "id": 22585988,
+            "name": "Forex Trade Signal and Crypto Currency Trade Signal Notifier Telegram Supported Platform",
+            "slug": "forex-trade-signal-and-crypto-currency-trade-signal-notifier-telegram-supported-platform",
+            "description": "\n        \n            If you have any questions or queries? Just knock us. \n            Whatsapp : +8801571118839\n            Telegram : @softwarezon\n        \n    \n\n    Frontend Demo: https://mytrade.softwarezon.com/\n    Admin Demo: https://mytrade.softwarezon.com/admin/\n    Staff Demo: https://mytrade.softwarezon.com/staff/\n    User Demo: https://mytrade.softwarezon.com/login/\n\n    Admin Login:\n        Link: https://mytrade.softwarezon.com/admin/\n        Email : admin@gmail.com\n        Password : 123456\n        Staff Login:\n        Link: https://mytrade.softwarezon.com/staff/\n        Email : staff@gmail.com\n        Password : 123456\n        User Login:\n        Link: https://mytrade.softwarezon.com/login/\n        Email : user@gmail.com\n    ",
+            "description_html": "<h3 id=\"item-description__key-features\">\n        <strong>\n            If you have any questions or queries? Just knock us. <br />\n            <br />Whatsapp : <a href=\"https://api.whatsapp.com/send?text=Hello Softwarezon Support.&#38;phone=+8801571118839\" rel=\"nofollow\">+8801571118839</a>\n            <br />Telegram : <a href=\"https://t.me/softwarezon\" rel=\"nofollow\">@softwarezon</a>\n        </strong>\n    </h3>\n\n    Frontend Demo: <a href=\"https://mytrade.softwarezon.com/\" rel=\"nofollow\">https://mytrade.softwarezon.com/</a><br />\n    Admin Demo: <a href=\"https://mytrade.softwarezon.com/admin/\" rel=\"nofollow\">https://mytrade.softwarezon.com/admin/</a><br />\n    Staff Demo: <a href=\"https://mytrade.softwarezon.com/staff/\" rel=\"nofollow\">https://mytrade.softwarezon.com/staff/</a><br />\n    User Demo: <a href=\"https://mytrade.softwarezon.com/login/\" rel=\"nofollow\">https://mytrade.softwarezon.com/login/</a><br />\n\n    <p><b><u>Admin Login:</u></b><br />\n        Link: <a href=\"https://mytrade.softwarezon.com/admin/\" rel=\"nofollow\">https://mytrade.softwarezon.com/admin/</a><br />\n        Email : <a href=\"mailto:admin@gmail.com\">admin@gmail.com</a><br />\n        Password : 123456<br /><br />\n        <b><u>Staff Login:</u></b><br />\n        Link: <a href=\"https://mytrade.softwarezon.com/staff/\" rel=\"nofollow\">https://mytrade.softwarezon.com/staff/</a><br />\n        Email : <a href=\"mailto:staff@gmail.com\">staff@gmail.com</a><br />\n        Password : 123456<br /><br />\n        <b><u>User Login:</u></b><br />\n        Link: <a href=\"https://mytrade.softwarezon.com/login/\" rel=\"nofollow\">https://mytrade.softwarezon.com/login/</a><br />\n        Email : <a href=\"mailto:user@gmail.com\">user@gmail.com</a><br />\n        Password : 123456<br />\n    </p>\n\n    <h3 id=\"item-description__demo\">Description:</h3>\n    <p>\n        This is a <strong>Trading Buy Sell Notification </strong>platform with this script you are able to send\n        <strong>Forex, Crypto, Stocks, CFD, or\n            any market </strong> signals. If you or your teams are experts in analysis then you can sell your\n        premium signal to your customer. Customers will pay you and they will receive this signal on their Telegram,\n        Whatsapp, Email,\n        and Sms. Here admin can create multiple free or paid plans. When any customer registers to the website he/her\n        needs\n        to choose a plan if the plan is paid then he/her needs to make a payment to you. When admin sends trading\n        real-time\n        signals to specific Plan users via <strong>Email, SMS, and Individual Telegram and Whatsapp Accounts.</strong>\n        The user will receive it and\n        Just follows the signal and opens his/her trading buy-sell position So that the user can stop loss and take a\n        profit\n        easily. Admin can create Staff and Staff can create signals like Admin. So you can easily start a Trading Signal\n        Sending\n        Platform with just a few clicks. This script has the most powerful <strong>30+ international payment\n            methods</strong> and 23+ <strong>Sms Gateway</strong> and <strong>7+ Email Driver</strong> and <strong>5+\n            Whatsapp Driver</strong>. It&#8217;s 100%\n        User-friendly and fully\n        responsive on all kinds of devices. It&#8217;s a very easy-to-use and SEO-friendly application.\n        Admin can manage the complete\n        website without a single line of coding knowledge. It is professionally developed in a\n        PHP-based <strong>Laravel framework with\n            MySQL backend</strong>. It has a strong SQL injection protection system which will keep away this\n        system from hackers. This\n        script creates a unique session for each login every time and checks login session is valid\n        with this system or not. So\n        there is no question about session hijacking.\n    </p>\n    <h3 id=\"item-description__nb-we-all-time-provide-free-installation-and-premium-support\">NB : We All-time Provide\n        free installation and Premium Support.</h3>\n    <img src=\"http://softwarezon.com/externals/mytrade/mytrade-v6.jpg?1\" alt=\"forex-signal\" />\n\n    <h3 id=\"item-description__key-features\">6<sup>th</sup> Update (02th-November-2022): </h3>\n    <strong>\n        <pre>\n✓ Improve signal UI\n✓ Implement Signal pips\n✓ Whatsapp Notification Added\n✓ Added nth Level Referral Bonus System\n✓ Add 22+ International Payment Gateway\n✓ Add 20+ International SMS Gateway\n✓ Add 7+ International Email Gateway\n✓ Add 5+ International Whatsapp Gateway\n✓ Add Custom input field on Plan System\n✓ Improve admin staff and user dashboard UI\n✓ Add an effective chart on the admin staff and user dashboard\n✓ Staff Access Management\n✓ Improve user register page\n✓ User list show improved\n✓ Documentation Update\n</pre>\n    </strong>\n    <h3 id=\"item-description__key-features\">5<sup>th</sup> Update (19th-February-2020): </h3>\n    <strong>\n        <pre>\n✓ Referral System added\n✓ Referral earning withdraw system\n✓ Withdraw management system Admin Dashboard\n✓ Documentation Update\n</pre>\n    </strong>\n    <h3 id=\"item-description__key-features\">4<sup>th</sup> Update (07th-April-2019): </h3>\n    <p><strong>\n            <pre>\n✓ Dashboard Signal option in Plan option\n✓ Telegram ID manage from Admin Panel\n✓ Free Plan Management\n✓ Documentation Update\n</pre>\n        </strong></p>\n    <h3 id=\"item-description__key-features\">3<sup>rd</sup> Update (17th-January-2019): </h3>\n    <p><strong>\n            <pre>\n✓ Signal Image Include\n✓ Telegram Notification Image send\n✓ Staff Panel Added\n✓ Staff Can Submit Signal\n✓ Staff Can Manage Blog\n✓ Newsletter Send System\n✓ Documentation Update\n</pre>\n        </strong></p>\n\n    <h3 id=\"item-description__key-features\">2<sup>nd</sup> Update (19th-October-2018): </h3>\n    <p>\n    <pre>\n✓ Signal Image Include\n✓ Email Setting Updated\n✓ Database Backup System Included\n✓ User Phone Update Solved\n✓ NicEditor Problem Solved\n✓ Menu Update Solved\n✓ Documentation Update\n</pre></p>\n\n    <h3 id=\"item-description__key-features\">1<sup>st</sup> Features :</h3>\n\n    <p>✓ Signal Send On-Time<br />\n        ✓ Easily Signal Create, Update and Delete System.<br />\n        ✓ Easily Manage Signal Rating and Comment System.<br />\n        ✓ Signal Send on Specific User Telegram Account.<br />\n        ✓ Signal Alert to <strong>Email, SMS and Individual Telegram Account</strong>.<br />\n        ✓ Powerful Plan Creation.<br />\n        ✓ Free Plan Create System.<br />\n        ✓ Limited and Life Time Plan Duration.<br />\n        ✓ <strong>Paypal, Perfect Money, Bitcoin and Stripe (Card), Skrill and Coinpayment Integrated.</strong><br />\n        ✓ <strong>Manual Payment (Bank, Wallet Address) System Integrated.</strong><br />\n        ✓ Category Wise Blog System.<br />\n        ✓ Fully responsive for any kind of device.<br />\n        ✓ Unique Fronted Design.<br />\n        ✓ Most Powerful Admin &#38; User Dashboard.<br />\n        ✓ User Email and Phone Verification System.<br />\n        ✓ Google reCapthca validation.<br />\n        ✓ Live Chat Integrated.<br />\n        ✓ Google Analytic Integrated.<br />\n        ✓ Powerful Blog Management under Category.<br />\n        ✓ Add user from Admin Panel.<br />\n        ✓ Live Forex rate and Calculator Integrated.<br />\n        ✓ Live Forex trading Widget Integrated.<br />\n        ✓ Easy to use contact form.<br />\n        ✓ Easily manage Logo &#38; Favicon.<br />\n        ✓ Easily manage Testimonial.<br />\n        ✓ Easily manage Team Member.<br />\n        ✓ Easily manage Slider.<br />\n        ✓ Easy to use contact form.<br />\n        ✓ Terms &#38; Condition and Privacy Policy page Included.<br />\n        ✓ Informative Menu&#8217;s.<br />\n        ✓ Create Multiple Menu and can Update and Delete Them.<br />\n        ✓ Fully Dynamic All section content.<br />\n        ✓ A to Z Description.<br />\n        ✓ and much more&#8230;<br /></p>\n    <h3 id=\"item-description__demo\">Demo Log In</h3>\n    Frontend Demo: <a href=\"https://mytrade.softwarezon.com/\" rel=\"nofollow\">https://mytrade.softwarezon.com/</a><br /><br />\n    Admin Demo: <a href=\"https://mytrade.softwarezon.com/admin/\" rel=\"nofollow\">https://mytrade.softwarezon.com/admin/</a><br /><br />\n    Staff Demo: <a href=\"https://mytrade.softwarezon.com/staff/\" rel=\"nofollow\">https://mytrade.softwarezon.com/staff/</a><br /><br />\n    User Demo: <a href=\"https://mytrade.softwarezon.com/login/\" rel=\"nofollow\">https://mytrade.softwarezon.com/login/</a><br /><br />\n\n    <p><b><u>Admin Login:</u></b><br />\n        Email : <a href=\"mailto:admin@gmail.com\">admin@gmail.com</a><br />\n        Password : 123456<br /><br />\n        <b><u>Staff Login:</u></b><br />\n        Email : <a href=\"mailto:staff@gmail.com\">staff@gmail.com</a><br />\n        Password : 123456<br /><br />\n        <b><u>User Login:</u></b><br />\n        Email : <a href=\"mailto:user@gmail.com\">user@gmail.com</a><br />\n        Password : 123456<br />\n    </p>\n\n    <h3 id=\"item-description__offer\">Free Offer</h3>\n    <p><b>We are always Offer Free Installation. Just E-mail us with Your Product Purchase Code and cPanel Access. We\n            Install your Product So Fastly.</b></p>\n\n    <h3 id=\"item-description__support\">Envato Review:</h3>\n    <a href=\"https://codecanyon.net/user/softwarezon/reviews\">Check Envato Review</a>\n    <img src=\"http://softwarezon.com/externals/mytrade/reviews.jpg?1\" alt=\"forex-signal\" />\n\n    <p>We are always happy to hear from you. Please feel free to contact us for any kind of customization, support,\n        query\n        and suggestion. We will respond as soon as possible.</p>\n    <p>Thank you,<br /></p>\n    <p><a href=\"http://softwarezon.com\" rel=\"nofollow\"><strong>Softwarezon</strong></a></p>\n    <p>\n        <strong>Email:</strong> <a href=\"mailto:softwarezon@hotmail.com?subject=Support%20For%20cryptoTradingSignal\">softwarezon@hotmail.com</a>\n    </p>",
+            "short_description": "Launch your trading signal business instantly! Send real-time Forex/Crypto/Stock alerts via Telegram, WhatsApp, Email & SMS. Create free/paid plans, accept global payments, manage staff, track referrals, and automate everything. Grow faster with a powerful, secure Laravel platform.",
+            "site": "codecanyon.net",
+            "classification": "php-scripts/help-and-support-tools",
+            "classification_url": "https://codecanyon.net/category/php-scripts/help-and-support-tools",
+            "price_cents": 4500,
+            "number_of_sales": 448,
+            "author_username": "softwarezon",
+            "author_url": "https://codecanyon.net/user/softwarezon",
+            "author_image": "https://s3.envato.com/files/236280900/avata-pic.jpg",
+            "url": "https://codecanyon.net/item/mytrade-telegram-supported-premium-cryptocurrency-trading-signal-sending-platform/22585988",
+            "summary": "High Resolution: No, Compatible Browsers: Firefox, Safari, Opera, Chrome, Edge, Software Version: PHP 8.x, MySQL 8.x, MySQL 5.x",
+            "rating": {
+                "rating": 4.9,
+                "count": 63
+            },
+            "updated_at": "2022-11-03T05:13:33+00:00",
+            "published_at": "2018-09-25T03:42:35+00:00",
+            "trending": false,
+            "previews": {
+                "icon_with_landscape_preview": {
+                    "icon_url": "https://previews.customer.envatousercontent.com/files/413502303/80-x-80.jpg",
+                    "landscape_url": "https://previews.customer.envatousercontent.com/files/413502304/590-x-300.jpg"
+                },
+                "live_site": {
+                    "url": "https://codecanyon.net/item/mytrade-telegram-supported-premium-cryptocurrency-trading-signal-sending-platform/full_screen_preview/22585988"
+                },
+                "landscape_preview": {
+                    "landscape_url": "https://previews.customer.envatousercontent.com/files/413502304/590-x-300.jpg",
+                    "image_urls": [
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/413502304/590-x-300.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=13bcfc9741e24393a54cebb0017adf18f7d6558071eda9186cc0e97cb908b4bd",
+                            "width": 590,
+                            "height": 300
+                        },
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/259107405/01_preview1.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=ec62684e791c2fc0ef53e9dff328af41134bd0db57f59bdfcba4546dcbf68691",
+                            "width": 590,
+                            "height": 300
+                        },
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/259107405/02_preview2.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=bc1c485e7a6c3ca5d3f9082d14c71dd9151af417c0f71c92571d0383387fe193",
+                            "width": 590,
+                            "height": 300
+                        },
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/259107405/03_closeup.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=d5d841ddf28f29bdb0058d4c704c26ebfdfc2a50dea5398bd4e206b670e6da55",
+                            "width": 590,
+                            "height": 300
+                        }
+                    ]
+                }
+            },
+            "attributes": [
+                {
+                    "name": "compatible-browsers",
+                    "value": [
+                        "Firefox",
+                        "Safari",
+                        "Opera",
+                        "Chrome",
+                        "Edge"
+                    ]
+                },
+                {
+                    "name": "compatible-software",
+                    "value": [
+                        "PHP 8.x",
+                        "MySQL 8.x",
+                        "MySQL 5.x"
+                    ]
+                },
+                {
+                    "name": "demo-url",
+                    "value": "https://mytrade.softwarezon.com/"
+                },
+                {
+                    "name": "high-resolution",
+                    "value": "No"
+                },
+                {
+                    "name": "software-framework",
+                    "value": [
+                        "Laravel"
+                    ]
+                },
+                {
+                    "name": "source-files-included",
+                    "value": [
+                        "JavaScript JS",
+                        "JavaScript JSON",
+                        "CSS",
+                        "PHP",
+                        "SQL"
+                    ]
+                },
+                {
+                    "name": "video-preview-resolution",
+                    "value": null
+                }
+            ],
+            "photo_attributes": [
+                {
+                    "name": "max_width",
+                    "value": null
+                },
+                {
+                    "name": "max_height",
+                    "value": null
+                },
+                {
+                    "name": "full_resolution",
+                    "value": null
+                },
+                {
+                    "name": "full_resolution_in_megapixels",
+                    "value": null
+                }
+            ],
+            "key_features": [],
+            "image_urls": [],
+            "tags": [
+                "bitcoin trading signal",
+                "crypto trading signal",
+                "cryptocurrency trade",
+                "forex buy sell",
+                "forex idea",
+                "forex premium signal",
+                "forex signal",
+                "forex software",
+                "forex trading",
+                "live trade signal",
+                "signal copier",
+                "signal copy",
+                "signal notification",
+                "stocks signal",
+                "trading signal"
+            ],
+            "discounts": []
+        },
+        {
+            "id": 21039008,
+            "name": "Ecommerce - Cryptocurrency Supported Responsive eCommerce Business Platform",
+            "slug": "ecommerce-cryptocurrency-supported-responsive-ecommerce-business-platform",
+            "description": "Ask any question on WhatsApp : +8801571118839 bitCommerce is Cryptocurrency Supported Powerful and Complete Solution for Any kind of eCommerce Business.\n            You can Easily Start an eCommerce Business just a few clicks. This scripts has most powerful 6 Payment method like (Paypal, Perfect Money, Bitcoin – (Blockchain), Skrill, Stripe – (Card), Coinpayment, COD – (Cash on Delivery)) and manual payment methods like Bank .\n            It’s 100% User-friendly and fully Responsive in all kinds of Devices.\n            Here have also a Staff Panel, where a staff easily Add Product and Manage Added Product. Its Very easy to use and SEO friendly software.\n            Admin can manage a complete website without a single line of coding knowledg",
+            "description_html": "<h3 id=\"item-description__key-features\"><strong>Ask any question on WhatsApp : <a href=\"https://api.whatsapp.com/send?text=Hello Softwarezon Support..!&#38;phone=+8801571118839\" rel=\"nofollow\">+8801571118839</a> </strong></h3><strong>bitCommerce</strong> is <strong>Cryptocurrency</strong> Supported Powerful and Complete Solution for Any kind of eCommerce Business.\n            You can Easily Start an eCommerce Business just a few clicks. This scripts has most powerful 6 Payment method like <strong>(Paypal, Perfect Money, Bitcoin &#8211; (Blockchain), Skrill, Stripe &#8211; (Card), Coinpayment, COD &#8211; (Cash on Delivery)) and manual payment methods like Bank </strong>.\n            It&#8217;s 100% User-friendly and fully Responsive in all kinds of Devices.\n            Here have also a Staff Panel, where a staff easily Add Product and Manage Added Product. Its Very easy to use and SEO friendly software.\n            Admin can manage a complete website without a single line of coding knowledge.\n            It is professionally developed in PHP based Laravel framework with MySQL backend.\n            It has a strong SQL injection protection system which will keep away this system from hackers.\n            This script creates a unique session for each login every time and checks login session is valid with this system or not.\n            So there is no question about session hijacking.\n        <p>\n            <a href=\"mailto:softwarezon@hotmail.com?subject=Support%20For%20Listingzon\"><img src=\"https://camo.envatousercontent.com/6808e042f658e570676954f96488e9ebda6cf010/687474703a2f2f746865736f66746b696e672e636f6d2f737570706f72742e706e67\" alt=\"Ecommerce - Cryptocurrency Supported Responsive eCommerce Business Platform - 1\" /></a>\n            <a href=\"http://facebook.com/softwarezon\" rel=\"nofollow\"><img src=\"https://camo.envatousercontent.com/fb446b702bb4381b00440ccbdc606e868bcd5efc/687474703a2f2f746865736f66746b696e672e636f6d2f66622e706e67\" alt=\"Ecommerce - Cryptocurrency Supported Responsive eCommerce Business Platform - 2\" /></a>\n            <a href=\"http://softwarezon.com\" rel=\"nofollow\"><img src=\"https://camo.envatousercontent.com/565b2b5830bd95486536892dd6cc01cca55d5f76/687474703a2f2f746865736f66746b696e672e636f6d2f74772e706e67\" alt=\"Ecommerce - Cryptocurrency Supported Responsive eCommerce Business Platform - 3\" /></a>\n            <a href=\"https://codecanyon.net/user/softwarezon\"><img src=\"https://camo.envatousercontent.com/978d4d00eaffaedf6fdcd34b6683823516cf8672/687474703a2f2f746865736f66746b696e672e636f6d2f656e7661746f2e706e67\" alt=\"Ecommerce - Cryptocurrency Supported Responsive eCommerce Business Platform - 4\" /></a><br /><br />\n        </p>\n        <p><img src=\"https://i.imgur.com/4QewiNW.jpg\" alt=\"Ecommerce - Cryptocurrency Supported Responsive eCommerce Business Platform - 5\" /></p>\n\n<h3 id=\"item-description__key-features\">Update version1.3</h3>\n<pre>\n+ Add Manual Payment Gateway Like (Bank, Western Union, Money Gram) \n</pre>\n<h3 id=\"item-description__key-features\">Update version1.2</h3>\n<pre>\n+ Add Coinpayment as Payment Gateway\n+ Add Cash On Delivery System \n+ Add Product Multiple Color Select System \n+ Add Product Multiple Size Select System\n+ Add Band wise Product View System\n+ Add Product Compare\n+ Add Product Delete System\n+ Add Category Delete System\n+ Add Product Mood Like (Sell, New, Hot)\n</pre>\n\n        <h3 id=\"item-description__key-features\">Key Features</h3>\n\n        <p>\n✓ Cryptocurrency Payment System.<br />\n✓ Cash On Delivery System.<br />\n✓ Manual Payament System (Bank, Western Union, Money Gram).<br />\n✓ Fully Dynamic Content.<br />\n            ✓ Fully responsive for any kind of device.<br />\n            ✓ Unique Frontend Design.<br />\n            ✓ Order Automatic cancel After Expire time.<br />\n            ✓ Informative Menu&#8217;s.<br />\n            ✓ Multiple Ads Show Place.<br />\n            ✓ Login &#38; Registration System.<br />\n            ✓ Quick Links.<br />\n            ✓ Easy to use contact form.<br />\n            ✓ Product With Category.<br />\n            ✓ Product With Subcategory.<br />\n            ✓ Product With Childcategory.<br />\n            ✓ 100% User friendly.<br />\n            ✓ SEO Friendly URL.<br />\n            ✓ Product Rating Feature.<br />\n            ✓ Product Comment Feature.<br />\n            ✓ Easy to Share On Social Media.<br />\n            ✓ Product Send Friend Via Email.<br />\n            ✓ A to Z Description.<br />\n            ✓ Multiple Image Facility.<br />\n            ✓ and much more&#8230;<br /><br />\n        </p>\n\n        <h3 id=\"item-description__key-features\">User Panel Features</h3>\n        <p>\n            ✓ Easily Add Product to Cart.<br />\n            ✓ Easily Add Product to Wishlist.<br />\n            ✓ Easy to Search ADS.<br />\n            ✓ Easy to Submit Rating.<br />\n            ✓ Easy to Submit Comment.<br />\n            ✓ User Profile Edit Easily.<br />\n            ✓ User Update Password Easily.<br />\n            ✓ User Social Link&#8217;s Management.<br />\n            ✓ and much more&#8230;<br /><br />\n        </p>\n        <h3 id=\"item-description__key-features\">Staff Panel Features</h3>\n        <p>\n            ✓ Easily Add Product.<br />\n            ✓ Easily Update Product.<br />\n            ✓ Profile Edit Easily.<br />\n            ✓ Update Password Easily.<br />\n            ✓ and much more&#8230;<br /><br />\n        </p>\n\n        <h3 id=\"item-description__key-features\">Admin Panel Features</h3>\n        <p>\n            ✓ Gorgeous Admin Dashboard.<br />\n            ✓ Easily Publish Product and Edit.<br />\n            ✓ Manage Category.<br />\n            ✓ Manage SubCategory.<br />\n            ✓ Manage Order Expire Time.<br />\n            ✓ Manage ChildCategory.<br />\n            ✓ Manage All User.<br />\n            ✓ Manage All Subscriber.<br />\n            ✓ Manage All Advertisement.<br />\n            ✓ Easily Manage Payment Method.<br />\n            ✓ Easily Manage Payment Charge.<br />\n            ✓ Admin Profile Edit Easily.<br />\n            ✓ Social Link&#8217;s Management.<br />\n            ✓ Easily Manage Logo, Favicon &#38; Preloader Image.<br />\n            ✓ Easily CRUD Menu.<br />\n            ✓ Easily CRUD Slider.<br />\n            ✓ Manage Email Template.<br />\n            ✓ Manage Google Analytic.<br />\n            ✓ Manage Live Chat Scripts.<br />\n            ✓ Manage Cron job.<br />\n            ✓ Manage Sitemap, Privacy policy &#38; terms &#38; conditions.<br />\n            ✓ Manage Testimonial.<br />\n            ✓ Frontend Base Color Manage Using Color Code.<br />\n            ✓ and much more&#8230;<br /><br />\n        </p>\n\n        <h3 id=\"item-description__demo\">Demo Log In</h3>\n        Frontend Demo: <a href=\"http://demo.softwarezon.com/bitcommerce_v3/\" rel=\"nofollow\">http://demo.softwarezon.com/bitcommerce_v3/</a><br />\n        Admin Demo: <a href=\"http://demo.softwarezon.com/bitcommerce_v3/admin/\" rel=\"nofollow\">http://demo.softwarezon.com/bitcommerce_v3/admin/</a><br />\n        Staff Demo: <a href=\"http://demo.softwarezon.com/bitcommerce_v3/staff/\" rel=\"nofollow\">http://demo.softwarezon.com/bitcommerce_v3/staff/</a><br />\n        User Demo: <a href=\"http://demo.softwarezon.com/bitcommerce_v3/login/\" rel=\"nofollow\">http://demo.softwarezon.com/bitcommerce_v3/login/</a><br /><br />\n        <b><u>Admin Login:</u></b><br />\n        Email : <a href=\"mailto:admin@gmail.com\">admin@gmail.com</a><br />\n        Password : 123456<br /><br />\n        <b><u>Staff Login:</u></b><br />\n        Email : <a href=\"mailto:staff@gmail.com\">staff@gmail.com</a><br />\n        Password : 123456<br /><br />\n\n        <b><u>User Login:</u></b><br />\n        Email : <a href=\"mailto:user@gmail.com\">user@gmail.com</a><br />\n        Password : 123456<br />\n\n        <h3 id=\"item-description__support\">Free Offer</h3>\n        <p><b>We are always Offer Free Installation. Just E-mail us with Your Product Purchase Code and cPanel Access. We Install your Product So Fastly.</b></p>\n\n        <h3 id=\"item-description__support\">Support</h3>\n        <p>We are always happy to hear from you. Please feel free to contact us for any kind of customization, support, query and suggestion. We will respond as soon as possible.</p>\n\n        <p>Thank you,<br /></p>\n        <p><a href=\"http://softwarezon.com\" rel=\"nofollow\"><strong>SoftwareZon</strong></a></p>\n        <p><strong>Email:</strong> <a href=\"mailto:softwarezon@hotmail.com?subject=Support%20For%20bitCommerce\">softwarezon@hotmail.com</a></p>\n    <p><strong>Skype:</strong> softwarezon</p>",
+            "short_description": "bitCommerce supports Bitcoin, PayPal, Skrill, Stripe, CoinPayment & COD. Sell products with dynamic content, multi-category support, staff panel, ratings, comments & full Laravel security. Fast, responsive, and beginner-friendly!",
+            "site": "codecanyon.net",
+            "classification": "php-scripts/shopping-carts",
+            "classification_url": "https://codecanyon.net/category/php-scripts/shopping-carts",
+            "price_cents": 3000,
+            "number_of_sales": 130,
+            "author_username": "softwarezon",
+            "author_url": "https://codecanyon.net/user/softwarezon",
+            "author_image": "https://s3.envato.com/files/236280900/avata-pic.jpg",
+            "url": "https://codecanyon.net/item/bitcommerce-bitcoin-wise-electronic-ecommerce-business-platform/21039008",
+            "summary": "High Resolution: Yes, Compatible Browsers: IE9, IE10, IE11, Firefox, Safari, Opera, Chrome, Edge, Software Version: PHP 7.x, MySQL 5.x",
+            "rating": {
+                "rating": 4.91,
+                "count": 11
+            },
+            "updated_at": "2019-02-24T21:49:47+00:00",
+            "published_at": "2017-12-08T15:06:09+00:00",
+            "trending": false,
+            "previews": {
+                "icon_with_landscape_preview": {
+                    "icon_url": "https://previews.customer.envatousercontent.com/files/238033770/thumnill-2.jpg",
+                    "landscape_url": "https://previews.customer.envatousercontent.com/files/238033771/envato-preview.jpg"
+                },
+                "live_site": {
+                    "url": "https://codecanyon.net/item/bitcommerce-bitcoin-wise-electronic-ecommerce-business-platform/full_screen_preview/21039008"
+                },
+                "landscape_preview": {
+                    "landscape_url": "https://previews.customer.envatousercontent.com/files/238033771/envato-preview.jpg",
+                    "image_urls": [
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/238033771/envato-preview.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=08b233ae1e59e07395240ed2772c89a6e43006114e6c09b7f167140956035b40",
+                            "width": 590,
+                            "height": 300
+                        },
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/238033773/01_preview1.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=7915dfde75ffd0abcd38c7a4eb3ca34089a3c5839530170b27d03bd60dfc8167",
+                            "width": 590,
+                            "height": 300
+                        },
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/238033773/02_preview2.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=7b2632a1e0dbe65d0b9a6a0b6facb60ecaf2853b37e7a89a93a359fadc463ce9",
+                            "width": 590,
+                            "height": 300
+                        },
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/238033773/03_preview3.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=49fb9b4dda34517eb70a343c889a3175db8b8a2a4cf2b6fc9097c94cd6c4ae1d",
+                            "width": 590,
+                            "height": 300
+                        }
+                    ]
+                }
+            },
+            "attributes": [
+                {
+                    "name": "compatible-browsers",
+                    "value": [
+                        "IE9",
+                        "IE10",
+                        "IE11",
+                        "Firefox",
+                        "Safari",
+                        "Opera",
+                        "Chrome",
+                        "Edge"
+                    ]
+                },
+                {
+                    "name": "compatible-software",
+                    "value": [
+                        "PHP 7.x",
+                        "MySQL 5.x"
+                    ]
+                },
+                {
+                    "name": "demo-url",
+                    "value": "https://demo.softwarezon.com/bitcommerce_v3/"
+                },
+                {
+                    "name": "high-resolution",
+                    "value": "Yes"
+                },
+                {
+                    "name": "software-framework",
+                    "value": [
+                        "Laravel"
+                    ]
+                },
+                {
+                    "name": "source-files-included",
+                    "value": [
+                        "JavaScript JS",
+                        "JavaScript JSON",
+                        "CSS",
+                        "PHP",
+                        "SQL"
+                    ]
+                },
+                {
+                    "name": "video-preview-resolution",
+                    "value": null
+                }
+            ],
+            "photo_attributes": [
+                {
+                    "name": "max_width",
+                    "value": null
+                },
+                {
+                    "name": "max_height",
+                    "value": null
+                },
+                {
+                    "name": "full_resolution",
+                    "value": null
+                },
+                {
+                    "name": "full_resolution_in_megapixels",
+                    "value": null
+                }
+            ],
+            "key_features": [],
+            "image_urls": [],
+            "tags": [
+                "bitcoin ecommerce",
+                "crypto currency ecommerce",
+                "cryptocurrency support",
+                "e-commerce",
+                "ecommerce",
+                "ecommerce business",
+                "ecommerce platform",
+                "ecommerce script",
+                "laravel ecommerce",
+                "online shop",
+                "paypal",
+                "responsive ecommerce",
+                "shopping cart"
+            ],
+            "discounts": []
+        },
+        {
+            "id": 20914360,
+            "name": "News Paper - Dynamic News, Magazine and Blog Portal Script",
+            "slug": "news-paper-dynamic-news-magazine-and-blog-portal-script",
+            "description": "Ask any question on WhatsApp : +8801571118839 Newszon is a complete solution for any kind of News, Magazine and Blog Portal. This cms Includes almost everything you need. Newszon is fully responsive for any device with four attractive templates. Laravel PHP Framework is used to develop this system so any developer can add any feature very easily. Admin can manage a complete website without a single line of coding knowledge. Newszon allows multiple admins with different roles. It has a strong SQL injection protection system which will keep away this system from hackers. This script creates an unique session for each login every time and checks login session is valid with this system or not. So there is no question about session hijacking.\n\n ",
+            "description_html": "<h3 id=\"item-description__key-features\"><strong>Ask any question on WhatsApp : <a href=\"https://api.whatsapp.com/send?text=Hello Softwarezon Support..!&#38;phone=+8801571118839\" rel=\"nofollow\">+8801571118839</a> </strong></h3>Newszon is a complete solution for any kind of News, Magazine and Blog Portal. This cms Includes almost everything you need. Newszon is fully responsive for any device with four attractive templates. Laravel PHP Framework is used to develop this system so any developer can add any feature very easily. Admin can manage a complete website without a single line of coding knowledge. Newszon allows multiple admins with different roles. It has a strong SQL injection protection system which will keep away this system from hackers. This script creates an unique session for each login every time and checks login session is valid with this system or not. So there is no question about session hijacking.\n\n    <p><img src=\"https://i.imgur.com/83D8Ejm.jpg\" alt=\"Newszon Details\" /></p>\n\n<h3 id=\"item-description__key-features\">Scripts Features</h3> \n\n<ul>\n\n    <li>✓ Fully Dynamic Content</li>\n    <li>✓ Fully responsive for any kind of device</li>\n    <li>✓ 4 Gorgeous Home Page</li>\n    <li>✓ Editor Base Portal Management</li>\n    <li>✓ Best Advertisement Management System</li>\n    <li>✓ Easy and simple interface to use</li>\n    <li>✓ Easy and simple interface to use</li>\n    <li>✓ Powerful admin backend Dashboard</li>\n    <li>✓ Clean coding with proper commenting</li>\n    <li>✓ Secured coding against SQL injection</li>\n    <li>✓ Direct access or invalid URL press stopped for each pages</li>\n    <li>✓ Multilevel user management</li>\n    <li>✓ Unlimited category and post creation</li>\n    <li>✓ Unlimited photo and video gallery creation</li>\n    <li>✓ Unlimited photo and video creation</li>\n    <li>✓ Facebook comment section for each post</li>\n    <li>✓ SEO meta data setup for each post, page and category</li>\n    <li>✓ SEO friendly URL structure</li>\n    <li>✓ Built in search system.</li>\n    <li>✓ Built in social share system.</li>\n    <li>✓ Dynamic google analytics script add option.</li>\n    <li>✓ Unlimited file uploading system</li>\n    <li>✓ Subscriber data export as CSV format</li>\n    <li>✓ Unlimited Advertisement management with website links</li>\n    <li>✓ General Settings</li>\n    <li>✓ Change everything such as logo, site title, footer from admin panel.</li>\n<li>and much more&#8230;</li>\n</ul>\n\n<h3 id=\"item-description__demo\">Demo Log In</h3> \n<br />\nFronted Demo: <a href=\"http://demo.softwarezon.com/newszon/\" rel=\"nofollow\">http://demo.softwarezon.com/newszon/</a><br />\nAdmin Demo: <a href=\"http://demo.softwarezon.com/newszon/admin/\" rel=\"nofollow\">http://demo.softwarezon.com/newszon/admin/</a><br /><br />\n<b><u>Admin Login:</u></b><br />\nEmail : <a href=\"mailto:admin@gmail.com\">admin@gmail.com</a><br />\nPassword : 123456<br /><br />\n<b><u>Staff Login:</u></b><br />\nEmail : <a href=\"mailto:staff@gmail.com\">staff@gmail.com</a><br />\nPassword : 123456<br />\n<h3 id=\"item-description__support\">Support</h3> \n<p>We are always happy to hear from you. Please feel free to contact us for any kind of customization, support, query and suggestion. We will respond as soon as possible.</p>\n\n    <p>Thank you,<br /></p>\n\n    <p><a href=\"http://softwarezon.com\" rel=\"nofollow\"><strong>SoftwareZon</strong></a></p>\n\n<p><strong>Email:</strong> <a href=\"mailto:softwarezon@hotmail.com?subject=Support%20For%20Newszon\">softwarezon@hotmail.com</a></p>\n<p><strong>Skype:</strong> softwarezon</p>",
+            "short_description": "Build your news, magazine, or blog portal in minutes! Newszon offers 4 stunning homepages, dynamic content, unlimited posts, galleries, SEO tools, ads management, multi-admin roles, and a powerful secure Laravel backend. Fast, responsive, and perfect for any media brand.",
+            "site": "codecanyon.net",
+            "classification": "php-scripts",
+            "classification_url": "https://codecanyon.net/category/php-scripts",
+            "price_cents": 2000,
+            "number_of_sales": 55,
+            "author_username": "softwarezon",
+            "author_url": "https://codecanyon.net/user/softwarezon",
+            "author_image": "https://s3.envato.com/files/236280900/avata-pic.jpg",
+            "url": "https://codecanyon.net/item/news-paper-dynamic-news-magazine-and-blog-portal-script/20914360",
+            "summary": "High Resolution: Yes, Compatible Browsers: IE8, IE9, IE10, IE11, Firefox, Safari, Opera, Chrome, Edge, Software Version: PHP 7.x",
+            "rating": {
+                "rating": 5,
+                "count": 4
+            },
+            "updated_at": "2019-11-29T22:06:09+00:00",
+            "published_at": "2017-11-10T03:31:40+00:00",
+            "trending": false,
+            "previews": {
+                "icon_with_landscape_preview": {
+                    "icon_url": "https://previews.customer.envatousercontent.com/files/236670998/thumnill-2.jpg",
+                    "landscape_url": "https://previews.customer.envatousercontent.com/files/236670999/preview.jpg"
+                },
+                "live_site": {
+                    "url": "https://codecanyon.net/item/news-paper-dynamic-news-magazine-and-blog-portal-script/full_screen_preview/20914360"
+                },
+                "landscape_preview": {
+                    "landscape_url": "https://previews.customer.envatousercontent.com/files/236670999/preview.jpg",
+                    "image_urls": [
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/236670999/preview.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=849add99334f978b95e699b6e1aa2c5709fdeb661ae0fbc8ee4f3a5e08a5fdf9",
+                            "width": 590,
+                            "height": 300
+                        },
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/236671002/preview/01_preview1.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=198a7396e1f7d6ac086bafe33ae18a0ba9d6603cb8e3c0564172e6c21daafded",
+                            "width": 590,
+                            "height": 300
+                        },
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/236671002/preview/02_preview2.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=35a3b057d9aff379f43124f5f8f5e8c68677db619074363d6f90263c8359349e",
+                            "width": 590,
+                            "height": 300
+                        },
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/236671002/preview/03_preview3.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=aa9b78f2a73784a6449056c2a83299185d48604465de96b04f8c2ec96dc197f2",
+                            "width": 590,
+                            "height": 300
+                        }
+                    ]
+                }
+            },
+            "attributes": [
+                {
+                    "name": "compatible-browsers",
+                    "value": [
+                        "IE8",
+                        "IE9",
+                        "IE10",
+                        "IE11",
+                        "Firefox",
+                        "Safari",
+                        "Opera",
+                        "Chrome",
+                        "Edge"
+                    ]
+                },
+                {
+                    "name": "compatible-software",
+                    "value": [
+                        "PHP 7.x"
+                    ]
+                },
+                {
+                    "name": "demo-url",
+                    "value": "https://demo.softwarezon.com/newszon/"
+                },
+                {
+                    "name": "high-resolution",
+                    "value": "Yes"
+                },
+                {
+                    "name": "software-framework",
+                    "value": [
+                        "Laravel"
+                    ]
+                },
+                {
+                    "name": "source-files-included",
+                    "value": [
+                        "PHP",
+                        "SQL"
+                    ]
+                },
+                {
+                    "name": "video-preview-resolution",
+                    "value": null
+                }
+            ],
+            "photo_attributes": [
+                {
+                    "name": "max_width",
+                    "value": null
+                },
+                {
+                    "name": "max_height",
+                    "value": null
+                },
+                {
+                    "name": "full_resolution",
+                    "value": null
+                },
+                {
+                    "name": "full_resolution_in_megapixels",
+                    "value": null
+                }
+            ],
+            "key_features": [],
+            "image_urls": [],
+            "tags": [
+                "blog",
+                "blog cms",
+                "emagazine",
+                "enews",
+                "magazine",
+                "magazine cms",
+                "magazine script",
+                "news",
+                "news cms",
+                "news paper",
+                "news script",
+                "newspaper",
+                "newspaper script",
+                "online magazine",
+                "php magazine"
+            ],
+            "discounts": []
+        },
+        {
+            "id": 22581463,
+            "name": "myShop - Installment and Due Sell Supported Powerful Shop Management System",
+             "slug": "myshop-installment-and-due-sell-supported-powerful-shop-management-system",
+            "description": "Ask any question on WhatsApp : +8801571118839 myShop is Powerful and Complete Solution for Any kind of Shop Management. It’s have most powerful store management system.\n            The product will be stored with companies category wise. Admin can easily manage products like (Create, Edit &amp; Update). Admin can sell multiple products at a time and also include powerful invoice management.\n            Here also included Installment Sell System, Installment Repayment, Installment Notification, Due Sell System, Due Repayment, Due Repayment Notification  system.\n            Every transaction is shown at the transaction log panel. It’s automatic calculate your Daily Expense, Total Deposit and Total Withdrawn from your shop.\n            You can",
+            "description_html": "<h3 id=\"item-description__key-features\"><strong>Ask any question on WhatsApp : <a href=\"https://api.whatsapp.com/send?text=Hello Softwarezon Support..!&#38;phone=+8801571118839\" rel=\"nofollow\">+8801571118839</a> </strong></h3><strong>myShop</strong> is Powerful and Complete Solution for <strong>Any kind of Shop Management</strong>. It&#8217;s have most powerful store management system.\n            The product will be stored with companies category wise. Admin can easily manage products like (Create, Edit &#38; Update). Admin can sell multiple products at a time and also include powerful invoice management.\n            Here also included <strong>Installment Sell System, Installment Repayment, Installment Notification, Due Sell System, Due Repayment, Due Repayment Notification </strong> system.\n            Every transaction is shown at the transaction log panel. It&#8217;s automatic calculate your Daily Expense, Total Deposit and Total Withdrawn from your shop.\n            You can easily see customer list wise Invoice and Instalment and Due repayment history just a single click. Here have also a Staff Panel, This Panel Staff can sell the product, Store product, and Customer and Customer Update.\n            Admin can manage a complete website without a single line of coding knowledge. It&#8217;s 100% User-friendly and fully Responsive in all kinds of Devices.\n            It is professionally developed in PHP based Laravel framework with MySQL backend. It has a strong SQL injection protection system which will keep away this system from hackers.\n            This script creates a unique session for each login every time and checks login session is valid with this system or not. So there is no question about session hijacking.\n        <p>\n            <a href=\"mailto:softwarezon@hotmail.com?subject=Support%20For%20MyMart\"><img src=\"https://camo.envatousercontent.com/6808e042f658e570676954f96488e9ebda6cf010/687474703a2f2f746865736f66746b696e672e636f6d2f737570706f72742e706e67\" alt=\"myShop - Installment and Due Sell Supported Powerful Shop Management System - 1\" /></a>\n            <a href=\"http://facebook.com/softwarezon\" rel=\"nofollow\"><img src=\"https://camo.envatousercontent.com/fb446b702bb4381b00440ccbdc606e868bcd5efc/687474703a2f2f746865736f66746b696e672e636f6d2f66622e706e67\" alt=\"myShop - Installment and Due Sell Supported Powerful Shop Management System - 2\" /></a>\n            <a href=\"http://softwarezon.com\" rel=\"nofollow\"><img src=\"https://camo.envatousercontent.com/565b2b5830bd95486536892dd6cc01cca55d5f76/687474703a2f2f746865736f66746b696e672e636f6d2f74772e706e67\" alt=\"myShop - Installment and Due Sell Supported Powerful Shop Management System - 3\" /></a>\n            <a href=\"https://codecanyon.net/user/softwarezon\"><img src=\"https://camo.envatousercontent.com/978d4d00eaffaedf6fdcd34b6683823516cf8672/687474703a2f2f746865736f66746b696e672e636f6d2f656e7661746f2e706e67\" alt=\"myShop - Installment and Due Sell Supported Powerful Shop Management System - 4\" /></a><br /><br />\n        </p>\n        <h3 id=\"item-description__key-features\">Script Features</h3>\n        <p>\n            ✓ Powerful Store management.<br />\n            ✓ Powerful Invoice management.<br />\n            ✓ Multiple Company Supported.<br />\n            ✓ Category wise Product Store.<br />\n            ✓ Company Payment Due and Repayment.<br />\n            ✓ <strong>Installment Sell System.</strong><br />\n            ✓ <strong>Installment Repayment System.</strong><br />\n            ✓ <strong>Installment Repayment Notification.</strong><br />\n            ✓ <strong>Due Sell System.</strong><br />\n            ✓ <strong>Due Repayment System.</strong><br />\n            ✓ <strong>Due Repayment Notification.</strong><br />\n            ✓ Cash On Sell System.<br />\n            ✓ Powerful Sell History.<br />\n            ✓ Multiple Product Sell at a Time.<br />\n            ✓ Perfect Current Cash Management.<br />\n            ✓ Perfect Daily Expense Report.<br />\n            ✓ Perfect Report Withdraw or Deposit from Shop.<br />\n            ✓ Barcode Scanner system Included.<br />\n            ✓ Powerful Customer Management System.<br />\n            ✓ Customer Instalment and Due Management System.<br />\n            ✓ Powerful Staff Panel Included.<br />\n            ✓ Powerful Transaction Log Included.<br />\n            ✓ Gorgeous Admin Dashboard.<br />\n            ✓ Admin Profile Edit Easily.<br />\n            ✓ Easily Admin Password Update Option.<br />\n            ✓ Manage Logo.<br />\n            ✓ Manage Copyright Text.<br />\n            ✓ Manage Shop Location.<br />\n            ✓ 100% User friendly.<br />\n            ✓ A to Z Description.<br />\n            ✓ and much more&#8230;<br /><br />\n        </p>\n\n        <h3 id=\"item-description__key-features\">Staff Panel Features</h3>\n        <p>\n            ✓ Installment Repayment.<br />\n            ✓ Installment Repayment Notification.<br />\n            ✓ Due Repayment.<br />\n            ✓ Due Repayment Notification.<br />\n            ✓ Sell Product.<br />\n            ✓ Store Product.<br />\n            ✓ Can Daily Expense.<br />\n            ✓ Powerful Staff Transaction Log.<br />\n            ✓ User Profile Edit Easily.<br />\n            ✓ User Update Password Easily.<br />\n            ✓ and much more&#8230;<br />\n        </p>\n\n        <h3 id=\"item-description__demo\">Demo Log In</h3>\n        Frontend Demo: <a href=\"http://demo.softwarezon.com/myshop/\" rel=\"nofollow\">http://demo.softwarezon.com/myshop/</a><br />\n        Admin Demo: <a href=\"http://demo.softwarezon.com/myshop/admin/\" rel=\"nofollow\">http://demo.softwarezon.com/myshop/admin/</a><br />\n        Staff Demo: <a href=\"http://demo.softwarezon.com/myshop/staff/\" rel=\"nofollow\">http://demo.softwarezon.com/myshop/staff/</a><br /><br />\n\n        <b><u>Admin Login:</u></b><br />\n        Email : <a href=\"mailto:admin@gmail.com\">admin@gmail.com</a><br />\n        Password : 123456<br /><br />\n        <b><u>Staff Login:</u></b><br />\n        Email : <a href=\"mailto:staff@gmail.com\">staff@gmail.com</a><br />\n        Password : 123456<br /><br />\n\n        <h3 id=\"item-description__offer\">Free Offer</h3>\n        <p><b>We are always Offer Free Installation. Just E-mail us with Your Product Purchase Code and cPanel Access. We Install your Product So Fastly.</b></p>\n\n        <h3 id=\"item-description__support\">Support Review</h3>\n        <p><img src=\"https://i.imgur.com/mDTRhS4.jpg\" alt=\"myShop - Installment and Due Sell Supported Powerful Shop Management System - 5\" /></p>\n\n        <h3 id=\"item-description__support\">Support</h3>\n        <p>We are always happy to hear from you. Please feel free to contact us for any kind of customization, support, query and suggestion. We will respond as soon as possible.</p>\n\n        <p>Thank you,<br /></p>\n        <p><a href=\"http://softwarezon.com\" rel=\"nofollow\"><strong>SoftwareZon</strong></a></p>\n        <p><strong>Email:</strong> <a href=\"mailto:softwarezon@hotmail.com?subject=Support%20For%20MyMart\">softwarezon@hotmail.com</a></p>\n        <p><strong>Skype:</strong> softwarezon</p>",
+            "short_description": "Manage your entire shop with one powerful system! myShop includes installment sales, due sell & repayment, invoices, expense tracking, barcode scanner, customer history, staff panel, cash management, and full Laravel security. Fast, responsive, user-friendly shop management.",
+            "site": "codecanyon.net",
+            "classification": "php-scripts/help-and-support-tools",
+            "classification_url": "https://codecanyon.net/category/php-scripts/help-and-support-tools",
+            "price_cents": 2500,
+            "number_of_sales": 49,
+            "author_username": "softwarezon",
+            "author_url": "https://codecanyon.net/user/softwarezon",
+            "author_image": "https://s3.envato.com/files/236280900/avata-pic.jpg",
+            "url": "https://codecanyon.net/item/myshop-installment-and-due-sell-supported-powerful-shop-management-system/22581463",
+            "summary": "High Resolution: Yes, Compatible Browsers: IE11, Firefox, Safari, Opera, Chrome, Edge, Software Version: MySQL 5.x",
+            "rating": {
+                "rating": 4.75,
+                "count": 4
+            },
+            "updated_at": "2018-09-25T00:12:10+00:00",
+            "published_at": "2018-09-25T00:12:10+00:00",
+            "trending": false,
+            "previews": {
+                "icon_with_landscape_preview": {
+                    "icon_url": "https://previews.customer.envatousercontent.com/files/254325597/thumnill.jpg",
+                    "landscape_url": "https://previews.customer.envatousercontent.com/files/254325598/preview.jpg"
+                },
+                "live_site": {
+                    "url": "https://codecanyon.net/item/myshop-installment-and-due-sell-supported-powerful-shop-management-system/full_screen_preview/22581463"
+                },
+                "landscape_preview": {
+                    "landscape_url": "https://previews.customer.envatousercontent.com/files/254325598/preview.jpg",
+                    "image_urls": [
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/254325598/preview.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=3e7f7d9f0f63ba80d3d61571d6a923856baaaa8a695ba010a5be019ae4c8d21d",
+                            "width": 590,
+                            "height": 300
+                        },
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/254325604/01_preview1.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=d1fdb79475b050a5cfe3ab4b30730c722db0a347eac55cfd3a45506bfff2234f",
+                            "width": 590,
+                            "height": 300
+                        },
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/254325604/02_preview2.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=90080f6a1532fcd75a8c82b384ca93e6e9c94539fa1c0c09d40ed4efddee925a",
+                            "width": 590,
+                            "height": 300
+                        },
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/254325604/03_preview3.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=b9d6fc1c0351b92175f01223e6be496f6fbf8b931b2e23f5d3be57bb91abbf10",
+                            "width": 590,
+                            "height": 300
+                        },
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/254325604/04_preview4.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=b01b656c70543000a68c7b87d684e08a9b06c9fb7dffd9e476ee49377895e178",
+                            "width": 590,
+                            "height": 300
+                        }
+                    ]
+                }
+            },
+            "attributes": [
+                {
+                    "name": "compatible-browsers",
+                    "value": [
+                        "IE11",
+                        "Firefox",
+                        "Safari",
+                        "Opera",
+                        "Chrome",
+                        "Edge"
+                    ]
+                },
+                {
+                    "name": "compatible-software",
+                    "value": [
+                        "MySQL 5.x"
+                    ]
+                },
+                {
+                    "name": "demo-url",
+                    "value": "https://demo.softwarezon.com/myshop"
+                },
+                {
+                    "name": "high-resolution",
+                    "value": "Yes"
+                },
+                {
+                    "name": "software-framework",
+                    "value": [
+                        "Laravel"
+                    ]
+                },
+                {
+                    "name": "source-files-included",
+                    "value": [
+                        "JavaScript JS",
+                        "JavaScript JSON",
+                        "CSS",
+                        "PHP",
+                        "SQL"
+                    ]
+                },
+                {
+                    "name": "video-preview-resolution",
+                    "value": null
+                }
+            ],
+            "photo_attributes": [
+                {
+                    "name": "max_width",
+                    "value": null
+                },
+                {
+                    "name": "max_height",
+                    "value": null
+                },
+                {
+                    "name": "full_resolution",
+                    "value": null
+                },
+                {
+                    "name": "full_resolution_in_megapixels",
+                    "value": null
+                }
+            ],
+            "key_features": [],
+            "image_urls": [],
+            "tags": [
+                "business management",
+                "cash management",
+                "installment sell",
+                "inventory management",
+                "invoice management",
+                "management",
+                "mart management",
+                "purchase management",
+                "retail shop",
+                "shop management",
+                "stock management",
+                "store",
+                "store inventory",
+                "store management"
+            ],
+            "discounts": []
+        },
+        {
+            "id": 22816202,
+            "name": "Shop Management System",
+            "slug": "shop-management-system",
+            "description": "Ask any question on WhatsApp : +8801571118839 simpleShop is Powerful and Complete Solution for any kind of Shop Management. This script we Include most Powerful Product Sell System, Admin can sell multiple product at a time with On Paid or Due Paid he/she also can edit sell product rate in sell time.\n            Here we added Daily, Monthly and Yearly basic Sell Invoice, Total Sell, Total Due and Total Profit Statistic.\n            Admin can store product with category wise and easily can manage his store. This script have a powerful account section every transaction like Sell, Deposit, Expense, Withdraw under this section so that Admin account will be 100% secure and meaningful.\n            Admin can easily manage product provider Companie",
+            "description_html": "<h3 id=\"item-description__key-features\"><strong>Ask any question on WhatsApp : <a href=\"https://api.whatsapp.com/send?text=Hello Softwarezon Support..!&#38;phone=+8801571118839\" rel=\"nofollow\">+8801571118839</a> </strong></h3>simpleShop is Powerful and Complete Solution for any kind of <b>Shop Management</b>. This script we Include most Powerful Product Sell System, Admin can sell multiple product at a time with <strong>On Paid or Due Paid</strong> he/she also can edit sell product rate in sell time.\n            Here we added Daily, Monthly and Yearly basic Sell Invoice, Total Sell, Total Due and Total Profit Statistic.\n            Admin can store product with category wise and easily can manage his store. This script have a powerful account section every transaction like <strong>Sell, Deposit, Expense, Withdraw</strong> under this section so that Admin account will be 100% secure and meaningful.\n            Admin can easily manage product provider Companies payment, due and repayment and easily can know how much he/she need repayment them.\n            Here also include Powerful Transaction Log, Due Repayment Notification system, Due Repayment System. Customer list wise Invoice and Due repayment history. Admin can manage complete website without single line of coding knowledge.\n            It is professionally developed in PHP based Laravel framework with MySQL backend.It has strong SQL injection protection system which will keep away this system from hackers.\n            This script creates an unique session for each login every time and checks login session is valid with this system or not. So there is no question about session hijacking.\n        <p>\n            <a href=\"mailto:softwarezon@hotmail.com?subject=Support%20For%20MyMart\"><img src=\"https://camo.envatousercontent.com/6808e042f658e570676954f96488e9ebda6cf010/687474703a2f2f746865736f66746b696e672e636f6d2f737570706f72742e706e67\" alt=\"Shop Management System - 1\" /></a>\n            <a href=\"http://facebook.com/softwarezon\" rel=\"nofollow\"><img src=\"https://camo.envatousercontent.com/fb446b702bb4381b00440ccbdc606e868bcd5efc/687474703a2f2f746865736f66746b696e672e636f6d2f66622e706e67\" alt=\"Shop Management System - 2\" /></a>\n            <a href=\"http://softwarezon.com\" rel=\"nofollow\"><img src=\"https://camo.envatousercontent.com/565b2b5830bd95486536892dd6cc01cca55d5f76/687474703a2f2f746865736f66746b696e672e636f6d2f74772e706e67\" alt=\"Shop Management System - 3\" /></a>\n            <a href=\"https://codecanyon.net/user/softwarezon\"><img src=\"https://camo.envatousercontent.com/978d4d00eaffaedf6fdcd34b6683823516cf8672/687474703a2f2f746865736f66746b696e672e636f6d2f656e7661746f2e706e67\" alt=\"Shop Management System - 4\" /></a><br /><br />\n        </p>\n        <h3 id=\"item-description__key-features\">Script Features</h3>\n        <p>\n\n            ✓ Powerful Sell System.<br />\n            ✓ Multiple Product Sell at a Time.<br />\n            ✓ Sell Discount or Less System Include.<br />\n            ✓ Sell On Paid and Due Payment System.<br />\n            ✓ Payment Cash Or Cheque System Included.<br />\n            ✓ Daily, Monthly, Yearly Sell Statistic.<br />\n            ✓ Powerful Invoice System Included.<br />\n            ✓ Due Repayment System.<br />\n            ✓ Due Repayment Notification.<br />\n            ✓ Cash On Sell System.<br />\n            ✓ Powerful Store management.<br />\n            ✓ Category wise Product Store.<br />\n            ✓ Multiple Company Supported.<br />\n            ✓ Company Payment Due and Repayment.<br />\n            ✓ Perfect Current Cash Management.<br />\n            ✓ Perfect Daily Expense Report.<br />\n            ✓ Perfect Report Withdraw or Deposit from Shop.<br />\n            ✓ Powerful Customer Management System.<br />\n            ✓ Powerful Transaction Log Included.<br />\n            ✓ Manage Logo.<br />\n            ✓ Manage Copyright Text.<br />\n            ✓ A to Z Description.<br />\n            ✓ and much more&#8230;<br /><br />\n        </p>\n\n        <h3 id=\"item-description__demo\">Demo Log In</h3>\n\n        Admin Demo: <a href=\"http://demo.softwarezon.com/shop/admin/\" rel=\"nofollow\">http://demo.softwarezon.com/shop/admin/</a><br />\n\n        <b><u>Admin Login:</u></b><br />\n        Email : <a href=\"mailto:admin@gmail.com\">admin@gmail.com</a><br />\n        Password : 123456<br /><br />\n\n        <h3 id=\"item-description__support\">Free Offer</h3>\n        <p><b>\n            ✓ We Offer Free Installation.\n            ✓ We Offer Free Minor Customization.\n            ✓ We Always Offer Premium Support.\n            ✓ We Fix Any Bugs or Broken Content.\n        </b></p>\n\n        <h3 id=\"item-description__support\">Support</h3>\n        <p>We are always happy to hear from you. Please feel free to contact us for any kind of customization, support, query and suggestion. We will respond as soon as possible.</p>\n\n        <p>Thank you,<br /></p>\n        <p><a href=\"http://softwarezon.com\" rel=\"nofollow\"><strong>SoftwareZon</strong></a></p>\n        <p><strong>Email:</strong> <a href=\"mailto:softwarezon@hotmail.com?subject=Support%20For%20Shop\">softwarezon@hotmail.com</a></p>\n        <p><strong>Skype:</strong> softwarezon</p>",
+            "short_description": "simpleShop makes selling effortless! Sell multiple products at once, manage paid/due sales, track daily–yearly stats, handle company payments, manage inventory, customers, expenses, withdrawals & full transaction logs. A complete, secure Laravel-powered shop management system.",
+            "site": "codecanyon.net",
+            "classification": "php-scripts/help-and-support-tools",
+            "classification_url": "https://codecanyon.net/category/php-scripts/help-and-support-tools",
+            "price_cents": 2000,
+            "number_of_sales": 19,
+            "author_username": "softwarezon",
+            "author_url": "https://codecanyon.net/user/softwarezon",
+            "author_image": "https://s3.envato.com/files/236280900/avata-pic.jpg",
+            "url": "https://codecanyon.net/item/shop-management-system/22816202",
+            "summary": "High Resolution: No, Compatible Browsers: Firefox, Safari, Opera, Chrome, Edge, Software Version: PHP 7.x, MySQL 5.x",
+            "rating": {
+                "rating": 0,
+                "count": 2
+            },
+            "updated_at": "2018-11-13T09:06:56+00:00",
+            "published_at": "2018-11-13T09:06:56+00:00",
+            "trending": false,
+            "previews": {
+                "icon_with_landscape_preview": {
+                    "icon_url": "https://previews.customer.envatousercontent.com/files/256109302/thumnill-2.jpg",
+                    "landscape_url": "https://previews.customer.envatousercontent.com/files/256109303/preview-1.jpg"
+                },
+                "live_site": {
+                    "url": "https://codecanyon.net/item/shop-management-system/full_screen_preview/22816202"
+                },
+                "landscape_preview": {
+                    "landscape_url": "https://previews.customer.envatousercontent.com/files/256109303/preview-1.jpg",
+                    "image_urls": [
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/256109303/preview-1.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=84cea81a887e5ae8b5d2b6d97275382c8a081563cabd1f1433173df92c2d2346",
+                            "width": 590,
+                            "height": 300
+                        },
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/256109305/01_preview1.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=bfb8d513bceae00825a511b256a1babd74543d134cf46d13afe5a9e08e0d47b6",
+                            "width": 590,
+                            "height": 300
+                        },
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/256109305/02_preview2.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=af26122d1ad89fb36fda1ef71b430163a28de82eeb411c651c7b5f70a7d97be3",
+                            "width": 590,
+                            "height": 300
+                        },
+                        {
+                            "name": null,
+                            "url": "https://market-resized.envatousercontent.com/previews/files/256109305/03_closeup.jpg?w=590&h=300&cf_fit=crop&crop=top&format=auto&q=85&s=f4c2b4b54cc6e52cff4a05f6854d61b8bb60d4ec30cc36efd328e9b907dda5c8",
+                            "width": 590,
+                            "height": 300
+                        }
+                    ]
+                }
+            },
+            "attributes": [
+                {
+                    "name": "compatible-browsers",
+                    "value": [
+                        "Firefox",
+                        "Safari",
+                        "Opera",
+                        "Chrome",
+                        "Edge"
+                    ]
+                },
+                {
+                    "name": "compatible-software",
+                    "value": [
+                        "PHP 7.x",
+                        "MySQL 5.x"
+                    ]
+                },
+                {
+                    "name": "demo-url",
+                    "value": "https://demo.softwarezon.com/shop"
+                },
+                {
+                    "name": "high-resolution",
+                    "value": "No"
+                },
+                {
+                    "name": "software-framework",
+                    "value": [
+                        "Laravel"
+                    ]
+                },
+                {
+                    "name": "source-files-included",
+                    "value": [
+                        "JavaScript JS",
+                        "JavaScript JSON",
+                        "PHP",
+                        "SQL"
+                    ]
+                },
+                {
+                    "name": "video-preview-resolution",
+                    "value": null
+                }
+            ],
+            "photo_attributes": [
+                {
+                    "name": "max_width",
+                    "value": null
+                },
+                {
+                    "name": "max_height",
+                    "value": null
+                },
+                {
+                    "name": "full_resolution",
+                    "value": null
+                },
+                {
+                    "name": "full_resolution_in_megapixels",
+                    "value": null
+                }
+            ],
+            "key_features": [],
+            "image_urls": [],
+            "tags": [
+                "business management",
+                "cash management",
+                "customer management",
+                "inventory management",
+                "inventory stock",
+                "invoice management",
+                "mart management",
+                "product management",
+                "sell management",
+                "shop management",
+                "shop management script",
+                "stock management",
+                "stock manager",
+                "store management"
+            ],
+            "discounts": []
+        }
+    ],
+    "author_exists": true,
+    "suggestions": [
+        "software on",
+        "software of",
+        "software in",
+        "software or",
+        "software o"
+    ],
+    "aggregations": {
+        "category_root_count": {
+            "key": null,
+            "count": 5,
+            "description": null
+        },
+        "category": [
+            {
+                "key": "php-scripts",
+                "count": 5,
+                "description": null
+            }
+        ],
+        "platform_root_count": {
+            "key": null,
+            "count": 5,
+            "description": null
+        },
+        "platform": [
+            {
+                "key": "MySQL",
+                "count": 4,
+                "description": null
+            },
+            {
+                "key": "PHP",
+                "count": 4,
+                "description": null
+            }
+        ],
+        "__internal_software_versions": [
+            {
+                "key": "MySQL",
+                "count": 4,
+                "description": null
+            },
+            {
+                "key": "MySQL 5.x",
+                "count": 4,
+                "description": null
+            },
+            {
+                "key": "PHP",
+                "count": 4,
+                "description": null
+            },
+            {
+                "key": "PHP 7.x",
+                "count": 3,
+                "description": null
+            },
+            {
+                "key": "MySQL 8.x",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "PHP 8.x",
+                "count": 1,
+                "description": null
+            }
+        ],
+        "file_formats": null,
+        "files_included": null,
+        "tags": [
+            {
+                "key": "business management",
+                "count": 2,
+                "description": null
+            },
+            {
+                "key": "cash management",
+                "count": 2,
+                "description": null
+            },
+            {
+                "key": "inventory management",
+                "count": 2,
+                "description": null
+            },
+            {
+                "key": "invoice management",
+                "count": 2,
+                "description": null
+            },
+            {
+                "key": "mart management",
+                "count": 2,
+                "description": null
+            },
+            {
+                "key": "shop management",
+                "count": 2,
+                "description": null
+            },
+            {
+                "key": "stock management",
+                "count": 2,
+                "description": null
+            },
+            {
+                "key": "store management",
+                "count": 2,
+                "description": null
+            },
+            {
+                "key": "bitcoin ecommerce",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "bitcoin trading signal",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "blog",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "blog cms",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "crypto currency ecommerce",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "crypto trading signal",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "cryptocurrency support",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "cryptocurrency trade",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "customer management",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "e-commerce",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "ecommerce",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "ecommerce business",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "ecommerce platform",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "ecommerce script",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "emagazine",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "enews",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "forex buy sell",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "forex idea",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "forex premium signal",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "forex signal",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "forex software",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "forex trading",
+                "count": 1,
+                "description": null
+            }
+        ],
+        "colors": null,
+        "rating": [
+            {
+                "key": "",
+                "count": 5,
+                "description": null
+            },
+            {
+                "key": "1",
+                "count": 4,
+                "description": null
+            },
+            {
+                "key": "2",
+                "count": 4,
+                "description": null
+            },
+            {
+                "key": "3",
+                "count": 4,
+                "description": null
+            },
+            {
+                "key": "4",
+                "count": 4,
+                "description": null
+            }
+        ],
+        "date": [
+            {
+                "key": "",
+                "count": 5,
+                "description": null
+            },
+            {
+                "key": "this-year",
+                "count": 0,
+                "description": null
+            },
+            {
+                "key": "this-month",
+                "count": 0,
+                "description": null
+            },
+            {
+                "key": "this-week",
+                "count": 0,
+                "description": null
+            },
+            {
+                "key": "this-day",
+                "count": 0,
+                "description": null
+            }
+        ],
+        "date_updated": [
+            {
+                "key": "",
+                "count": 5,
+                "description": null
+            },
+            {
+                "key": "this-year",
+                "count": 0,
+                "description": null
+            },
+            {
+                "key": "this-month",
+                "count": 0,
+                "description": null
+            },
+            {
+                "key": "this-week",
+                "count": 0,
+                "description": null
+            },
+            {
+                "key": "this-day",
+                "count": 0,
+                "description": null
+            }
+        ],
+        "size": null,
+        "sizes": null,
+        "sales_count": [
+            {
+                "key": "rank-0",
+                "count": 0,
+                "description": null
+            },
+            {
+                "key": "rank-1",
+                "count": 0,
+                "description": null
+            },
+            {
+                "key": "rank-2",
+                "count": 4,
+                "description": null
+            },
+            {
+                "key": "rank-3",
+                "count": 1,
+                "description": null
+            },
+            {
+                "key": "rank-4",
+                "count": 0,
+                "description": null
+            }
+        ],
+        "cost": {
+            "count": 5,
+            "min": 2000,
+            "max": 4500,
+            "avg": 2800,
+            "sum": 14000
+        },
+        "length": null,
+        "tempo": null,
+        "alpha": null,
+        "looped": null,
+        "resolution": null,
+        "vocals_in_audio": null,
+        "frame_rate": null,
+        "compatible_with": [],
+        "orientation": null,
+        "requires_plugins": null,
+        "include_pro_affiliated": null,
+        "discount_count": {
+            "key": null,
+            "count": 0,
+            "description": null
+        },
+        "poly_count": null
+    },
+    "item": null
+}

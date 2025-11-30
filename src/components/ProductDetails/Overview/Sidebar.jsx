@@ -1,10 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { ChevronDown, CircleCheck, ShoppingCart } from "lucide-react";
 import PrimaryButton from "@/components/ui/PrimaryButton/PrimaryButton";
 import SecondaryButton from "@/components/ui/SecondaryButton/SecondaryButton";
+import Link from "next/link";
 
-const Sidebar = () => {
+const Sidebar = ({ product }) => {
   const [showPopup, setShowPopup] = useState(false);
   const [selectedLicense, setSelectedLicense] = useState("Regular License");
 
@@ -29,29 +30,45 @@ const Sidebar = () => {
     "3 months support included",
   ];
 
-  const licenseDetails = [
-    [
-      { label: "First Release", value: "03rd February 2022" },
-      { label: "Last Update", value: "02nd February 2022" },
-    ],
-    { label: "Documentation", value: "YES" },
-    { label: "High Resolution", value: "YES" },
-    { label: "Responsive", value: "YES" },
-    {
-      label: "Compatible Browsers",
-      value: "Firefox, Safari, Opera, Chrome, Edge",
-    },
-    { label: "Version", value: "v1.0.1" },
-    {
-      label: "Files Included",
-      value: "JavaScript JS, JavaScript JSON, PHP, SQL",
-    },
-  ];
+
+  const licenseDetails = useMemo(() => {
+    const details = [];
+
+
+    details.push([
+      {
+        label: "First Release",
+        value: new Date(product.published_at).toLocaleDateString(),
+      },
+      {
+        label: "Last Update",
+        value: new Date(product.updated_at).toLocaleDateString(),
+      },
+    ]);
+
+    product.attributes.forEach((attr) => {
+      if (attr.name === "demo-url") return; 
+
+      const value =
+        Array.isArray(attr.value) && attr.value.length
+          ? attr.value.join(", ")
+          : attr.value || "N/A";
+
+      const label = attr.name
+        .replace(/-/g, " ")
+        .replace(/\b\w/g, (l) => l.toUpperCase());
+
+      details.push({ label, value });
+    });
+
+    return details;
+  }, [product]);
 
   const mainPrice = licenses.find((l) => l.title === selectedLicense)?.price;
 
   return (
-    <section className="sticky top-20 ">
+    <section className="sticky top-20">
+    
       <div className="border border-[#00000014] rounded-[5px] bg-[#FDFDFD]">
         <div
           onClick={() => setShowPopup(!showPopup)}
@@ -76,9 +93,7 @@ const Sidebar = () => {
               {licenses.map((item, i) => (
                 <div
                   key={i}
-                  className={`p-4 border-b border-dotted last:border-none transition-all cursor-pointer ${
-                    selectedLicense === item.title
-                  }`}
+                  className={`p-4 border-b border-dotted last:border-none transition-all cursor-pointer`}
                   onClick={() => {
                     setSelectedLicense(item.title);
                     setShowPopup(false);
@@ -95,9 +110,7 @@ const Sidebar = () => {
                     </p>
                     <p className="text-[#0FAAB8] font-medium">{item.price}</p>
                   </div>
-                  <p className="text-[#474545] text-sm leading-[22px]">
-                    {item.desc}
-                  </p>
+                  <p className="text-[#474545] text-sm leading-[22px]">{item.desc}</p>
                 </div>
               ))}
 
@@ -108,6 +121,7 @@ const Sidebar = () => {
           )}
         </div>
 
+        
         <div className="p-[15px] lg:p-[20px]">
           <ul className="text-[#474545] text-sm space-y-3 lg:text-[16px] leading-[28px]">
             {licenseInfo.map((item, index) => (
@@ -121,55 +135,54 @@ const Sidebar = () => {
           </ul>
         </div>
 
+       
         <div className="flex flex-col gap-[20px] px-[15px] lg:px-[20px] pb-[20px] lg:pb-[30px]">
-          <PrimaryButton
-            label="Add to Cart"
-            icon={ShoppingCart}
-            iconClassName="w-5 h-5 fill-white"
-          />
-          <SecondaryButton
-            text="Buy From Envato"
-            imgSrc="/images/envarto-icon.svg"
-            alt="Envato"
-          />
+          <Link href={product?.url} target="_blank" className="w-full">
+            <SecondaryButton
+              text="Buy From Envato"
+              imgSrc="/images/envarto-icon.svg"
+              alt="Envato"
+            />
+          </Link>
         </div>
       </div>
-
       <p className="p-[15px] lg:p-[20px] bg-[#474545] rounded-[5px] text-white text-[16px] font-medium lg:text-[24px] mt-[20px] lg:mt-[30px]">
-        Total Sell - 34
+        Total Sell - {product?.number_of_sales}
       </p>
 
-      <div className="border border-[#00000014] overflow-hidden  mt-[20px]  lg:mt-[30px] rounded-[5px]">
-        {licenseDetails.map((item, index) => {
-        const hasBg =  index % 2 !== 0;
-
      
-        if (Array.isArray(item)) {
-          return (
-            <div
-              key={index}
-              className={`text-[16px] lg:text-[20px] ${hasBg ? "bg-[#FDFDFD]" : ""} border-b border-gray-200 p-[15px] lg:p-[20px]`}
-            >
-              {item.map((subItem, subIndex) => (
-                <div key={subIndex} className="flex justify-between py-1">
-                  <p className="text-[#474545] text-[16px] lg:text-[20px]">{subItem.label}</p>
-                  <p className="">{subItem.value}</p>
-                </div>
-              ))}
-            </div>
-          );
-        } else {
-          return (
-            <div
-              key={index}
-              className={`${hasBg ? "bg-[#FDFDFD]" : ""} flex justify-between gap-[10px] flex-wrap p-[15px] lg:p-[20px]`}
-            >
-              <p className="text-[#474545] text-[16px] lg:text-[20px]">{item.label}</p>
-              <p className="text-[16px] lg:text-[18px]">{item.value}</p>
-            </div>
-          );
-        }
-      })}
+      <div className="border border-[#00000014] overflow-hidden mt-[20px] lg:mt-[30px] rounded-[5px]">
+        {licenseDetails.map((item, index) => {
+          const hasBg = index % 2 !== 0;
+
+          if (Array.isArray(item)) {
+            return (
+              <div
+                key={index}
+                className={`text-[16px] lg:text-[20px] ${
+                  hasBg ? "bg-[#FDFDFD]" : ""
+                } border-b border-gray-200 p-[15px] lg:p-[20px]`}
+              >
+                {item.map((subItem, subIndex) => (
+                  <div key={subIndex} className="flex justify-between py-1">
+                    <p className="text-[#474545] text-[16px] lg:text-[20px]">{subItem.label}</p>
+                    <p className="">{subItem.value}</p>
+                  </div>
+                ))}
+              </div>
+            );
+          } else {
+            return (
+              <div
+                key={index}
+                className={`${hasBg ? "bg-[#FDFDFD]" : ""} flex justify-between gap-[10px] flex-wrap p-[15px] lg:p-[20px]`}
+              >
+                <p className="text-[#474545] text-[16px] lg:text-[20px]">{item.label}</p>
+                <p className="text-[16px] lg:text-[18px]">{item.value}</p>
+              </div>
+            );
+          }
+        })}
       </div>
 
       <style jsx>{`

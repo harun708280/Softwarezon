@@ -2,16 +2,29 @@
 
 import { CircleCheck } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import Slider from "react-slick";
+import CustomDescription from "./CustomDescription";
 
-const OverviewDetails = () => {
-  const images = [
-    "/images/project-details.png",
-    "/images/project-details.png",
-    "/images/project-details.png",
-  ];
+const OverviewDetails = ({ product }) => {
+  // const images = [
+  //   "/images/project-details.png",
+  //   "/images/project-details.png",
+  //   "/images/project-details.png",
+  // ];
+  console.log(product);
+ if (!product) {
+    return <div className="py-20 text-center text-gray-500">Loading product...</div>;
+  }
 
+  const demoUrl = product?.attributes?.find(
+    (attr) => attr.name === "demo-url"
+  )?.value;
+
+  // Safe fallback for images
+  const images = product?.previews?.landscape_preview?.image_urls || [];
+  const image = product?.previews?.landscape_preview?.image_urls;
   const settings = {
     dots: true,
     infinite: true,
@@ -56,97 +69,37 @@ const OverviewDetails = () => {
     "We Always Offer Premium Support.",
     "We Fix Any Bugs or Broken Content.",
   ];
-
+  console.log(images);
   return (
     <section className="overflow-hidden">
-      <div className="w-full product-details-tab relative overflow-hidden border-b  border-l border-r rounded-[16px] border-[#00000014] bg-[#FDFDFD]">
-        <Slider {...settings} className="!m-0 !p-0">
-          {images.map((src, index) => (
-            <div key={index} className="relative w-full h-[440px] !m-0 !p-0">
-              <Image
-                src={src}
-                alt={`project-details-${index}`}
-                fill
-                className="rounded-t-[16px] object-cover"
-              />
-            </div>
-          ))}
-        </Slider>
-
-        <div className="p-[20px] lg:p-[30px] flex gap-[20px] justify-between flex-wrap">
-          <button className="btn !bg-[#7A9C2B] ">
-            {" "}
-            Live Preview{" "}
-            <span>
-              <img src="/icon/live.svg" alt="live" />
-            </span>
-          </button>
-          <div className="flex items-center gap-[10px]">
-            <p className="text-[16px]  lg:text-[20px] font-medium text-[#1A171799]">
-              Share
-            </p>
-            <button
-              className="h-[40px] w-[40px] rounded-full border   flex justify-center items-center border-[#000000]/30 cursor-pointer transition-all duration-300 ease-in-out
-                 h hover:border-[#f39022] hover:scale-110"
-            >
-              <img src="/icon/facebook.svg" alt="facebook" />
-            </button>
-            <button
-              className="h-[40px] w-[40px] rounded-full border   flex justify-center items-center border-[#000000]/30  cursor-pointer transition-all duration-300 ease-in-out
-                 h hover:border-[#f39022] hover:scale-110"
-            >
-              <img src="/icon/twiter.svg" alt="twiter" />
-            </button>
-            <button
-              className="h-[40px] w-[40px] rounded-full border   flex justify-center items-center border-[#000000]/30  cursor-pointer transition-all duration-300 ease-in-out
-                 h hover:border-[#f39022] hover:scale-110"
-            >
-              <img src="/icon/instragram.svg" alt="instragram" />
-            </button>
-            <button
-              className="h-[40px] w-[40px] rounded-full border   flex justify-center items-center border-[#000000]/30 cursor-pointer transition-all duration-300 ease-in-out
-                 h hover:border-[#f39022] hover:scale-110"
-            >
-              <img src="/icon/whatsapp.svg" alt="whatsapp" />
-            </button>
-            <button
-              className="h-[40px] w-[40px] rounded-full border   flex justify-center items-center border-[#000000]/30 cursor-pointer transition-all duration-300 ease-in-out
-                 h hover:border-[#f39022] hover:scale-110"
-            >
-              <img src="/icon/teligram.svg" alt="teligram" />
-            </button>
-          </div>
+       <div className="w-full product-details-tab relative overflow-hidden border-b border-l border-r rounded-[16px] border-[#00000014] bg-[#FDFDFD]">
+  {image && image.length > 0 ? (
+    <Slider {...settings} className="!m-0 !p-0">
+      {image.map((img, index) => (
+        <div key={index} className="relative w-full h-[440px]">
+          <Image
+            src={img.url}
+            alt={`project-details-${index}`}
+            fill
+            className="rounded-t-[16px] object-cover"
+          />
         </div>
-      </div>
+      ))}
+    </Slider>
+  ) : (
+    <div className="w-full h-[440px] flex items-center justify-center bg-gray-100">
+      <p className="text-gray-500">No images available</p>
+    </div>
+  )}
+</div>
+
       <div className="bg-[#FDFDFD] border border-[#00000014] rounded-[10px]  mt-[20px]  lg:mt-[30px]">
-        <p className="text-sm lg:text-[15px] leading-[30px] text-[#474545] p-[20px] lg:p-[30px] ">
-          This is a Trading Buy Sell Notification platform with this script you
-          are able to send Forex, Crypto, Stocks, CFD, or any market signals. If
-          you or your teams are experts in analysis then you can sell your
-          premium signal to your customer. Customers will pay you and they will
-          receive this signal on their Telegram, Whatsapp, Email, and Sms. Here
-          admin can create multiple free or paid plans. When any customer
-          registers to the website he/her needs to choose a plan if the plan is
-          paid then he/her needs to make a payment to you. When admin sends
-          trading real-time signals to specific Plan users via Email, SMS, and
-          Individual Telegram and Whatsapp Accounts. The user will receive it
-          and Just follows the signal and opens his/her trading buy-sell
-          position So that the user can stop loss and take a profit easily.
-          Admin can create Staff and Staff can create signals like Admin. So you
-          can easily start a Trading Signal Sending Platform with just a few
-          clicks. This script has the most powerful 30+ international payment
-          methods and 23+ Sms Gateway and 7+ Email Driver and 5+ Whatsapp
-          Driver. It’s 100% User-friendly and fully responsive on all kinds of
-          devices. It’s a very easy-to-use and SEO-friendly application. Admin
-          can manage the complete website without a single line of coding
-          knowledge. It is professionally developed in a PHP-based Laravel
-          framework with MySQL backend. It has a strong SQL injection protection
-          system which will keep away this system from hackers. This script
-          creates a unique session for each login every time and checks login
-          session is valid with this system or not. So there is no question
-          about session hijacking.
-        </p>
-        <div className="border-t border-[#00000014] p-[20px] lg:p-[30px]">
+        <p
+          className="customDescription p-[20px] lg:p-[30px]"
+          dangerouslySetInnerHTML={{ __html: product?.description_html }}
+        />
+         {/* <CustomDescription html={product?.description_html} /> */}
+        {/* <div className="border-t border-[#00000014] p-[20px] lg:p-[30px]">
           <h6 className="text-[#474545] text-[18px] lg:text-[24px] font-medium">
             Script Features
           </h6>
@@ -254,7 +207,6 @@ const OverviewDetails = () => {
               >
                 softwarezon@hotmail.com
               </a>
-             
             </p>
             <p>
               {" "}
@@ -267,10 +219,9 @@ const OverviewDetails = () => {
               >
                 SoftwareZon
               </a>
-             
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

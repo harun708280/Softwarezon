@@ -5,22 +5,22 @@ import PrimaryButton from "@/components/ui/PrimaryButton/PrimaryButton";
 
 const faqData = [
   {
-    question: "What do I need to get started?",
+    question: "How quickly will you respond?",
     answer:
-      "A: Our average response time is under 2 hours during business hours (10:00–19:00 UTC+6).",
+      " Our average response time is under 2 hours during business hours (10:00–19:00 UTC+6).",
   },
   {
-    question: "What kind of customization is available?",
+    question: "What technologies do you specialize in?",
     answer:
       "We offer full customization options, including layout changes, color schemes, typography, and content sections to align with your brand. ",
   },
   {
-    question: "How easy is it to edit for beginners?",
+    question: "Do you sign NDAs for projects?",
     answer:
       "Our platform is designed with beginners in mind, offering an intuitive drag-and-drop interface that makes editing simple and straightforward. No coding skills required—just customize and go!",
   },
   {
-    question: "Let me know more about moneyback guarantee?",
+    question: "How do you handle pricing?",
     answer:
       "Our money-back guarantee ensures peace of mind by offering a full refund if you’re not satisfied with the final product within a specified time frame.",
   },
@@ -188,7 +188,7 @@ const Faq = () => {
               >
                 <div className="overflow-hidden">
                   <p className="text-[#777777] px-4 lg:px-6 py-[15px] lg:pb-[26px] text-sm lg:text-[18px]">
-                    {item.answer}
+                   A :  {item.answer}
                   </p>
                 </div>
               </div>

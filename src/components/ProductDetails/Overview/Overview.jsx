@@ -6,13 +6,13 @@ import Reviews from "./Reviews";
 import Support from "./Support";
 import Sidebar from "./Sidebar";
 
-const Overview = () => {
+const Overview = ({product}) => {
   const [activeTab, setActiveTab] = useState("overview");
+  
 
   const tabs = [
     { id: "overview", label: "Overview" },
-    { id: "reviews", label: "Reviews" },
-    { id: "support", label: "Support" },
+    
   ];
 
   return (
@@ -45,7 +45,7 @@ const Overview = () => {
                 : "opacity-0 absolute top-0 left-0 w-full"
             }`}
           >
-            <OverviewDetails />
+            <OverviewDetails product={product}/>
           </div>
 
           <div
@@ -70,7 +70,7 @@ const Overview = () => {
         </div>
 
         <div className="lg:col-span-1   h-fit sticky top-[100px]">
-          <Sidebar />
+          <Sidebar product={product}/>
         </div>
       </div>
     </section>
