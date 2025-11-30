@@ -32,10 +32,10 @@ const UpperHeader = () => {
           <p className="hidden 2xl:block"></p>
 
           <div className="flex text-[14px] font-medium gap-3 justify-center">
-            <p>FOR ANY inquiry - +8801741773194</p>
+            <p className="uppercase">FOR ANY INQUIRY- +8801571118839</p>
 
             <a
-              href="tel:+8801741773194"
+              href="tel:+8801571118839"
               className="flex gap-1 border-b pb-[2px] items-center cursor-pointer text-black transition-colors"
             >
               Call Now <ArrowRight height={18} width={18} />

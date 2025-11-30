@@ -33,8 +33,14 @@ const Hero = () => {
               Web3 solutions using modern stacks...
             </p>
 
-            <Link
-              href="/contact"
+            <button
+              onClick={() => {
+                window.open(
+                  "https://wa.me/8801571118839?text=" +
+                    encodeURIComponent("Hello Softwarezon Support"),
+                  "_blank"
+                );
+              }}
               className="primary-button opacity-0 transform translate-y-6 inline-flex items-center gap-2 mt-[30px] lg:mt-[40px]"
               data-aos="fade-up"
               data-aos-duration="900"
@@ -42,7 +48,7 @@ const Hero = () => {
             >
               Start Your Project Today
               <MoveRight />
-            </Link>
+            </button>
           </div>
 
           <div
