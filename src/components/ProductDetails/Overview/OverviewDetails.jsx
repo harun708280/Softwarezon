@@ -6,6 +6,7 @@ import Link from "next/link";
 import React from "react";
 import Slider from "react-slick";
 import CustomDescription from "./CustomDescription";
+import CustomSlider from "./CustomSlider";
 
 const OverviewDetails = ({ product }) => {
   // const images = [
@@ -14,15 +15,17 @@ const OverviewDetails = ({ product }) => {
   //   "/images/project-details.png",
   // ];
   console.log(product);
- if (!product) {
-    return <div className="py-20 text-center text-gray-500">Loading product...</div>;
+  if (!product) {
+    return (
+      <div className="py-20 text-center text-gray-500">Loading product...</div>
+    );
   }
 
   const demoUrl = product?.attributes?.find(
     (attr) => attr.name === "demo-url"
   )?.value;
 
-  // Safe fallback for images
+ 
   const images = product?.previews?.landscape_preview?.image_urls || [];
   const image = product?.previews?.landscape_preview?.image_urls;
   const settings = {
@@ -72,33 +75,68 @@ const OverviewDetails = ({ product }) => {
   console.log(images);
   return (
     <section className="overflow-hidden">
-       <div className="w-full product-details-tab relative overflow-hidden border-b border-l border-r rounded-[16px] border-[#00000014] bg-[#FDFDFD]">
-  {image && image.length > 0 ? (
-    <Slider {...settings} className="!m-0 !p-0">
-      {image.map((img, index) => (
-        <div key={index} className="relative w-full h-[440px]">
-          <Image
-            src={img.url}
-            alt={`project-details-${index}`}
-            fill
-            className="rounded-t-[16px] object-cover"
-          />
-        </div>
-      ))}
-    </Slider>
-  ) : (
-    <div className="w-full h-[440px] flex items-center justify-center bg-gray-100">
-      <p className="text-gray-500">No images available</p>
-    </div>
-  )}
-</div>
+      {images.length > 0 && (
+        <div className="w-full product-details-tab relative overflow-hidden border-b  border-l border-r rounded-[16px] border-[#00000014] bg-[#FDFDFD]">
+         
 
+          <CustomSlider images={image} />
+
+          <div className="p-[20px] lg:p-[30px] flex gap-[20px] justify-between flex-wrap">
+            {demoUrl && (
+              <Link href={demoUrl} target="_blank" rel="noopener noreferrer">
+                <button className="btn !bg-[#7A9C2B] ">
+                  Live Preview
+                  <span>
+                    <img src="/icon/live.svg" alt="live" />
+                  </span>
+                </button>
+              </Link>
+            )}
+
+            <div className="flex items-center gap-[10px]">
+              <p className="text-[16px]  lg:text-[20px] font-medium text-[#1A171799]">
+                Share
+              </p>
+              <button
+                className="h-[40px] w-[40px] rounded-full border   flex justify-center items-center border-[#000000]/30 cursor-pointer transition-all duration-300 ease-in-out
+                 h hover:border-[#f39022] hover:scale-110"
+              >
+                <img src="/icon/facebook.svg" alt="facebook" />
+              </button>
+              <button
+                className="h-[40px] w-[40px] rounded-full border   flex justify-center items-center border-[#000000]/30  cursor-pointer transition-all duration-300 ease-in-out
+                 h hover:border-[#f39022] hover:scale-110"
+              >
+                <img src="/icon/twiter.svg" alt="twiter" />
+              </button>
+              <button
+                className="h-[40px] w-[40px] rounded-full border   flex justify-center items-center border-[#000000]/30  cursor-pointer transition-all duration-300 ease-in-out
+                 h hover:border-[#f39022] hover:scale-110"
+              >
+                <img src="/icon/instragram.svg" alt="instragram" />
+              </button>
+              <button
+                className="h-[40px] w-[40px] rounded-full border   flex justify-center items-center border-[#000000]/30 cursor-pointer transition-all duration-300 ease-in-out
+                 h hover:border-[#f39022] hover:scale-110"
+              >
+                <img src="/icon/whatsapp.svg" alt="whatsapp" />
+              </button>
+              <button
+                className="h-[40px] w-[40px] rounded-full border   flex justify-center items-center border-[#000000]/30 cursor-pointer transition-all duration-300 ease-in-out
+                 h hover:border-[#f39022] hover:scale-110"
+              >
+                <img src="/icon/teligram.svg" alt="teligram" />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
       <div className="bg-[#FDFDFD] border border-[#00000014] rounded-[10px]  mt-[20px]  lg:mt-[30px]">
         <p
           className="customDescription p-[20px] lg:p-[30px]"
           dangerouslySetInnerHTML={{ __html: product?.description_html }}
         />
-         {/* <CustomDescription html={product?.description_html} /> */}
+        {/* <CustomDescription html={product?.description_html} /> */}
         {/* <div className="border-t border-[#00000014] p-[20px] lg:p-[30px]">
           <h6 className="text-[#474545] text-[18px] lg:text-[24px] font-medium">
             Script Features
