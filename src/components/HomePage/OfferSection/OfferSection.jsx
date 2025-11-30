@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
-import ScrollBlurUp from "@/components/shared/SlideInText/ScrollBlurUp";
+
 const offers = [
   {
     id: "01/04",
@@ -32,32 +32,42 @@ const offers = [
   },
 ];
 
-function OfferCard({ item }) {
+function OfferCard({ item, index }) {
   return (
-    <div className="group border border-[#00000014] py-[20px] px-[25px] lg:px-[50px] rounded-[10px] hover:shadow-[10px_12px_60px_0px_#0000001A] transition-shadow duration-300">
-      <div className="flex items-center justify-between hover:border-none transition-opacity duration-300">
+    <div
+      data-aos="fade-up"
+      data-aos-delay={index * 150}
+      data-aos-duration="800"
+      className="group border border-[#00000014] py-[20px] px-[25px] lg:px-[50px] rounded-[10px]
+             shadow-sm transform transition-all duration-700 ease-out
+             hover:shadow-[0_25px_60px_#0000001A] hover:-translate-y-2 hover:scale-[1.015]"
+    >
+      <div className="flex items-center justify-between transition-all duration-700 ease-out group-hover:opacity-95">
         <div
-          className={`rounded-full bg-gradient-to-tr ${item.gradient} flex items-center justify-center`}
+          className={`rounded-full bg-gradient-to-tr ${item.gradient} flex items-center justify-center 
+                 transition-transform duration-700 ease-out group-hover:scale-105`}
         >
           <Image
             src={item.icon}
             alt={item.title}
             width={100}
             height={100}
-            className="p-[10px] lg:p-[25px] h-14 w-14 md:w-auto  md:h-auto"
+            className="p-[10px] lg:p-[25px] h-14 w-14 md:w-auto md:h-auto"
           />
         </div>
-        <p className=" text-[#777777] text-[22px] lg:text-[30px]">{item.id}</p>
+        <p className="text-[#777777] text-[22px] lg:text-[30px] transition-colors duration-700 ease-out group-hover:text-[#555555]">
+          {item.id}
+        </p>
       </div>
 
-      <div className="pt-[17px] text-left">
-        <h3 className="text-[20px] lg:text-[34px] leading-tight font-semibold">
+      <div className="pt-[17px] text-left transition-colors duration-700 ease-out">
+        <h3 className="text-[20px] lg:text-[34px] leading-tight font-semibold transition-colors duration-700 ease-out group-hover:text-primary">
           {item.title}
         </h3>
-        <p className="text-[16px] lg:text-[18px] text-[#777777] pt-[10px] lg:pt-[20px] pb-[20px] lg:pb-[30px] group-hover:text-[#555555] transition-colors duration-300">
+        <p className="text-[16px] lg:text-[18px] text-[#777777] pt-[10px] lg:pt-[20px] pb-[20px] lg:pb-[30px] transition-colors duration-700 ease-out group-hover:text-[#333333]">
           {item.desc}
         </p>
-        <button className="text-[18px] flex items-center text-primary pb-[8px] transition-all duration-300 group-hover:border-b-2 group-hover:border-[#F7A421] group-hover:font-semibold group-hover:text-[#F7A421] border-b-2 border-transparent cursor-pointer">
+        <button className="text-[18px] flex items-center text-primary pb-[8px] transition-all duration-700 ease-out group-hover:border-b-2 group-hover:border-[#F7A421] group-hover:text-[#F7A421] border-b-2 border-transparent cursor-pointer">
           Learn More <ChevronRight className="h-[20px] w-[20px]" />
         </button>
       </div>
@@ -67,17 +77,18 @@ function OfferCard({ item }) {
 
 export default function OfferSection() {
   return (
-    <section className="container md:text-center">
-      <ScrollBlurUp>
-        <h2 className="section-header ">Explore What We Offer</h2>
+    <section className="container md:text-center ">
+      <div data-aos="fade-up" data-aos-duration="800">
+        <h2 className="section-header">Explore What We Offer</h2>
         <p className="max-w-[521px] mx-auto section-description pt-[10px] lg:pt-[15px]">
           From design to development, we build the future of SaaS, FinTech &
           Web3.
         </p>
-      </ScrollBlurUp>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[30px] lg:gap-[44px] pt-[30px] lg:pt-[50px]">
         {offers.map((item, index) => (
-          <OfferCard key={index} item={item} />
+          <OfferCard key={index} item={item} index={index} />
         ))}
       </div>
     </section>

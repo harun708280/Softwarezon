@@ -15,7 +15,7 @@ const Hero = () => {
               className="text-[30px] sm:text-3xl md:text-4xl xl:text-[56px] font-bold leading-tight xl:leading-[75px]"
               data-aos="fade-up"
               data-aos-duration="900"
-              data-aos-delay="100"
+              data-aos-delay="50"
             >
               Build, Scale & Transform with{" "}
               <span className="bg-gradient-to-r from-[#FFBF78] to-[#D76B00] bg-clip-text text-transparent">
@@ -49,7 +49,7 @@ const Hero = () => {
             className="flex justify-center w-full relative mx-auto my-16 xl:my-20 max-w-[586px]"
             data-aos="fade-up"
             data-aos-duration="900"
-            data-aos-delay="100"
+            data-aos-delay="50"
           >
             <Image
               src="/hero-icon/hero.png"

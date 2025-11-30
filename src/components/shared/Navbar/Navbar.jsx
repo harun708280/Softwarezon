@@ -81,8 +81,10 @@ const Navbar = () => {
               </span>
             </Link>
 
-            <Link
-              href="#"
+            <Link  
+              href="https://wa.me/8801571118839"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`hidden lg:inline-flex items-center gap-2 border py-[8px] px-[16px] rounded-full text-[18px] font-medium hover:opacity-70 transition ${
                 scrolled
                   ? "text-[#17A52E] border-[#17A52E]"
@@ -151,7 +153,9 @@ const Navbar = () => {
 
             <div className="px-6 ">
               <Link
-                href="#"
+                href="https://wa.me/8801571118839"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 border border-[#17A52E] text-[#17A52E] py-[8px] h-fit  lg:px-[20px] rounded-full text-[18px] font-medium hover:opacity-80 transition"
               >
                 <Image

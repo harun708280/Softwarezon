@@ -47,8 +47,6 @@ const testimonials = [
   },
 ];
 
-
-
 const TestimonialSlick = () => {
   const sliderRef = useRef(null);
 
@@ -68,7 +66,9 @@ const TestimonialSlick = () => {
   return (
     <div className="py-[60px] xl:py-[100px]">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap gap-2 justify-between items-center mb-12">
+        <div className="flex flex-wrap gap-2 justify-between items-center mb-12"  data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-delay="100">
           <div>
             <h2 className="section-header">Success Stories That Inspire</h2>
             <p className="section-description pt-2 lg:pt-5">
@@ -95,7 +95,7 @@ const TestimonialSlick = () => {
 
         <Slider ref={sliderRef} {...settings}>
           {testimonials.map((item, index) => (
-            <div key={index} className="">
+            <div key={index} className=""  data-aos="fade-left" data-aos-delay={index * 100}>
               <div className="bg-white border border-gray-200/60 rounded-[10px] p-3 lg:p-6   transition-transform duration-300 hover:scale-[1.0] scale-[0.99] h-[270px] flex flex-col justify-between">
                 <div className="flex items-center">
                   {Array.from({ length: 5 }).map((_, i) => (

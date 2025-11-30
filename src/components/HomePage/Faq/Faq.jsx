@@ -24,6 +24,11 @@ const faqData = [
     answer:
       "Our money-back guarantee ensures peace of mind by offering a full refund if you’re not satisfied with the final product within a specified time frame.",
   },
+  {
+    question: "Let me know more about moneyback guarantee?",
+    answer:
+      "Our money-back guarantee ensures peace of mind by offering a full refund if you’re not satisfied with the final product within a specified time frame.",
+  },
 ];
 
 const Faq = () => {
@@ -70,7 +75,11 @@ const Faq = () => {
       />
 
       <div className="container flex flex-col md:flex-row justify-between items-center   py-[50px] md:py-[80px] lg:py-[120px] px-4 z-10 gap-[30px]">
-        <div className="w-full md:w-[40%]">
+        <div
+          className="w-full md:w-[40%]"
+          data-aos="fade-right"
+         
+        >
           <div className="">
             <Image
               src="/images/phone-call.png"
@@ -146,10 +155,12 @@ const Faq = () => {
             <div
               key={index}
               className="border border-white/10 rounded-xl text-left transition bg-white overflow-hidden"
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
             >
               <button
                 onClick={() => toggleFaq(index)}
-                className={`w-full flex justify-between items-center px-4 lg:px-6 py-4 lg:py-6 rounded-t-xl 
+                className={`w-full flex justify-between items-center px-4 lg:px-6 py-4 lg:py-4 rounded-t-xl 
   transition-colors duration-500 ease-in-out 
   ${openIndex === index ? "bg-secondary" : "bg-white"}`}
               >

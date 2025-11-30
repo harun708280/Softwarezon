@@ -6,17 +6,21 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[url('/images/footer-bg.png')] bg-cover bg-top bg-no-repeat lg:mt-[120px]  ">
+    <footer
+      className="relative bg-[url('/images/footer-bg.png')] bg-cover bg-top bg-no-repeat lg:mt-[120px]  "
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-delay="100"
+    >
       <div className="container relative z-0 ">
-
-    
         <div className="relative z-10 rounded-md max-w-[1170px] mx-auto lg:rounded-[30px] py-7 lg:py-[85px] px-5 lg:px-[52px] bg-orange w-full flex flex-col md:flex-row gap-4 lg:gap-[33px] items-center lg:-mt-[100px] overflow-hidden">
           <div className="w-full lg:w-[62%]">
             <h6 className="text-white text-[18px] md:text-[22px] lg:text-[40px] font-bold ">
               Stay Ahead with Softwarezon
             </h6>
             <p className="text-[16px] lg:text-[18px] text-white/80 pt-[10px] lg:pt-[16px] max-w-[512px]">
-              Get the latest insights on SaaS, FinTech, and Web3 development—straight to your inbox.
+              Get the latest insights on SaaS, FinTech, and Web3
+              development—straight to your inbox.
             </p>
           </div>
           <div className="w-full lg:w-[45%]">
@@ -25,9 +29,9 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 outline-none text-gray-700 text-sm placeholder:text-gray-400 bg-transparent"
+                  className="flex-1 outline-none text-gray-700 text-sm placeholder-gray-400 h-full"
                 />
-                <button className="bg-orange text-white font-medium text-sm md:text-[16px]   px-2 md:px-5 py-2 md:py-3 rounded-full whitespace-nowrap cursor-pointer">
+                <button className="bg-orange text-white font-medium text-sm md:text-[16px] px-2 md:px-5 py-2 md:py-3 rounded-full whitespace-nowrap cursor-pointer">
                   Subscribe Now
                 </button>
               </div>
@@ -35,13 +39,15 @@ const Footer = () => {
           </div>
         </div>
 
-  
         <div className="relative z-0 pt-[40px] text-white lg:pt-[70px]">
           <div className="flex flex-wrap justify-between gap-6 lg:gap-3">
             <div className="max-w-[303px] space-y-[10px] lg:space-y-[14px]">
-              <h6 className="text-[18px] md:text-[20px] font-medium ">About Softwarezon</h6>
+              <h6 className="text-[18px] md:text-[20px] font-medium ">
+                About Softwarezon
+              </h6>
               <p className="text-[#DAD9D9] text-[15px] !leading-[30px]">
-                Innovative software solutions in SaaS, FinTech, and Blockchain—delivering scalable products for global clients.
+                Innovative software solutions in SaaS, FinTech, and
+                Blockchain—delivering scalable products for global clients.
               </p>
               <PrimaryButton label="About us" icon={MoveRight} />
             </div>
@@ -67,18 +73,29 @@ const Footer = () => {
             </div>
 
             <div className="max-w-[258px]">
-              <h6 className="text-[16px] md:text-[20px] font-medium ">Connect With Us</h6>
+              <h6 className="text-[16px] md:text-[20px] font-medium ">
+                Connect With Us
+              </h6>
               <p className="text-[#DAD9D9] text-[15px] !leading-[30px] lg:pt-[30px]">
                 Let’s stay connected on your favorite platforms:
               </p>
               <div className="flex gap-[15px] pt-[20px]">
-                <a href="#" className="bg-white/10 h-[28px] w-[28px] rounded-md p-1 flex items-center">
+                <a
+                  href="#"
+                  className="bg-white/10 h-[28px] w-[28px] rounded-md p-1 flex items-center"
+                >
                   <Facebook className="fill-white" />
                 </a>
-                <a href="#" className="bg-white/10 h-[28px] w-[28px] rounded-md p-1 flex items-center">
+                <a
+                  href="#"
+                  className="bg-white/10 h-[28px] w-[28px] rounded-md p-1 flex items-center"
+                >
                   <Twitter className="fill-white" />
                 </a>
-                <a href="#" className="bg-white/10 h-[28px] w-[28px] rounded-md p-1 flex items-center">
+                <a
+                  href="#"
+                  className="bg-white/10 h-[28px] w-[28px] rounded-md p-1 flex items-center"
+                >
                   <Linkedin className="fill-white" />
                 </a>
               </div>
@@ -86,7 +103,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer Bottom */}
         <div className="pt-[60px] lg:pt-[120px] relative z-0">
           <div className="border-t border-[#606060] py-[30px]">
             <div className="flex flex-wrap gap-4 justify-between items-center text-[#DAD9D9] text-[14px]">
@@ -101,7 +117,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
       </div>
     </footer>
   );

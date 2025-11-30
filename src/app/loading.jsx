@@ -34,7 +34,7 @@ export default function Loader({ onFinish }) {
         loaded && progress >= 100 ? "opacity-0 pointer-events-none" : "opacity-100"
       }`}
     >
-      {/* Top Positioned Loader Content */}
+     
       <div className="flex flex-col items-center justify-start pt-20 gap-5 w-full">
         <div className="text-2xl font-semibold">Loading Your Website...</div>
 

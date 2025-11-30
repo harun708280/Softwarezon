@@ -1,4 +1,3 @@
-
 "use client";
 import { ArrowRight, X } from "lucide-react";
 import React, { useEffect, useState } from "react";
@@ -7,14 +6,17 @@ const UpperHeader = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const hasSeen = sessionStorage.getItem("hasSeenUpperHeader");
-    if (!hasSeen) {
+ 
+    const isClosed = sessionStorage.getItem("upperHeaderClosed");
+    if (!isClosed) {
       setVisible(true);
-      sessionStorage.setItem("hasSeenUpperHeader", "true");
     }
-
-   
   }, []);
+
+  const handleClose = () => {
+    setVisible(false);
+    sessionStorage.setItem("upperHeaderClosed", "true");
+  };
 
   if (!visible) return null;
 
@@ -23,6 +25,7 @@ const UpperHeader = () => {
       className={`bg-orange py-2 transition-all duration-500 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
       }`}
+    
     >
       <div className="container">
         <div className="flex items-center justify-between gap-[20px] flex-wrap text-black">
@@ -40,7 +43,7 @@ const UpperHeader = () => {
           </div>
 
           <button
-            onClick={() => setVisible(false)}
+            onClick={handleClose}
             className="h-7 w-7 rounded-full bg-[#ffffff32] flex items-center justify-center cursor-pointer hover:bg-[#ffffff33] transition"
           >
             <X width={16} height={16} />
