@@ -1,7 +1,4 @@
 "use client";
-
-import BlurIn from "@/components/shared/SlideInText/BlurIn";
-import SlideInText from "@/components/shared/SlideInText/SlideInText";
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,46 +11,54 @@ const Hero = () => {
       <div className="min-h-[945px] flex items-center pt-[120px] pb-[0px] md:pb-[80px] bg-orange-glow">
         <div className="container mx-auto flex flex-col xl:flex-row items-center justify-center text-center gap-[20px] xl:gap-[42px]">
           <div className="xl:max-w-[700px] w-full mb-8 text-white xl:text-left xl:mb-0">
-            <BlurIn delay={0.2}>
-              <h1 className="text-[30px] sm:text-3xl md:text-4xl xl:text-[56px] font-bold leading-tight xl:leading-[75px]">
-                Build, Scale & Transform with{" "}
-                <span className="bg-gradient-to-r from-[#FFBF78] to-[#D76B00] bg-clip-text text-transparent">
-                  SOFTWAREZON
-                </span>
-              </h1>
-            </BlurIn>
+            <h1
+              className="text-[30px] sm:text-3xl md:text-4xl xl:text-[56px] font-bold leading-tight xl:leading-[75px]"
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-delay="100"
+            >
+              Build, Scale & Transform with{" "}
+              <span className="bg-gradient-to-r from-[#FFBF78] to-[#D76B00] bg-clip-text text-transparent">
+                SOFTWAREZON
+              </span>
+            </h1>
 
-            {/* <SlideInText 
-            text="Sharp Focus Ahead"
-             /> */}
-            <BlurIn delay={0.3}>
-              <p className="text-white text-[16px] md:text-[20px] pt-[15px] md:pt-[20px] leading-[30px] pb-[25px] md:pb-[45px]">
-                We design and develop next-gen CRM systems, SaaS platforms, and
-                Web3 solutions using modern stacks like Laravel, Vue, Nuxt,
-                Node.js, Python & Solidity.{" "}
-                <span className="text-secondary">
-                  Your vision → Our code → Infinite possibilities.
-                </span>
-              </p>
-            
-              <Link href="/contact" className="primary-button">
-                Start Your Project Today
-                <MoveRight />
-              </Link>
-            </BlurIn>
+            <p
+              className="text-[16px] md:text-[20px] leading-[30px] opacity-0 transform translate-y-6"
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-delay="250"
+            >
+              We design and develop next-gen CRM systems, SaaS platforms, and
+              Web3 solutions using modern stacks...
+            </p>
+
+            <Link
+              href="/contact"
+              className="primary-button opacity-0 transform translate-y-6 inline-flex items-center gap-2 mt-[30px] lg:mt-[40px]"
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-delay="400"
+            >
+              Start Your Project Today
+              <MoveRight />
+            </Link>
           </div>
 
-          <div className="flex justify-center w-full relative mx-auto my-16 xl:my-20 max-w-[586px]">
-            <BlurIn delay={0.2}>
-              <Image
+          <div
+            className="flex justify-center w-full relative mx-auto my-16 xl:my-20 max-w-[586px]"
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="100"
+          >
+            <Image
               src="/hero-icon/hero.png"
               alt="Developer Illustration with Framework Logos"
               width={586}
               height={581}
+              priority
               className="w-full max-w-[340px] sm:max-w-[440px] md:max-w-[520px] xl:max-w-[586px] relative z-0"
             />
-            </BlurIn>
-            
 
             <div className="absolute inset-0">
               <div className="absolute left-[2%] top-[29%] logo-item">
@@ -62,6 +67,7 @@ const Hero = () => {
                   alt="Next.js"
                   width={60}
                   height={46}
+                  priority
                   className="w-[50px] sm:w-[65px] md:w-[80px]"
                 />
               </div>
@@ -72,6 +78,7 @@ const Hero = () => {
                   alt="Nuxt.js"
                   width={60}
                   height={46}
+                  priority
                   className="w-[50px] sm:w-[65px] md:w-[80px]"
                 />
               </div>
@@ -82,6 +89,7 @@ const Hero = () => {
                   alt="React.js"
                   width={60}
                   height={46}
+                  priority
                   className="w-[50px] sm:w-[65px] md:w-[80px]"
                 />
               </div>
@@ -92,6 +100,7 @@ const Hero = () => {
                   alt="Vue.js"
                   width={60}
                   height={46}
+                  priority
                   className="w-[50px] sm:w-[65px] md:w-[80px]"
                 />
               </div>
@@ -102,6 +111,7 @@ const Hero = () => {
                   alt="Wireless Icon"
                   width={38}
                   height={54}
+                  priority
                   className="w-[36px] sm:w-[44px] md:w-[48px]"
                 />
               </div>
@@ -112,6 +122,7 @@ const Hero = () => {
                   alt="Laravel"
                   width={60}
                   height={46}
+                  priority
                   className="w-[50px] sm:w-[65px] md:w-[80px]"
                 />
               </div>
@@ -122,6 +133,7 @@ const Hero = () => {
                   alt="Figma"
                   width={48}
                   height={50}
+                  priority
                   className="w-[40px] sm:w-[52px] md:w-[58px]"
                 />
               </div>
@@ -132,6 +144,7 @@ const Hero = () => {
                   alt="React.js UI"
                   width={60}
                   height={46}
+                  priority
                   className="w-[50px] sm:w-[65px] md:w-[80px]"
                 />
               </div>

@@ -1,11 +1,9 @@
-// app/layout.js (Server Component)
 import { Rubik } from "next/font/google";
 import "./globals.css";
 import UpperHeaderWrapper from "@/components/Wrapper/UpperHeaderWrapper";
 import NavWrapper from "@/components/Wrapper/NavWrapper";
 import FooterWrapper from "@/components/Wrapper/FooterWrapper";
-
-
+import AOSWrapper from "@/components/shared/SlideInText/AOSWrapper";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -25,8 +23,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={rubik.className}>
         <div className="flex flex-col min-h-screen bg-white">
-          <UpperHeaderWrapper/>
+          <UpperHeaderWrapper />
           <NavWrapper />
+          <AOSWrapper />
           <main className="flex-grow">{children}</main>
           <FooterWrapper />
         </div>

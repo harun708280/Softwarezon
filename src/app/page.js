@@ -1,15 +1,11 @@
-
-import HomePage from '@/components/HomePage/HomePage';
-import React from 'react';
+import HomePage from "@/components/HomePage/HomePage";
+import React from "react";
 
 const Home = () => {
-
-  console.log("server")
   return (
     <div>
-      <HomePage/>
+      <HomePage />
     </div>
   );
 };
-
 export default Home;
