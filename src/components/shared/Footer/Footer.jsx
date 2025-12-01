@@ -83,22 +83,23 @@ const Footer = () => {
                 <a
                   href="https://www.facebook.com/softwarezon"
                   target="_blank"
-                  className="bg-white/10 h-[28px] w-[28px] rounded-md p-1 flex items-center"
+                  className="
+      bg-white/10 h-[28px] w-[28px] rounded-md p-1 flex items-center 
+      transition-all duration-300 hover:bg-orange-500/20 hover:scale-110
+    "
                 >
-                  <Facebook className="fill-white" />
+                  <Facebook className="fill-white  transition-colors duration-300 hover:fill-orange-400" />
                 </a>
-                {/* <a
-                  href="#"
-                  className="bg-white/10 h-[28px] w-[28px] rounded-md p-1 flex items-center"
-                >
-                  <Twitter className="fill-white" />
-                </a> */}
+
                 <a
                   href="https://www.linkedin.com/company/softwarezon"
                   target="_blank"
-                  className="bg-white/10 h-[28px] w-[28px] rounded-md p-1 flex items-center"
+                  className="
+      bg-white/10 h-[28px] w-[28px] rounded-md p-1 flex items-center
+      transition-all duration-300 hover:bg-orange-500/20 hover:scale-110
+    "
                 >
-                  <Linkedin className="fill-white" />
+                  <Linkedin className="fill-white transition-colors duration-300 hover:fill-orange-400" />
                 </a>
               </div>
             </div>

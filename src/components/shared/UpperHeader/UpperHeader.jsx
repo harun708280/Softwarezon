@@ -29,7 +29,7 @@ const UpperHeader = () => {
     >
       <div className="container">
         <div className="flex items-center justify-between gap-[20px] flex-wrap text-black">
-          <p className="hidden 2xl:block"></p>
+          <p className="hidden xl:block"></p>
 
           <div className="flex text-[14px] font-medium gap-3 justify-center">
             <p className="uppercase">FOR ANY INQUIRY- +8801571118839</p>
