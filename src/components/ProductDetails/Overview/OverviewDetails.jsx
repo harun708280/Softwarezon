@@ -4,32 +4,25 @@ import { CircleCheck } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import CustomSlider from "./CustomSlider";
+import Loader from "@/components/shared/Loader/Loader";
 
 const OverviewDetails = ({ product }) => {
   if (!product) {
-    return (
-      <div className="py-20 text-center text-gray-500">
-        Loading product...
-      </div>
-    );
+    return <Loader />;
   }
 
-  // Demo URL
   const demoUrl = product?.attributes?.find(
     (attr) => attr.name === "demo-url"
   )?.value;
 
-  // Images
   const images = product?.previews?.landscape_preview?.image_urls || [];
   const mainImage = images[0]?.url || "/images/default-og.jpg";
 
-  // Current page URL (Client-side + SSR fallback)
   const pageUrl =
     typeof window !== "undefined"
       ? window.location.href
       : `${process.env.NEXT_PUBLIC_SITE_URL}/products/${product.slug}`;
 
-  // Share URLs
   const shareUrls = {
     facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
       pageUrl
@@ -52,10 +45,8 @@ const OverviewDetails = ({ product }) => {
     <section className="overflow-hidden">
       {images.length > 0 && (
         <div className="w-full product-details-tab relative overflow-hidden border-b border-l border-r rounded-[16px] border-[#00000014] bg-[#FDFDFD]">
-          {/* Slider */}
           <CustomSlider images={images} />
 
-          {/* Demo Button & Share */}
           <div className="p-[20px] lg:p-[30px] flex gap-[20px] justify-between flex-wrap items-center">
             {demoUrl && (
               <Link href={demoUrl} target="_blank" rel="noopener noreferrer">
@@ -71,7 +62,6 @@ const OverviewDetails = ({ product }) => {
                 Share
               </p>
 
-              {/* Facebook */}
               <a
                 href={shareUrls.facebook}
                 target="_blank"
@@ -81,7 +71,6 @@ const OverviewDetails = ({ product }) => {
                 <img src="/icon/facebook.svg" alt="facebook" />
               </a>
 
-              {/* Twitter */}
               <a
                 href={shareUrls.twitter}
                 target="_blank"
@@ -91,7 +80,6 @@ const OverviewDetails = ({ product }) => {
                 <img src="/icon/twiter.svg" alt="twitter" />
               </a>
 
-              {/* WhatsApp */}
               <a
                 href={shareUrls.whatsapp}
                 target="_blank"
@@ -101,7 +89,6 @@ const OverviewDetails = ({ product }) => {
                 <img src="/icon/whatsapp.svg" alt="whatsapp" />
               </a>
 
-              {/* Telegram */}
               <a
                 href={shareUrls.telegram}
                 target="_blank"
@@ -111,21 +98,19 @@ const OverviewDetails = ({ product }) => {
                 <img src="/icon/teligram.svg" alt="telegram" />
               </a>
 
-              {/* LinkedIn */}
               <a
                 href={shareUrls.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="h-[40px] w-[40px] rounded-full border flex justify-center items-center border-[#000000]/30 cursor-pointer transition-all duration-300 ease-in-out hover:border-[#f39022] hover:scale-110"
               >
-                <img src="/icon/linkedin.svg" alt="linkedin" />
+                <img src="/icon/linkdin.svg" alt="linkedin" />
               </a>
             </div>
           </div>
         </div>
       )}
 
-      {/* Product Description */}
       <div className="bg-[#FDFDFD] border border-[#00000014] rounded-[10px] mt-[20px] lg:mt-[30px]">
         <p
           className="customDescription p-[20px] lg:p-[30px]"
