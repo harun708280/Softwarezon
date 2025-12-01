@@ -10,40 +10,41 @@ import dynamic from "next/dynamic";
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 const testimonials = [
   {
-    name: "John Doe",
-    role: "CEO, Company A",
+    name: "Ricardomoura",
+    role: "Brazil, Member since February 2016",
     feedback:
-      "The product is amazing, and the support is outstanding. This is the best product I’ve ever used.",
-    avatar: "/images/avator.png",
+      "Guys, it is my second review! Even if updating my platform, this guy is amazing. The code run smoothly without any bug! Congrats! You deserve to sell thousands copies of this platform!",
+    avatar: "/images/author-default.jpg",
     rating: 5,
-    Product: "Shop Management System",
+    Product: "Forex Trade Signal and Crypto Currency ",
   },
   {
-    name: "Jane Smith",
-    role: "Founder, Startup B",
+    name: "alibi29300alibi",
+    role: "Algeria, Member since November 2022",
+    feedback:
+      "technical support is very good. He answered all my questions quickly and efficiently.",
+    avatar: "/images/author-default.jpg",
+    rating: 4,
+    Product: "Ecommerce - Cryptocurrency Supported ",
+  },
+  {
+    name: "nexttradefx",
+    role: "South Africa, Member since June 2022",
     feedback:
       "Exceptional experience! The Softwarezon team truly understands our needs.",
-    avatar: "/images/avator.png",
+    avatar: "/images/author-default.jpg",
     rating: 5,
-    Product: "Inventory Tracker",
+    Product: "Forex Trade Signal and Crypto Currency ",
   },
+  
   {
-    name: "Alex Johnson",
-    role: "CTO, Company C",
+    name: "viru2810",
+    role: "India, Member since January 2018",
     feedback:
-      "Very intuitive platform. It helped streamline our processes and improve efficiency.",
-    avatar: "/images/avator.png",
-    rating: 4,
-    Product: "POS Management",
-  },
-  {
-    name: "Emily Brown",
-    role: "Operations Head, Company D",
-    feedback:
-      "Customer support is top-notch, and the product delivers as promised.",
-    avatar: "/images/avator.png",
+      "Good and very responsive support people are there.Thanks for supporting us..",
+    avatar: "/images/author-default.jpg",
     rating: 5,
-    Product: "CRM Suite",
+    Product: "News Paper - Dynamic News",
   },
 ];
 
@@ -129,9 +130,9 @@ const TestimonialSlick = () => {
                       </p>
                     </div>
                   </div>
-                  <button className="text-[#666666] text-[14px] py-[10px] px-[16px] border rounded-full gradient-btn-2 cursor-pointer">
+                  {/* <button className="text-[#666666] text-[14px] py-[10px] px-[16px] border rounded-full gradient-btn-2 cursor-pointer">
                     Customer Support
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>

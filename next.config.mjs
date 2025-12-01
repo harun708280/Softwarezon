@@ -9,7 +9,8 @@ const nextConfig = {
       "previews.customer.envatousercontent.com",
       "s3.envato.com",
       "softwarezon.com",
-      "demo.softwarezon.com"
+      "demo.softwarezon.com",
+      "www.codester.com"
     ],
   },
 };

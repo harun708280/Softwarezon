@@ -11,7 +11,7 @@ const PrimaryButton = ({
   return (
     <button
       onClick={onClick}
-      className={`primary-button ${className}`}
+      className={`primary-button !flex !justify-center !items-center ${className}`}
     >
       {label}
       {Icon && <Icon className={`w-5 h-5 ${iconClassName}`} />}

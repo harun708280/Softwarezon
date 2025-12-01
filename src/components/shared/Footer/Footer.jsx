@@ -81,19 +81,21 @@ const Footer = () => {
               </p>
               <div className="flex gap-[15px] pt-[20px]">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/softwarezon"
+                  target="_blank"
                   className="bg-white/10 h-[28px] w-[28px] rounded-md p-1 flex items-center"
                 >
                   <Facebook className="fill-white" />
                 </a>
-                <a
+                {/* <a
                   href="#"
                   className="bg-white/10 h-[28px] w-[28px] rounded-md p-1 flex items-center"
                 >
                   <Twitter className="fill-white" />
-                </a>
+                </a> */}
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/softwarezon"
+                  target="_blank"
                   className="bg-white/10 h-[28px] w-[28px] rounded-md p-1 flex items-center"
                 >
                   <Linkedin className="fill-white" />
@@ -106,14 +108,16 @@ const Footer = () => {
         <div className="pt-[60px] lg:pt-[120px] relative z-0">
           <div className="border-t border-[#606060] py-[30px]">
             <div className="flex flex-wrap gap-4 justify-between items-center text-[#DAD9D9] text-[14px]">
-              <Image
-                src="/images/footer-logo.svg"
-                alt="Logo"
-                width={206}
-                height={47}
-                className="object-contain"
-              />
-              <Link href="#">Copyright 2025.com, All rights reserved.</Link>
+              <Link href="/">
+                <Image
+                  src="/images/footer-logo.svg"
+                  alt="Logo"
+                  width={206}
+                  height={47}
+                  className="object-contain"
+                />
+              </Link>
+              <p>&copy;2025 All Copyrights Reserver by Softwarezon</p>
             </div>
           </div>
         </div>

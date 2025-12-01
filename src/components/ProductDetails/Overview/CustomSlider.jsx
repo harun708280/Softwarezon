@@ -6,7 +6,7 @@ const CustomSlider = ({ images = [] }) => {
   const [current, setCurrent] = useState(0);
   const timeoutRef = useRef(null);
 
-  // Auto slide
+  
   useEffect(() => {
     timeoutRef.current = setTimeout(() => {
       setCurrent((prev) => (prev + 1) % images.length);
@@ -15,7 +15,6 @@ const CustomSlider = ({ images = [] }) => {
     return () => clearTimeout(timeoutRef.current);
   }, [current, images.length]);
 
-  // Swipe support
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
 
@@ -26,11 +25,11 @@ const CustomSlider = ({ images = [] }) => {
     touchEndX.current = e.changedTouches[0].clientX;
 
     if (touchStartX.current - touchEndX.current > 50) {
-      // next slide
+   
       setCurrent((prev) => (prev + 1) % images.length);
     }
     if (touchEndX.current - touchStartX.current > 50) {
-      // prev slide
+     
       setCurrent((prev) =>
         prev === 0 ? images.length - 1 : prev - 1
       );
@@ -47,11 +46,11 @@ const CustomSlider = ({ images = [] }) => {
 
   return (
     <div
-      className="relative w-full h-[440px] overflow-hidden rounded-lg"
+      className="relative w-full h-[250px] md:h-[350px] lg:h-[440px] overflow-hidden rounded-lg"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Slide Image */}
+      
       <div
         className="flex transition-transform duration-700 ease-out"
         style={{
@@ -61,7 +60,7 @@ const CustomSlider = ({ images = [] }) => {
         {images.map((img, index) => {
           const imgUrl = typeof img === "string" ? img : img.url;
           return (
-            <div key={index} className="relative w-full flex-shrink-0 h-[440px]">
+            <div key={index} className="relative w-full flex-shrink-0 h-[250px] md:h-[350px] lg:h-[440px]">
               <Image
                 src={imgUrl}
                 alt={`slide-${index}`}

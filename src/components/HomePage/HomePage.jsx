@@ -20,7 +20,7 @@ const HomePage = () => {
            <OurProducts/>
            <Faq/>
            <TestimonialSlick/>
-           <Blog/>
+           {/* <Blog/> */}
         </div>
     );
 };

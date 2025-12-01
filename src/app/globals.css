@@ -252,6 +252,31 @@ body {
 }
 
 
+.product-details-btn{
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 12px 17px;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(90deg, #f39022 -7.35%, #f8a921 103.68%);
+
+ 
+}
+
+.product-details-btn  img {
+ 
+  filter: brightness(10) saturate(0);
+  transform: scale(1.05);
+  transition-delay: 0.05s;
+}
+
 .hero-shape {
   position: absolute;
   width: 800px;
@@ -488,4 +513,144 @@ body {
     text-decoration: none;
     
   }
+}
+
+
+:root {
+  --brand: #f8a921; /* main orange color */
+}
+
+/* Preloader */
+#page-load-preloader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 9999;
+  backdrop-filter: blur(25px);
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+/* Orbit Animation */
+.page-load-signal-area {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-load-orbit {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  animation: page-load-rotateOrbit 6s linear infinite;
+}
+
+.page-load-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--brand);
+  box-shadow: 0 0 10px var(--brand);
+  animation: page-load-pulse 1.5s ease-in-out infinite;
+}
+
+.page-load-particle:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.page-load-particle:nth-child(2) {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.page-load-particle:nth-child(3) {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page-load-logo {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-load-logo .page-load-circle {
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--brand);
+  border-top-color: var(--brand);
+  border-radius: 50%;
+  animation: page-load-spin 1.2s linear infinite;
+}
+
+.page-load-logo h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 10px;
+}
+
+.page-load-logo h2 span {
+  color: var(--brand);
+  text-shadow: 0 0 10px var(--brand);
+}
+
+/* Progress bar */
+.page-load-progress-bar {
+  width: 160px;
+  height: 3px;
+  background: #f8a921; /* light orange background for contrast */
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.page-load-progress {
+  width: 0%;
+  height: 100%;
+  background: var(--brand);
+  box-shadow: 0 0 8px var(--brand);
+  transition: width 0.3s ease;
+}
+
+/* Keyframes */
+@keyframes page-load-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes page-load-rotateOrbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes page-load-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+/* Hide after load */
+body.page-load-loaded #page-load-preloader {
+  opacity: 0;
+  visibility: hidden;
 }

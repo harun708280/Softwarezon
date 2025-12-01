@@ -83,7 +83,7 @@ const OurProducts = () => {
                   <div className="flex items-center gap-2">
                     <Image
                       src="/images/5-star.svg"
-                      alt={`Rating ${product.rating.rating}`}
+                      alt={`Rating ${product?.rating?.rating}`}
                       width={145}
                       height={29}
                       className="object-cover"

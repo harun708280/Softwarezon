@@ -9,15 +9,19 @@ const Sidebar = ({ product }) => {
   const [showPopup, setShowPopup] = useState(false);
   const [selectedLicense, setSelectedLicense] = useState("Regular License");
 
+  console.log(product);
+
   const licenses = [
     {
       title: "Regular License",
-      price: "USD 45",
+      price: `USD ${product?.price_cents/100}`,
+
       desc: "Use, by you or one client, in a single end product which end users are not charged for. The total price includes the item price and a buyer fee.",
     },
     {
       title: "Extended License",
-      price: "USD 924",
+      price: `USD ${product?.price_cents_extends/100}`,
+
       desc: "Use, by you or one client, in a single end product which end users can be charged for. The total price includes the item price and a buyer fee.",
     },
   ];
@@ -30,10 +34,10 @@ const Sidebar = ({ product }) => {
     "3 months support included",
   ];
 
-
   const licenseDetails = useMemo(() => {
-    const details = [];
+    if (!product) return [];
 
+    const details = [];
 
     details.push([
       {
@@ -46,19 +50,49 @@ const Sidebar = ({ product }) => {
       },
     ]);
 
-    product.attributes.forEach((attr) => {
-      if (attr.name === "demo-url") return; 
+    details.push({
+      label: "Rating",
+      value: product.rating
+        ? `${product.rating.rating} (${product.rating.count} reviews)`
+        : "N/A",
+    });
+
+    // // 4. Price
+    // details.push({
+    //   label: "Price",
+    //   value: `$${(product.price_cents / 100).toFixed(2)}`,
+    // });
+
+    // // 5. Author
+    // details.push({
+    //   label: "Author",
+    //   value: product.author_username,
+    // });
+
+    // 6. Summary
+    // details.push({
+    //   label: "Summary",
+    //   value: product.summary || "N/A",
+    // });
+
+    product.attributes?.forEach((attr) => {
+      if (attr.name === "demo-url") return;
+
+      const label = attr.name
+        .replace(/-/g, " ")
+        .replace(/\b\w/g, (l) => l.toUpperCase());
 
       const value =
         Array.isArray(attr.value) && attr.value.length
           ? attr.value.join(", ")
           : attr.value || "N/A";
 
-      const label = attr.name
-        .replace(/-/g, " ")
-        .replace(/\b\w/g, (l) => l.toUpperCase());
-
       details.push({ label, value });
+    });
+
+    details.push({
+      label: "Tags",
+      value: product.tags?.length ? product.tags.join(", ") : "N/A",
     });
 
     return details;
@@ -68,7 +102,6 @@ const Sidebar = ({ product }) => {
 
   return (
     <section className="sticky top-20">
-    
       <div className="border border-[#00000014] rounded-[5px] bg-[#FDFDFD]">
         <div
           onClick={() => setShowPopup(!showPopup)}
@@ -82,7 +115,7 @@ const Sidebar = ({ product }) => {
               }`}
             />
           </p>
-          <p className="text-[#0FAAB8] text-[16px] lg:text-[24px] font-medium">
+          <p className="text-[#0FAAB8] text-[16px] lg:text-[24px] font-bold">
             {mainPrice}
           </p>
 
@@ -110,7 +143,9 @@ const Sidebar = ({ product }) => {
                     </p>
                     <p className="text-[#0FAAB8] font-medium">{item.price}</p>
                   </div>
-                  <p className="text-[#474545] text-sm leading-[22px]">{item.desc}</p>
+                  <p className="text-[#474545] text-sm leading-[22px]">
+                    {item.desc}
+                  </p>
                 </div>
               ))}
 
@@ -121,7 +156,6 @@ const Sidebar = ({ product }) => {
           )}
         </div>
 
-        
         <div className="p-[15px] lg:p-[20px]">
           <ul className="text-[#474545] text-sm space-y-3 lg:text-[16px] leading-[28px]">
             {licenseInfo.map((item, index) => (
@@ -135,14 +169,11 @@ const Sidebar = ({ product }) => {
           </ul>
         </div>
 
-       
         <div className="flex flex-col gap-[20px] px-[15px] lg:px-[20px] pb-[20px] lg:pb-[30px]">
-          <Link href={product?.url} target="_blank" className="w-full">
-            <SecondaryButton
-              text="Buy From Envato"
-              imgSrc="/images/envarto-icon.svg"
-              alt="Envato"
-            />
+          <Link href={product?.url} target="_blank" className="w-full product-details-btn text-white flex justify-center rounded-full hover:opacity-50">
+            
+           <span>Buy From Envato</span>
+            <img src="/images/envarto-icon.svg" alt="" />
           </Link>
         </div>
       </div>
@@ -150,7 +181,6 @@ const Sidebar = ({ product }) => {
         Total Sell - {product?.number_of_sales}
       </p>
 
-     
       <div className="border border-[#00000014] overflow-hidden mt-[20px] lg:mt-[30px] rounded-[5px]">
         {licenseDetails.map((item, index) => {
           const hasBg = index % 2 !== 0;
@@ -159,14 +189,16 @@ const Sidebar = ({ product }) => {
             return (
               <div
                 key={index}
-                className={`text-[16px] lg:text-[20px] ${
-                  hasBg ? "bg-[#FDFDFD]" : ""
+                className={`text-[16px] lg:text-[1px] ${
+                  hasBg ? "bg-white" : ""
                 } border-b border-gray-200 p-[15px] lg:p-[20px]`}
               >
                 {item.map((subItem, subIndex) => (
                   <div key={subIndex} className="flex justify-between py-1">
-                    <p className="text-[#474545] text-[16px] lg:text-[20px]">{subItem.label}</p>
-                    <p className="">{subItem.value}</p>
+                    <p className="text-[#474545] text-[16px] lg:text-[16px]">
+                      {subItem.label} :{" "}
+                    </p>
+                    <p className="text-[16px]">{subItem.value}</p>
                   </div>
                 ))}
               </div>
@@ -175,10 +207,14 @@ const Sidebar = ({ product }) => {
             return (
               <div
                 key={index}
-                className={`${hasBg ? "bg-[#FDFDFD]" : ""} flex justify-between gap-[10px] flex-wrap p-[15px] lg:p-[20px]`}
+                className={`${
+                  hasBg ? "bg-[#f5f4f4]" : ""
+                } flex justify-between gap-[10px] flex-wrap p-[15px] lg:p-[15px]`}
               >
-                <p className="text-[#474545] text-[16px] lg:text-[20px]">{item.label}</p>
-                <p className="text-[16px] lg:text-[18px]">{item.value}</p>
+                <p className=" text-[16px] lg:text-[16px]">{item.label}: </p>
+                <p className="text-[16px] lg:text-[16px] text-[#474545]">
+                  {item.value}
+                </p>
               </div>
             );
           }

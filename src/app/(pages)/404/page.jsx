@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Share2, Facebook, Twitter, Linkedin } from "lucide-react";
 
 function Countdown() {
-
   const [targetDate] = useState(() => {
     const date = new Date();
     date.setDate(date.getDate() + 27);
@@ -36,9 +35,8 @@ function Countdown() {
       }
     };
 
-    updateCountdown(); 
+    updateCountdown();
     const timer = setInterval(updateCountdown, 1000);
-
     return () => clearInterval(timer);
   }, [targetDate]);
 
@@ -58,47 +56,62 @@ function Countdown() {
 
 export default function ComingSoon() {
   return (
+    // <div className="bg-black relative overflow-hidden  ">
+    //   <div className="hero-shape"></div>
+    //   <div className="bg-orange-glow  flex flex-col justify-center pt-[100px] pb-[40px] lg:pt-[140px] lg:pb-[80px]"></div>
     <div className="flex items-center justify-center min-h-screen bg-gray-50">
-      <div className="grid lg:grid-cols-2 max-w-5xl w-full bg-gray-100 border border-gray-200 rounded-xl shadow-lg overflow-hidden">
-     
+      <div className="grid lg:grid-cols-2 max-w-5xl w-full bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden">
+        {/* LEFT SIDE (Image + gradient overlay) */}
         <div
           className="relative flex flex-1 flex-col justify-between p-8 lg:p-12 bg-cover bg-center"
           style={{ backgroundImage: "url('/images/building.png')" }}
         >
-          
-
+          <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-black/10"></div>
         </div>
 
-        <div className="relative flex flex-1 flex-col justify-center p-8 lg:p-12 text-center">
-         
-          <div className="flex w-full justify-end">
-            <Share2 className="h-6 w-6 cursor-pointer opacity-80 hover:opacity-100" />
-          </div>
+        {/* RIGHT SIDE (Gradient panel) */}
+        <div className=" bg-black relative overflow-hidden  flex flex-1 flex-col justify-center text-center text-white">
+          <div className="hero-shape"></div>
 
-          <Countdown />
+          <div className="bg-orange-glow  p-8 lg:p-12">
+            <div className="flex w-full justify-end">
+              <Share2 className="h-6 w-6 cursor-pointer opacity-90 hover:opacity-100" />
+            </div>
 
-          
-          <div className="space-y-6 mt-6">
-            <h1 className="text-4xl font-bold lg:text-5xl">Under Redesign</h1>
-            <p className="text-gray-700 lg:text-lg">
-              This section of the website is under redesign. Stay tuned for updates!
-            </p>
+            <Countdown />
 
-            <Link
-              href="/"
-              className="inline-block mt-4 rounded-full bg-gray-800 px-6 py-3 font-semibold text-white hover:bg-gray-700"
-            >
-              Go to Home Page
-            </Link>
-          </div>
+            <div className="space-y-4 mt-6">
+              <h1 className="text-4xl font-bold lg:text-5xl">
+                We’re Upgrading
+              </h1>
+              <p className="text-white/90 lg:text-lg">
+                A fresh experience is on the way. Please check back soon!
+              </p>
 
-       
-          <div className="flex w-full justify-center gap-6 mt-12">
-            {[Facebook, Twitter, Linkedin].map((Icon, idx) => (
-              <Link key={idx} href="#" aria-label={Icon.name}>
-                <Icon className="h-6 w-6 text-gray-700 opacity-80 hover:opacity-100" />
+              <Link href="/" className="primary-button">
+                Go to Home Page
               </Link>
-            ))}
+            </div>
+
+            <div className="flex w-full justify-center gap-6 mt-12">
+              {[
+                { icon: Facebook, url: "https://www.facebook.com/softwarezon" },
+                {
+                  icon: Linkedin,
+                  url: "https://www.linkedin.com/company/softwarezon",
+                },
+              ].map((item, idx) => (
+                <Link
+                  key={idx}
+                  href={item.url}
+                  target="_blank"
+                  aria-label={item.icon.name}
+                  className="transition-transform duration-300 hover:scale-110"
+                >
+                  <item.icon className="h-6 w-6 text-white opacity-90 hover:opacity-100" />
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </div>
