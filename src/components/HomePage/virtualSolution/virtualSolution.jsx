@@ -48,7 +48,7 @@ export default function VirtualSolution() {
             businesses grow and scale
           </p>
           <p
-            className=" md:text-center lg:text-left mx-auto text-[#626262] text-[20px] leading-[29px] font-normal pt-[20px] pb-[25px] lg:pb-[45px]"
+            className=" md:text-center lg:text-left mx-auto text-[#626262] text-[20px] leading-[29px] font-normal pt-[20px] pb-[25px] lg:pb-[35px]"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="300"
@@ -58,7 +58,7 @@ export default function VirtualSolution() {
             modern, secure, and user-friendly.
           </p>
 
-          <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">
+          <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="350" className="flex md:justify-center lg:justify-start">
             <PrimaryButton label="Let’s Work Together" />
           </div>
         </div>

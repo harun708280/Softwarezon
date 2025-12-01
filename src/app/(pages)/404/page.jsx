@@ -73,7 +73,7 @@ export default function ComingSoon() {
         <div className=" bg-black relative overflow-hidden  flex flex-1 flex-col justify-center text-center text-white">
           <div className="hero-shape"></div>
 
-          <div className="bg-orange-glow  p-8 lg:p-12">
+          <div className="bg-orange-glow  p-8 lg:p-12 z-20">
             <div className="flex w-full justify-end">
               <Share2 className="h-6 w-6 cursor-pointer opacity-90 hover:opacity-100" />
             </div>
@@ -88,7 +88,7 @@ export default function ComingSoon() {
                 A fresh experience is on the way. Please check back soon!
               </p>
 
-              <Link href="/" className="primary-button">
+              <Link href="/" className="primary-button z-50">
                 Go to Home Page
               </Link>
             </div>
