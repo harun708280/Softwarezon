@@ -854,14 +854,7 @@
                         "Javascript .js"
                     ]
                 },
-                {
-                    "name": "first_release",
-                    "value": "2018-05-26"
-                },
-                {
-                    "name": "last_update",
-                    "value": "2018-05-26"
-                },
+                
                 {
                     "name": "requirements",
                     "value": [
