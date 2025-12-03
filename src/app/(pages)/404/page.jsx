@@ -63,10 +63,10 @@ export default function ComingSoon() {
       <div className="grid lg:grid-cols-2 max-w-5xl w-full bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden">
         {/* LEFT SIDE (Image + gradient overlay) */}
         <div
-          className="relative flex flex-1 flex-col justify-between p-8 lg:p-12 bg-cover bg-center"
+          className="relative flex flex-1 flex-col justify-between p-8 lg:p-12 bg-cover bg-center min-h-[300px]"
           style={{ backgroundImage: "url('/images/building.png')" }}
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-black/10"></div>
+          
         </div>
 
         {/* RIGHT SIDE (Gradient panel) */}

@@ -19,6 +19,15 @@ const testimonials = [
     Product: "Forex Trade Signal and Crypto Currency ",
   },
   {
+    name: "patriciawadam",
+    role: "United States, Member since March 2016",
+    feedback:
+      "Excellent support, I was helped even after the support period expired. I recommend it to everyone. I will also buy other products from him to support him. Thank you Softwarezon!",
+    avatar: "/images/author-default.jpg",
+    rating: 5,
+    Product: "Forex Trade Signal and Crypto Currency",
+  },
+  {
     name: "alibi29300alibi",
     role: "Algeria, Member since November 2022",
     feedback:
@@ -46,6 +55,61 @@ const testimonials = [
     rating: 5,
     Product: "News Paper - Dynamic News",
   },
+  {
+    name: "traderforex01554",
+    role: "Egypt, Member since November 2024",
+    feedback:
+      "They provide good customer support and help everyone.",
+    avatar: "/images/author-default.jpg",
+    rating: 5,
+    Product: "Forex Trade Signal and Crypto Currency",
+  },
+  {
+    name: "assasin99",
+    role: "Kenya, Member since January 2017",
+    feedback:
+      "Softwarezon has got amazing support. Bought the script and I was able to set it up live and get some features updated thanks to the quick response. Good work on the script. Its the best.Thanks so much.",
+    avatar: "/images/author-default.jpg",
+    rating: 5,
+    Product: "Forex Trade Signal and Crypto Currency",
+  },
+  
+  {
+    name: "fcolucci",
+    role: "Italy, Member since November 2018",
+    feedback:
+      "Customer support really fast! Thank you guys...I am trying this really nice website!! I will keep you updated once done!",
+    avatar: "/images/author-default.jpg",
+    rating: 5,
+    Product: "Forex Trade Signal and Crypto Currency",
+  },
+  {
+    name: "alibi29300alibi",
+    role: "Algeria, Member since November 2022",
+    feedback:
+      "technical support is very good. He answered all my questions quickly and efficiently.",
+    avatar: "/images/author-default.jpg",
+    rating: 5,
+    Product: "Ecommerce - Cryptocurrency Supported",
+  },
+  {
+    name: "fcolucci",
+    role: "Italy, Member since November 2018",
+    feedback:
+      "Customer support really fast! Thank you guys...I am trying this really nice website!! I will keep you updated once done!",
+    avatar: "/images/author-default.jpg",
+    rating: 5,
+    Product: "Forex Trade Signal and Crypto Currency",
+  },
+  {
+    name: "muazmuneer",
+    role: "Pakistan, Member since December 2020",
+    feedback:
+      "Recommended, very good support center will help you with everything, support bug reports. Very good with suggestion for improvements and bug fixes",
+    avatar: "/images/author-default.jpg",
+    rating: 5,
+    Product: "Forex Trade Signal and Crypto Currency",
+  },
 ];
 
 const TestimonialSlick = () => {
@@ -59,7 +123,7 @@ const TestimonialSlick = () => {
     slidesToScroll: 1,
     arrows: false,
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
+      { breakpoint: 1024, settings: { slidesToShow: 1 } },
       { breakpoint: 768, settings: { slidesToShow: 1 } },
     ],
   };
@@ -67,7 +131,7 @@ const TestimonialSlick = () => {
   return (
     <div className="py-[60px] xl:py-[100px]">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap gap-2 justify-between items-center mb-12"  data-aos="fade-up"
+        <div className="flex flex-wrap gap-2 justify-between items-center mb-6 md:mb-12"  data-aos="fade-up"
         data-aos-duration="800"
         data-aos-delay="100">
           <div>

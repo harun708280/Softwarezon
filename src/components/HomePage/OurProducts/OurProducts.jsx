@@ -58,7 +58,7 @@ const OurProducts = () => {
               />
             </div>
 
-            <div className="flex flex-col justify-between flex-1 py-6 px-5 transition-transform duration-700 ease-out group-hover:-translate-y-0.5 will-change-transform">
+            <div className="flex flex-col justify-between flex-1 py-2 lg:py-6 px-5 transition-transform duration-700 ease-out group-hover:-translate-y-0.5 will-change-transform">
               <div>
                 <h6 className="text-primary text-[18px] lg:text-[20px] font-semibold line-clamp-2 transition-colors duration-700 group-hover:text-[#333333]">
                   {product.name}

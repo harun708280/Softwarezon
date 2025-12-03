@@ -113,8 +113,8 @@ const Navbar = () => {
               <Image
                 src="/images/Hamburger.svg"
                 alt="menu"
-                width={40}
-                height={40}
+                width={35}
+                height={35}
               />
             </button>
           </div>
@@ -132,7 +132,21 @@ const Navbar = () => {
             }`}
           >
             <div className="flex items-center justify-between p-5 border-b">
-              <Image src="/images/logo.svg" alt="Logo" width={45} height={45} />
+              <Link href="/" className="flex items-center gap-3">
+                <Image
+                  src="/images/logo.svg"
+                  alt="Logo"
+                  width={50}
+                  height={50}
+                  className="object-contain"
+                />
+                <h3
+                  className=
+                   "text-black text-xl lg:text-3xl font-bold transition-colors duration-300"
+                >
+                  SOFTWAREZON
+                </h3>
+              </Link>
               <button
                 onClick={() => setIsOpen(false)}
                 className="p-2 rounded-full hover:bg-gray-100"
@@ -164,12 +178,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 border border-[#17A52E] text-[#17A52E] py-[8px] h-fit  lg:px-[20px] rounded-full text-[18px] font-medium hover:opacity-80 transition"
               >
-                <Image
-                  src="/images/whatsap.svg"
-                  alt=""
-                  width={20}
-                  height={20}
-                />
+                <Image src="/icon/whatsapp.png" alt="" width={20} height={20} />
                 <span>Whatsapp Us</span>
               </Link>
             </div>

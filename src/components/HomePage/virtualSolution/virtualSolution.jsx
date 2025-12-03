@@ -59,7 +59,13 @@ export default function VirtualSolution() {
           </p>
 
           <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="350" className="flex md:justify-center lg:justify-start">
-            <PrimaryButton label="Let’s Work Together" />
+            <PrimaryButton onClick={() => {
+                window.open(
+                  "https://wa.me/8801571118839?text=" +
+                    encodeURIComponent("Hello Softwarezon Support"),
+                  "_blank"
+                );
+              }} label="Let’s Work Together" />
           </div>
         </div>
       </div>
