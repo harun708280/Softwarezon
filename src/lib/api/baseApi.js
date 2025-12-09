@@ -4,7 +4,7 @@ export const baseApi = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
     baseUrl: process.env.NEXT_PUBLIC_API_URL, 
-    credentials: "include", 
+   
   }),
   tagTypes: ["Auth", "User", "Product","Category","SubCategory","BlogCategory","Blog","TeamMember","Subscribe"],
   endpoints: () => ({}),
