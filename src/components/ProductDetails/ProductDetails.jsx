@@ -8,6 +8,8 @@ const ProductDetails = ({ slug }) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  console.log(slug)
+
   useEffect(() => {
     setLoading(true);
     fetch("/data/products.json")
