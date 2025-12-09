@@ -4,6 +4,8 @@ import UpperHeaderWrapper from "@/components/Wrapper/UpperHeaderWrapper";
 import NavWrapper from "@/components/Wrapper/NavWrapper";
 import FooterWrapper from "@/components/Wrapper/FooterWrapper";
 import AOSWrapper from "@/components/shared/SlideInText/AOSWrapper";
+import Providers from "@/lib/redux/provider";
+import { Toaster } from "sonner";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -12,15 +14,18 @@ const rubik = Rubik({
 
 export const metadata = {
   title: "Softwarezon - Your Trusted Software Development Partner",
-  description: "Softwarezon provides premium software solutions, trading signals, web apps, and more.",
-  keywords: "software development, trading signals, web apps, PHP scripts, Laravel, Next.js",
+  description:
+    "Softwarezon provides premium software solutions, trading signals, web apps, and more.",
+  keywords:
+    "software development, trading signals, web apps, PHP scripts, Laravel, Next.js",
   authors: [{ name: "Softwarezon", url: "https://softwarezon.com" }],
   icons: {
     icon: "/images/logo.svg",
   },
   openGraph: {
     title: "Softwarezon - Your Trusted Software Development Partner",
-    description: "Softwarezon provides premium software solutions, trading signals, web apps, and more.",
+    description:
+      "Softwarezon provides premium software solutions, trading signals, web apps, and more.",
     url: "https://softwarezon.com",
     siteName: "Softwarezon",
     images: [
@@ -36,7 +41,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Softwarezon - Your Trusted Software Development Partner",
-    description: "Softwarezon provides premium software solutions, trading signals, web apps, and more.",
+    description:
+      "Softwarezon provides premium software solutions, trading signals, web apps, and more.",
     images: ["/images/main-web.png"],
   },
   alternates: {
@@ -49,11 +55,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={rubik.className}>
         <div className="flex flex-col min-h-screen bg-white">
-          <UpperHeaderWrapper />
-          <NavWrapper />
-          <AOSWrapper />
-          <main className="flex-grow">{children}</main>
-          <FooterWrapper />
+          <Providers>
+            <Toaster />
+            <UpperHeaderWrapper />
+            <NavWrapper />
+            <AOSWrapper />
+            <main className="flex-grow">{children}</main>
+            <FooterWrapper />
+          </Providers>
         </div>
       </body>
     </html>

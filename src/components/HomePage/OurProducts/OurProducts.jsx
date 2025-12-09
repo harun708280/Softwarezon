@@ -1,5 +1,5 @@
 "use client";
-import CustomDescription from "@/components/ProductDetails/Overview/CustomDescription";
+
 import PrimaryButton from "@/components/ui/PrimaryButton/PrimaryButton";
 import SecondaryButton from "@/components/ui/SecondaryButton/SecondaryButton";
 import { ArrowRight, ShoppingCart } from "lucide-react";

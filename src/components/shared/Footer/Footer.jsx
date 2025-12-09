@@ -1,10 +1,70 @@
+"use client";
 import PrimaryButton from "@/components/ui/PrimaryButton/PrimaryButton";
-import { Facebook, Linkedin, MoveRight, Twitter } from "lucide-react";
+import { useSubscribeUserMutation } from "@/lib/api/subscribeApi";
+
+import {
+  Facebook,
+  Linkedin,
+  MailCheck,
+  MailWarning,
+  MoveRight,
+  Twitter,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import { toast } from "sonner";
 
 const Footer = () => {
+  const [emailInput, setEmailInput] = useState("");
+  const [addSubscriber, { isLoading }] = useSubscribeUserMutation();
+
+  const handleAddSubscriber = async () => {
+    if (!emailInput) {
+      toast.custom(
+        (t) => (
+          <div className="flex items-center gap-2 bg-white p-3 rounded-md shadow-md text-orange-400">
+            <MailWarning className="w-5 h-5" />
+            <span>Email is required!</span>
+          </div>
+        ),
+        { duration: 5000 }
+      );
+      return;
+    }
+
+    try {
+      await addSubscriber({ email: emailInput }).unwrap();
+      toast.custom(
+        (t) => (
+          <div
+            className={`flex items-center gap-2 bg-white text-orange-400 p-3 rounded-md shadow-md`}
+          >
+            <MailCheck className="w-5 h-5" />
+            <div className="flex flex-col">
+              <span className="font-medium">Subscribed!</span>
+              <span className="text-sm text-orange-400">
+                You will get our latest updates.
+              </span>
+            </div>
+          </div>
+        ),
+        { duration: 5000 }
+      );
+      setEmailInput("");
+    } catch (err) {
+      toast.custom(
+        (t) => (
+          <div className="flex items-center gap-2 bg-white p-3 rounded-md shadow-md text-orange-400">
+            <MailWarning className="w-5 h-5" />
+            <span>{err?.data?.message || "Failed to subscribe!"}</span>
+          </div>
+        ),
+        { duration: 5000 }
+      );
+    }
+  };
+
   return (
     <footer
       className="relative bg-[url('/images/footer-bg.png')] bg-cover bg-top bg-no-repeat lg:mt-[120px]  "
@@ -12,6 +72,7 @@ const Footer = () => {
       data-aos-duration="800"
       data-aos-delay="100"
     >
+      ''
       <div className="container relative z-0 ">
         <div className="relative z-10 rounded-md max-w-[1170px] mx-auto lg:rounded-[30px] py-7 lg:py-[85px] px-5 lg:px-[52px] bg-orange w-full flex flex-col md:flex-row gap-4 lg:gap-[33px] items-center lg:-mt-[100px] overflow-hidden">
           <div className="w-full lg:w-[62%]">
@@ -30,8 +91,14 @@ const Footer = () => {
                   type="email"
                   placeholder="Enter your email"
                   className="flex-1 outline-none text-gray-700 text-sm placeholder-gray-400 h-full"
+                  value={emailInput}
+                  onChange={(e) => setEmailInput(e.target.value)}
                 />
-                <button className="bg-orange text-white font-medium text-sm md:text-[16px] px-2 md:px-5 py-2 md:py-3 rounded-full whitespace-nowrap cursor-pointer">
+                <button
+                  onClick={handleAddSubscriber}
+                  disabled={isLoading}
+                  className="bg-orange text-white font-medium text-sm md:text-[16px] px-2 md:px-5 py-2 md:py-3 rounded-full whitespace-nowrap cursor-pointer"
+                >
                   Subscribe Now
                 </button>
               </div>
