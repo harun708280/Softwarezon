@@ -210,6 +210,8 @@ const Footer = () => {
           </div>
         </div>
 
+        
+
         <div className="pt-[60px] lg:pt-[120px] relative z-0">
           <div className="border-t border-[#606060] py-[30px]">
             <div className="flex flex-wrap gap-4 justify-between items-center text-[#DAD9D9] text-[14px]">
